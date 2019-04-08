@@ -1,33 +1,43 @@
 #include "Object.h"
 
+#pragma region constructors
 
 Object::Object()
 {
 }
+
 Object::Object(const char *filename)
 {
 	bitmapa = new MyBitmap(filename);
 	sizeX = al_get_bitmap_width(bitmapa->image);
 	sizeY = al_get_bitmap_height(bitmapa->image);
-	bouncerX = sizeX / 2 - 1;
-	bouncerY = sizeY / 2 - 1;
 }
 
-Object::Object(const char *filename, int x, int y)
+Object::Object(const char *filename, int posX, int posY, int x) : Hitbox::Hitbox(posX, posY, x)
 {
 	bitmapa = new MyBitmap(filename);
 	sizeX = al_get_bitmap_width(bitmapa->image);
 	sizeY = al_get_bitmap_height(bitmapa->image);
-	bouncerX = x / 2 - 1;
-	bouncerY = y / 2 - 1;
 }
+
+Object::Object(const char *filename, int posX, int posY, int x, int y) : Hitbox::Hitbox(posX, posY, sizeX / 2 - 1 , sizeY / 2 - 1)
+{
+	bitmapa = new MyBitmap(filename);
+	sizeX = al_get_bitmap_width(bitmapa->image);
+	sizeY = al_get_bitmap_height(bitmapa->image);
+}
+Object::Object(Hitbox * hitbox)
+{
+}
+
+
+#pragma endregion
 
 
 void Object::DrawObject(int x, int y, double rotation, int scale)
 {
 	al_draw_scaled_rotated_bitmap(GetBitmap(), sizeX / 2, sizeY / 2, x, y, scale, scale, rotation, 0);
 }
-
 
 void Object::ChangeBitmap(const char *filename) 
 {
@@ -36,10 +46,10 @@ void Object::ChangeBitmap(const char *filename)
 
 bool Object::CollisionCalculate(double x, double y, double objX, double objY, int objBouncerX, int objBouncerY)
 {
-	if (x  < objX + objBouncerX + bouncerX
-		&& x > objX - objBouncerX - bouncerX
-		&& y  < objY + objBouncerY + bouncerY
-		&& y  > objY - objBouncerY - bouncerY)
+	if (x  < objX + objBouncerX + boundryX
+		&& x > objX - objBouncerX - boundryX
+		&& y  < objY + objBouncerY + boundryY
+		&& y  > objY - objBouncerY - boundryY)
 	{
 		return true;
 	}
@@ -60,5 +70,5 @@ ALLEGRO_BITMAP *Object::GetBitmap()
 
 Object::~Object()
 {
-
+	delete bitmapa;
 }

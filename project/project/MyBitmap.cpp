@@ -1,7 +1,6 @@
 #include "MyBitmap.h"
 
 
-
 MyBitmap::MyBitmap(const char *filename)
 {
 	image = al_load_bitmap(filename);

@@ -14,9 +14,6 @@ void DATA::RefrestData(Bullets *bullets)
 }
 
 DATA::~DATA() {
-
 	al_destroy_mutex(mutex);
-	
 	al_destroy_cond(cond);
-
 }

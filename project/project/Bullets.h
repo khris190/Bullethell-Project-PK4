@@ -5,16 +5,20 @@
 #include <vector>
 class Bullets : public Object
 {
-
+			
 public:
-	std::vector < Bullet > bullets;
+	std::vector < Bullet * >bullets;
 	Bullets(const char *filename);
 	Bullets();
 	void AddBullet(double rotation, double posX, double posY, double speedX, double speedY);
+	void AddBullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX);
+	void AddBullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX, double sizeY);
 	void CalculateBullets();
 	void CalcuclateBulletsCollision(double posX, double posY, int objBouncerX, int objBouncerY);
+	void CalcuclateBulletsCollision(Hitbox *hitbox);
+	void ClearBulletsByCollision();
 	void DrawBullets(int scale = 1);
-	std::vector < Bullet > *GetBullets();
+	std::vector < Bullet * > *GetBullets();
 	~Bullets();
 };
 

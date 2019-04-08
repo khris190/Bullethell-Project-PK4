@@ -1,19 +1,22 @@
 #pragma once
 #include "Config.h"
-class Bullet
+#include "Hitbox.h"
+class Bullet: public Hitbox
 {
 private:
 	double rotation;
-	double posX;
-	double posY;
 	double speedX;
 	double speedY;
+	
 public:
+
+
 	Bullet(double rotation, double posX, double posY, double speedX, double speedY);
-	double GetX();
-	double GetY();
+	Bullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX);
+	Bullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX, double sizeY);
+	//Bullet operator=(const Bullet& bullet);
 	double GetRotation();
 	int calculate();
-	~Bullet();
+	 ~Bullet();
 };
 

@@ -5,26 +5,19 @@ Player::Player() : Object::Object()
 {
 	speed = 3;
 }
-Player::Player(const char *filename, int x, int y) : Object::Object(filename, x, y)
-{ 
-	this->posX = WindowWidth / 2;
-	this->posY = WindowHeight - 32; 
+Player::Player(const char *filename, int x, int y) : Object::Object(filename, WindowWidth / 2, WindowHeight - 32, x)
+{
 	speed = 3;
 }
 
-
-
 double Player::GetX()
 {
-	return posX;
+	return *posX;
 }
 double Player::GetY()
 {
-	return posY;
+	return *posY;
 }
-
-
-
 
 void Player::calculatePosition()
 {
@@ -32,17 +25,17 @@ void Player::calculatePosition()
 	{
 		if (left && !right)
 		{
-			posY -= speed * 0.71;
-			posX -= speed * 0.71;
+			*posY -= speed * 0.71;
+			*posX -= speed * 0.71;
 		}
 		else if (right && !left)
 		{
-			posY -= speed * 0.71;
-			posX += speed * 0.71;
+			*posY -= speed * 0.71;
+			*posX += speed * 0.71;
 		}
 		else
 		{
-			posY -= speed;
+			*posY -= speed;
 		}
 		
 	}
@@ -50,26 +43,26 @@ void Player::calculatePosition()
 	{
 		if (left && !right)
 		{
-			posY += speed * 0.71;
-			posX -= speed * 0.71;
+			*posY += speed * 0.71;
+			*posX -= speed * 0.71;
 		}
 		else if (right && !left)
 		{
-			posY += speed * 0.71;
-			posX += speed * 0.71;
+			*posY += speed * 0.71;
+			*posX += speed * 0.71;
 		}
 		else
 		{
-			posY += speed;
+			*posY += speed;
 		}
 	}
 	else if (left && !right)
 	{
-		posX -= speed;
+		*posX -= speed;
 	}
 	else if (right && !left)
 	{
-		posX += speed;
+		*posX += speed;
 	}
 }
 

@@ -17,7 +17,12 @@ int Game::mainloop()
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
-	
+	if (!al_init_primitives_addon())
+	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize allegro primitives addon!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
+		return -1;
+	}
 #pragma region imageAddon
 
 	if (!al_init_image_addon()) {
@@ -90,7 +95,7 @@ int Game::mainloop()
 	{
 		return -1;
 	}
-	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 16, 16);
+	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8);
 	if (player.GetBitmap() == NULL)
 	{
 		return -1;
@@ -111,10 +116,7 @@ int Game::mainloop()
 	al_set_app_name(programName);
 	al_register_event_source(queue, al_get_display_event_source(display));
 #pragma endregion
-	
 		
-#pragma region mainloop
-	
 	al_start_timer(timer);
 #pragma region threads
 
@@ -125,14 +127,15 @@ int Game::mainloop()
 	al_start_thread(thread_1);
 	al_start_thread(thread_2);
 #pragma endregion
+
 #pragma region testfbulletspawn
 
-	for (int i = 0; i < 30; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		for (int y = 0; y < 30; y++)
+		for (int y = 0; y < 10; y++)
 		{
-			basicBullets.AddBullet(0, 0 + 20 * i, 800 - 20 * y, 0, -1.5);
-			bulletsV2.AddBullet(0, 0 + 20 * i + 10, 800 - 20 * y, 0, -1);
+			//basicBullets.AddBullet(0, 0 + 20 * i, 800 - 20 * y, 0, -1.5);
+			//bulletsV2.AddBullet(0, 0 + 20 * i + 10, 800 - 20 * y, 0, 0, 8);
 
 		}
 	}
@@ -144,12 +147,13 @@ int Game::mainloop()
 	bool doloop = true;
 	bool mauseInPasueButton = false;
 	bool mauseInDisplay = true;
+
+#pragma region mainloop
 	while (!done)
 	{
 		al_wait_for_event(queue, &ev1);
 		ALLEGRO_MOUSE_STATE state;
 		
-		/* Je¿eli pojawi siê event, wybierz co nale¿y wykonaæ */
 		switch (ev1.type)
 		{
 		case ALLEGRO_EVENT_DISPLAY_CLOSE:
@@ -175,8 +179,9 @@ int Game::mainloop()
 					al_rest(0.005);
 				}
 
-				player.DrawPlayer(player.GetX(), player.GetY());
 
+
+				player.DrawPlayer(player.GetX(), player.GetY());
 #pragma region bulletdraw
 				basicBullets.DrawBullets(2);
 				bulletsV2.DrawBullets();
@@ -222,7 +227,7 @@ int Game::mainloop()
 			}
 			else if (state.buttons & 1 && doloop)
 			{
-				bulletsV2.AddBullet(PI, state.x, state.y, 0, 1);
+				bulletsV2.AddBullet(PI, state.x, state.y, 0, 1, 8);
 			}
 			break;
 #pragma endregion
@@ -271,19 +276,30 @@ int Game::mainloop()
 
 #pragma endregion
 
+#pragma region displayEvents
 
 
 		case ALLEGRO_EVENT_DISPLAY_SWITCH_OUT:
-			//doloop = false;
+			al_stop_timer(timer);
+			doloop = false;
+			break;
+		case ALLEGRO_EVENT_DISPLAY_SWITCH_IN:
+			al_start_timer(timer);
 			break;
 		case ALLEGRO_EVENT_MOUSE_LEAVE_DISPLAY:
-			//mauseInDisplay = false;
-			//doloop = false;
+			mauseInDisplay = false;
+			doloop = false;
+			pause.ChangeBitmap("Resources/pausesmall.png");
+				al_draw_scaled_rotated_bitmap(pause.GetBitmap(), 128, 128, WindowWidth / 2, WindowHeight / 2, 1, 1, 0, 0);
+				al_flip_display();
 			break; 
 		case ALLEGRO_EVENT_MOUSE_ENTER_DISPLAY:
 			mauseInDisplay = true;
 			break;
-			
+
+
+#pragma endregion
+
 		default: break;
 		}
 	}
@@ -295,10 +311,16 @@ int Game::mainloop()
 	al_destroy_thread(thread_1);
 	al_destroy_thread(thread_2);
 
+	al_uninstall_keyboard();
+	al_uninstall_mouse();
+
+	
+
 	al_destroy_display(display);
 	al_destroy_event_queue(queue);
 	al_destroy_timer(timer);
 	al_shutdown_image_addon();
+	al_shutdown_primitives_addon();
 #pragma endregion
 	return 0;
 }
@@ -319,12 +341,15 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 			}
 		}
 		data->bullets->CalculateBullets();
-		data->bullets->CalcuclateBulletsCollision(data->player->GetX(), data->player->GetY(), data->player->bouncerX, data->player->bouncerY);
+		al_lock_mutex(data->mutex);
+		al_unlock_mutex(data->mutex);
+		data->bullets->CalcuclateBulletsCollision(data->player);
+		//data->bullets->CalcuclateBulletsCollision(data->player->GetX(), data->player->GetY(), data->player->bouncerX, data->player->bouncerY);
 		data->ready = false;
 		data->ready2 = true;
 
 	}
-
+	data->bullets->ClearBulletsByCollision();
 	return 0;
 }
 

@@ -57,7 +57,13 @@
     <ClCompile Include="data.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Weapons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Weapon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hitbox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -89,7 +95,16 @@
     <ClInclude Include="data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Weapons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Weapon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hitbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HitboxTypeEnum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
