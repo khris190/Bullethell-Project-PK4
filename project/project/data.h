@@ -11,6 +11,7 @@ public:
 	ALLEGRO_COND  *cond;
 	Bullets       *bullets;
 	Player		  *player;
+
 	bool           ready;
 	bool           ready2;
 	void RefrestData (Bullets *bullets);

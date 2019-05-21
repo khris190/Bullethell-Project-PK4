@@ -12,6 +12,7 @@ protected:
 	double *posX = NULL;
 	double *posY = NULL;
 public:
+
 	double boundryX;
 	double boundryY;
 	Hitbox();

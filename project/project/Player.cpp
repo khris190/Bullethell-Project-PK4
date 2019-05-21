@@ -1,13 +1,14 @@
 #include "Player.h"
 
 
-Player::Player() : Object::Object()
+Player::Player() : ship::ship()
 {
-	speed = 3;
 }
-Player::Player(const char *filename, int x, int y) : Object::Object(filename, WindowWidth / 2, WindowHeight - 32, x)
+Player::Player(const char *filename, int radius) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius)
 {
-	speed = 3;
+}
+Player::Player(const char *filename, int radius, int s) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius, s)
+{
 }
 
 double Player::GetX()
@@ -25,17 +26,33 @@ void Player::calculatePosition()
 	{
 		if (left && !right)
 		{
-			*posY -= speed * 0.71;
-			*posX -= speed * 0.71;
+			if (*posX > 0)
+			{
+				*posX -= GetSpeed() * 0.71;
+			}
+			if (*posY > 0)
+			{
+				*posY -= GetSpeed() * 0.71;
+			}
+			
 		}
 		else if (right && !left)
 		{
-			*posY -= speed * 0.71;
-			*posX += speed * 0.71;
+			if (*posX < WindowWidth)
+			{
+				*posX += GetSpeed() * 0.71;
+			}
+			if (*posY > 0)
+			{
+				*posY -= GetSpeed() * 0.71;
+			}
 		}
 		else
 		{
-			*posY -= speed;
+			if (*posY > 0)
+			{
+				*posY -= GetSpeed();
+			}
 		}
 		
 	}
@@ -43,26 +60,47 @@ void Player::calculatePosition()
 	{
 		if (left && !right)
 		{
-			*posY += speed * 0.71;
-			*posX -= speed * 0.71;
+			if (*posY < WindowHeight)
+			{
+				*posY += GetSpeed() * 0.71;
+			}
+			if (*posX > 0)
+			{
+				*posX -= GetSpeed() * 0.71;
+			}
 		}
 		else if (right && !left)
 		{
-			*posY += speed * 0.71;
-			*posX += speed * 0.71;
+			if (*posY < WindowHeight)
+			{
+				*posY += GetSpeed() * 0.71;
+			}
+			if (*posX < WindowWidth)
+			{
+				*posX += GetSpeed() * 0.71;
+			}
 		}
 		else
 		{
-			*posY += speed;
+			if (*posY < WindowHeight)
+			{
+				*posY += GetSpeed();
+			}
 		}
 	}
 	else if (left && !right)
 	{
-		*posX -= speed;
+		if (*posX > 0)
+		{
+			*posX -= GetSpeed();
+		}
 	}
 	else if (right && !left)
 	{
-		*posX += speed;
+		if (*posX < WindowWidth)
+		{
+			*posX += GetSpeed();
+		}
 	}
 }
 

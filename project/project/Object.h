@@ -28,9 +28,14 @@ public:
 	bool CollisionCalculate(double x, double y, double objX, double objY, int objBouncerX, int objBouncerY);
 
 	ALLEGRO_BITMAP *GetBitmap();
+	int GetSizeX();
+	int GetSizeY();
+
+
 	Object();
 	virtual ~Object();
-protected: void DrawObject(int x, int y, double rotation = 0, int scale = 1);
+protected: void DrawObject(int x, int y, double rotation = 0, float scale = 1);
+		   void DrawObjecttest(int x, int y, double rotation = 0, int scale = 1);
 		   int sizeX;
 		   int sizeY;
 		   MyBitmap * bitmapa = NULL;

@@ -2,14 +2,15 @@
 
 
 
-#define WindowHeight 800
-#define WindowWidth 700
+#define WindowHeight 900
+#define WindowWidth 750
 
 
 #define blackRGB 0, 0, 0
 
-#define FPScount 50
+#define FPScount 60
 
 #define programName "projekt"
 
-#define PI 3.1416
+#define PI 3.14159265
+

@@ -1,22 +1,20 @@
 #pragma once
-#include "Object.h"
+#include "ship.h"
 #include "Config.h"
 #include "Bullets.h"
-class Player : public Object
+#include "Weapons.h"
+class Player : public ship
 {
 private:
-	int rotation;
-	double speed;
-	double health;
 public:
-
 	bool up = false;
 	bool down = false;
 	bool left = false;
 	bool right = false;
 	
 	Player();
-	Player(const char *filename, int x, int y);
+	Player(const char *filename, int radius);
+	Player(const char *filename, int radius, int s);
 	void calculatePosition();
 	void DrawPlayer(int x, int y, int rotation = 0, int scale = 1);
 	void CalculateCollisions();

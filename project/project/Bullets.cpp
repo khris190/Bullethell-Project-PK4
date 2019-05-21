@@ -33,19 +33,23 @@ void Bullets::CalculateBullets()
 	{
 		if (!(bullets[i]->calculate()))
 		{
+			Bullet *swapper = bullets[i];
 			bullets[i] = bullets[bullets.size() - 1];
+			bullets[bullets.size() - 1] = swapper;
 			bullets.erase(bullets.end() - 1);
+			delete swapper;
 		}
 	}
+
 }
 
 void Bullets::CalcuclateBulletsCollision(double posX, double posY, int objBouncerX, int objBouncerY)
 {
+	
 	for (unsigned int i = 0; i < bullets.size(); i++)
 	{
 		if (CollisionCalculate(bullets[i]->GetX(), bullets[i]->GetY(), posX, posY, objBouncerX, objBouncerX))
 		{
-
 			bullets[i] = bullets[bullets.size() - 1];
 			bullets.erase(bullets.end() - 1);
 		}
@@ -68,23 +72,27 @@ void Bullets::CalcuclateBulletsCollision(Hitbox *hitbox)
 
 void Bullets::ClearBulletsByCollision()
 {
-	while (bullets.size() > 0)
-	{
-			bullets.erase(bullets.end() - 1);
-	}
 }
 
 
-void Bullets::DrawBullets(int scale)
+void Bullets::DrawBullets(float scale)
 {
-	unsigned int i = 0;
-	while (i < bullets.size())
+	for (unsigned int i = 0; i < bullets.size(); i++)
 	{
-		DrawObject(bullets[i]->GetX(), bullets[i]->GetY(), bullets[i]->GetRotation(), scale);
-		i++;
+		if (i < bullets.size())
+		{
+			DrawObject((int)bullets[i]->GetX(), (int)bullets[i]->GetY(), bullets[i]->GetRotation(), scale);
+		}
+		
 	}
 }
-
+void Bullets::DrawBulletstest(float scale)
+{
+	for (unsigned int i = 0; i < bullets.size(); i++)
+	{
+		DrawObjecttest(bullets[i]->GetX(), bullets[i]->GetY(), bullets[i]->GetRotation(), scale);
+	}
+}
 std::vector < Bullet *> *Bullets::GetBullets()
 {
 	return &bullets;

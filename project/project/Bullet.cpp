@@ -21,14 +21,6 @@ Bullet::Bullet(double rotation, double posX, double posY, double speedX, double 
 	this->speedY = speedY;
 }
 
-//Bullet Bullet::operator=(const Bullet& bullet)
-//{
-//	Hitbox *helper = new Hitbox();
-//	helper = bullet.hitbox;
-//	//this->hitbox = 
-//
-//}
-
 
 double Bullet::GetRotation()
 {

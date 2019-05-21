@@ -7,9 +7,11 @@ Game::Game()
 
 int Game::mainloop()	
 {
-#pragma region inicjalizacja
+#pragma region INIT
 
 	ALLEGRO_DISPLAY * display = nullptr;
+
+#pragma region basicAllegroINIT
 
 	if (!al_init())
 	{
@@ -23,12 +25,52 @@ int Game::mainloop()
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
+
+#pragma endregion
+
 #pragma region imageAddon
 
 	if (!al_init_image_addon()) {
 		al_show_native_message_box(display, "Error", "Error", "Failed to initialize al_init_image_addon!",
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
+	}
+
+#pragma endregion
+
+#pragma region fonts
+
+	if (!al_init_font_addon())
+	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize allegro fonts addon!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
+		return -1;
+	}
+
+	if (!al_init_ttf_addon())
+	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize allegro ttf addon!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
+		return -1;
+	}
+	ALLEGRO_FONT *font = al_load_ttf_font("Resources/fonts/Roboto-Light.ttf", 36, 0);
+
+	if (!font) {
+		return 1;
+	}
+
+#pragma endregion
+
+#pragma region display
+
+
+	display = al_create_display(WindowWidth, WindowHeight);
+
+	if (display == nullptr)
+	{
+		std::cerr << "Well, something is not working..." << std::endl;
+		al_rest(5.0);
+		return -3;
 	}
 
 #pragma endregion
@@ -43,7 +85,7 @@ int Game::mainloop()
 		fprintf(stderr, "Failed to create event queue!\n");
 		return -2;
 	}
-
+	al_register_event_source(queue, al_get_display_event_source(display));
 #pragma endregion
 
 #pragma region CONTROLS
@@ -72,20 +114,8 @@ int Game::mainloop()
 		return -1;
 	}
 	al_register_event_source(queue, al_get_timer_event_source(timer));
+	al_start_timer(timer);
 
-#pragma endregion
-
-#pragma region display
-
-	
-	display = al_create_display(WindowWidth, WindowHeight);
-
-	if (display == nullptr)
-	{
-		std::cerr << "Well, something is not working..." << std::endl;
-		al_rest(5.0);
-		return -3;
-	}
 #pragma endregion
 
 #pragma region objects
@@ -106,49 +136,73 @@ int Game::mainloop()
 		return -1;
 	}
 
-	ALLEGRO_THREAD      *thread_1 = NULL;
-	ALLEGRO_THREAD      *thread_2 = NULL;
-
-
 	Object pause("Resources/pausesmall.png");
+
 #pragma endregion	
-	
-	al_set_app_name(programName);
-	al_register_event_source(queue, al_get_display_event_source(display));
-#pragma endregion
-		
-	al_start_timer(timer);
+
 #pragma region threads
+
+	ALLEGRO_THREAD      *thread_1 = NULL;
+	ALLEGRO_THREAD      *thread_2 = NULL;	
 
 	DATA basicBulletsData(&basicBullets, &player);
 	DATA bulletsV2Data(&bulletsV2, &player);
+
 	thread_1 = al_create_thread(Func_ThreadBulletsCalculations, &basicBulletsData);
 	thread_2 = al_create_thread(Func_ThreadBulletsCalculations, &bulletsV2Data);
+
 	al_start_thread(thread_1);
 	al_start_thread(thread_2);
+
+#pragma endregion
+
 #pragma endregion
 
 #pragma region testfbulletspawn
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 100; i++)
 	{
-		for (int y = 0; y < 10; y++)
+		for (int y = 0; y < 100; y++)
 		{
-			//basicBullets.AddBullet(0, 0 + 20 * i, 800 - 20 * y, 0, -1.5);
-			//bulletsV2.AddBullet(0, 0 + 20 * i + 10, 800 - 20 * y, 0, 0, 8);
+
+			basicBullets.AddBullet(PI, 8 * i + 10, 9 * y, 0, 2, 2);
+			//bulletsV2.AddBullet(0, 4 * i + 10, 3 * y, 0, 1, 2);
 
 		}
 	}
+
+	//for (int i = 0; i < 400; i++)
+	//{
+	//	for (int y = 0; y < 500; y++)
+	//	{
+
+	//		//basicBullets.AddBullet(0, 10 * i + 10, 4 * y, 0, 1, 2);
+	//		bulletsV2.AddBullet(0, 2 * i + 10, 2 * y, 0, 1, 2);
+
+	//	}
+	//}
+
 #pragma endregion
 
+#pragma region setVariables
 
+	al_set_app_name(programName);
 
 	bool done = false;
 	bool doloop = true;
 	bool mauseInPasueButton = false;
 	bool mauseInDisplay = true;
+	std::clock_t start, end;
+	std::clock_t duration;
+	std::vector <std::clock_t> czasy;
+	double old_time = al_get_time();
 
-#pragma region mainloop
+#pragma endregion
+
+
+#pragma region MAINLOOP
+	try
+	{
 	while (!done)
 	{
 		al_wait_for_event(queue, &ev1);
@@ -156,9 +210,14 @@ int Game::mainloop()
 		
 		switch (ev1.type)
 		{
+
+#pragma region ALLEGRO_EVENT_DISPLAY_CLOSE
+
 		case ALLEGRO_EVENT_DISPLAY_CLOSE:
 			done = true;
 			break;
+
+#pragma endregion
 
 #pragma region allegro event timer
 
@@ -166,30 +225,63 @@ int Game::mainloop()
 
 			if (doloop)
 			{
+
+				
+				bulletsV2Data.ready = true;
 				player.calculatePosition();
 				basicBulletsData.ready = true;
-				bulletsV2Data.ready = true;
+				while (basicBulletsData.ready)
+				{
+					al_rest(0.001);
+				}
+				
+				while (bulletsV2Data.ready)
+				{
+					al_rest(0.001);
+				}
+			}
+			if (doloop && al_is_event_queue_empty(queue))
+			{
+				start = std::clock();
 				al_clear_to_color(al_map_rgb(0, 0, 0));
-				while (!basicBulletsData.ready2)
-				{
-					al_rest(0.005);
-				}
-				while (!bulletsV2Data.ready2)
-				{
-					al_rest(0.005);
-				}
-
-
+				al_hold_bitmap_drawing(true);
 
 				player.DrawPlayer(player.GetX(), player.GetY());
+				
 #pragma region bulletdraw
-				basicBullets.DrawBullets(2);
-				bulletsV2.DrawBullets();
+				basicBullets.DrawBullets(1);
+				bulletsV2.DrawBullets(0.5);
 #pragma endregion
+
+				end = std::clock();
+				duration = (end - start);
+				czasy.push_back(duration);
+
+				al_hold_bitmap_drawing(false);
+
+				double new_time = al_get_time();
+				double delta = new_time - old_time;
+				int fps =1/ (delta);
+				char text[20];
+				char text2[20];
+				sprintf_s(text, "%d", fps);
+				sprintf_s(text2, "%d", bulletsV2.bullets.size() + basicBullets.bullets.size());
+				old_time = new_time;
+				if (fps>=60)
+				{
+					al_draw_text(font, al_map_rgb(0, 255, 0), 50, 10, ALLEGRO_ALIGN_CENTRE, text);
+					al_draw_text(font, al_map_rgb(0, 255, 0), 60, 45, ALLEGRO_ALIGN_CENTRE, text2);
+				}
+				else
+				{
+					al_draw_text(font, al_map_rgb(255, 0, 0), 50, 10, ALLEGRO_ALIGN_CENTRE, text);
+					al_draw_text(font, al_map_rgb(255, 0, 0), 60, 45, ALLEGRO_ALIGN_CENTRE, text2);
+				}
 				
 				al_flip_display();
 			}
-			else if (mauseInDisplay)
+
+			else if (mauseInDisplay&& al_is_event_queue_empty(queue))
 			{
 				al_get_mouse_state(&state);
 				if (state.x < WindowWidth / 2 + 80 && state.x > WindowWidth / 2 - 80 && state.y < WindowHeight / 2 + 100 && state.y > WindowHeight / 2 - 100)
@@ -216,8 +308,8 @@ int Game::mainloop()
 #pragma endregion
 
 #pragma region allegro event mouse button down
-		case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN:
 
+		case ALLEGRO_EVENT_MOUSE_BUTTON_DOWN:
 
 			al_get_mouse_state(&state);
 			if (state.buttons & 1 && mauseInPasueButton == true)
@@ -269,6 +361,18 @@ int Game::mainloop()
 			case ALLEGRO_KEY_D:
 				player.right = false;
 				break;
+			case ALLEGRO_KEY_1:
+				for (int i = 0; i < 40; i++)
+				{
+					for (int y = 0; y < 40; y++)
+					{
+
+						//basicBullets.AddBullet(0, 0 + 10 * i + 10, 800 - 10 * y, 0, 0, 8);
+						bulletsV2.AddBullet(0, 0 + 15 * i + 10, 15 * y, 0, 2.11, 8);
+
+					}
+				}
+				break;
 			default:
 				break;
 			}
@@ -278,7 +382,7 @@ int Game::mainloop()
 
 #pragma region displayEvents
 
-
+#ifndef NOPAUSE
 		case ALLEGRO_EVENT_DISPLAY_SWITCH_OUT:
 			al_stop_timer(timer);
 			doloop = false;
@@ -290,21 +394,29 @@ int Game::mainloop()
 			mauseInDisplay = false;
 			doloop = false;
 			pause.ChangeBitmap("Resources/pausesmall.png");
-				al_draw_scaled_rotated_bitmap(pause.GetBitmap(), 128, 128, WindowWidth / 2, WindowHeight / 2, 1, 1, 0, 0);
-				al_flip_display();
-			break; 
+			al_draw_scaled_rotated_bitmap(pause.GetBitmap(), 128, 128, WindowWidth / 2, WindowHeight / 2, 1, 1, 0, 0);
+			al_flip_display();
+			break;
 		case ALLEGRO_EVENT_MOUSE_ENTER_DISPLAY:
 			mauseInDisplay = true;
 			break;
-
+#endif // NOPAUSE
 
 #pragma endregion
 
 		default: break;
 		}
 	}
-#pragma endregion
 
+	}
+	catch (const std::exception& thing)
+	{
+		al_show_native_message_box(display, "Error", "Error", thing.what() ,
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
+		
+	}
+
+#pragma endregion
 
 #pragma region deconstructors
 
@@ -321,35 +433,37 @@ int Game::mainloop()
 	al_destroy_timer(timer);
 	al_shutdown_image_addon();
 	al_shutdown_primitives_addon();
+	al_shutdown_font_addon();
 #pragma endregion
+
 	return 0;
 }
 
 void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 {
-
+	
 	DATA *data = (DATA*)arg;
-	//moze while(1)
 	while (!al_get_thread_should_stop(thr))
 	{
 		while (!data->ready)
 		{
-			al_rest(0.005);
+			al_rest(0.001);
 			if (al_get_thread_should_stop(thr))
 			{
 				return 0;
 			}
 		}
-		data->bullets->CalculateBullets();
-		al_lock_mutex(data->mutex);
-		al_unlock_mutex(data->mutex);
-		data->bullets->CalcuclateBulletsCollision(data->player);
-		//data->bullets->CalcuclateBulletsCollision(data->player->GetX(), data->player->GetY(), data->player->bouncerX, data->player->bouncerY);
+		for (int i = 0; i < 1; i++)
+		{
+			data->bullets->CalculateBullets();
+			data->bullets->CalcuclateBulletsCollision(data->player);
+		}
 		data->ready = false;
-		data->ready2 = true;
 
 	}
+
 	data->bullets->ClearBulletsByCollision();
+
 	return 0;
 }
 

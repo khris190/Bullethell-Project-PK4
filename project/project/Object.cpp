@@ -34,11 +34,14 @@ Object::Object(Hitbox * hitbox)
 #pragma endregion
 
 
-void Object::DrawObject(int x, int y, double rotation, int scale)
+void Object::DrawObject(int x, int y, double rotation, float scale)
 {
 	al_draw_scaled_rotated_bitmap(GetBitmap(), sizeX / 2, sizeY / 2, x, y, scale, scale, rotation, 0);
 }
-
+void Object::DrawObjecttest(int x, int y, double rotation, int scale)
+{
+	al_draw_bitmap(GetBitmap(), x, y, 0);
+}
 void Object::ChangeBitmap(const char *filename) 
 {
 	bitmapa->ChangeBitmap(filename);

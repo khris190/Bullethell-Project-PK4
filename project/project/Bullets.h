@@ -17,7 +17,9 @@ public:
 	void CalcuclateBulletsCollision(double posX, double posY, int objBouncerX, int objBouncerY);
 	void CalcuclateBulletsCollision(Hitbox *hitbox);
 	void ClearBulletsByCollision();
-	void DrawBullets(int scale = 1);
+	void DrawBullets(float scale = 1);
+	void DrawBulletstest(float scale = 1);
+
 	std::vector < Bullet * > *GetBullets();
 	~Bullets();
 };
