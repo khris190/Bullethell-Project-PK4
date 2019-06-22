@@ -8,14 +8,16 @@ class Bullets : public Object
 			
 public:
 	std::vector < Bullet * >bullets;
+	int damage;
 	Bullets(const char *filename);
 	Bullets();
 	void AddBullet(double rotation, double posX, double posY, double speedX, double speedY);
 	void AddBullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX);
 	void AddBullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX, double sizeY);
+	void setDmg(int value);
 	void CalculateBullets();
 	void CalcuclateBulletsCollision(double posX, double posY, int objBouncerX, int objBouncerY);
-	void CalcuclateBulletsCollision(Hitbox *hitbox);
+	int CalcuclateBulletsCollision(Hitbox *hitbox);
 	void ClearBulletsByCollision();
 	void DrawBullets(float scale = 1);
 	void DrawBulletstest(float scale = 1);

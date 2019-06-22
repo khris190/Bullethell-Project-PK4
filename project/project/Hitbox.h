@@ -1,16 +1,17 @@
 #pragma once
 #include "HitboxTypeEnum.h"
 #include <math.h>
+#include <memory>
 class Hitbox
 {
-private:
-	
-	
+protected:
 	double radius;
 	HitboxType type;
-protected:
-	double *posX = NULL;
-	double *posY = NULL;
+	std::unique_ptr<double> posX = std::make_unique<double>();
+	std::unique_ptr<double> posY = std::make_unique<double>();
+
+	//double *posX = NULL;
+	//double *posY = NULL;
 public:
 
 	double boundryX;
@@ -23,6 +24,7 @@ public:
 	double GetX();
 	double GetY();
 	bool CalculateCollision(Hitbox *second);
+	bool CalculateCollision(HitboxType sType, double sPosX, double sPosY, double sRadius);
 	virtual ~Hitbox();
 };
 

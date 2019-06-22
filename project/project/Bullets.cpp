@@ -25,6 +25,11 @@ void Bullets::AddBullet(double rotation, double posX, double posY, double speedX
 	bullets.push_back(bullet);
 }
 
+void Bullets::setDmg(int value)
+{
+	this->damage = value;
+}
+
 
 void Bullets::CalculateBullets()
 {
@@ -55,8 +60,9 @@ void Bullets::CalcuclateBulletsCollision(double posX, double posY, int objBounce
 		}
 	}
 }
-void Bullets::CalcuclateBulletsCollision(Hitbox *hitbox)
+int Bullets::CalcuclateBulletsCollision(Hitbox *hitbox)
 {
+	int result = 0;
 	for (unsigned int i = 0; i < bullets.size(); i++)
 	{
 		if (bullets[i]->CalculateCollision(hitbox))
@@ -66,8 +72,10 @@ void Bullets::CalcuclateBulletsCollision(Hitbox *hitbox)
 			bullets[bullets.size() - 1] = swapper;
 			bullets.erase(bullets.end() - 1);
 			delete swapper;
+			result++;
 		}
 	}
+	return result;
 }
 
 void Bullets::ClearBulletsByCollision()

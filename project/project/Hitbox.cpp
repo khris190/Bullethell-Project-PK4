@@ -5,21 +5,21 @@ Hitbox::Hitbox()
 }
 Hitbox::Hitbox(double x, double y)
 {
-	this->posX = new double(x);
-	this->posY = new double(y);
+	*posX = x;
+	*posY = y;
 	type = dot;
 }
 Hitbox::Hitbox(double x, double y, double radius)
 {
-	this->posX = new double(x);
-	this->posY = new double(y);
+	*posX = x;
+	*posY = y;
 	this->radius = radius;
 	type = circle;
 }
 Hitbox::Hitbox(double x, double y, double boundryX, double boundryY)
 {
-	this->posX = new double(x);
-	this->posY = new double(y);
+	*posX = x;
+	*posY = y;
 	this->boundryX = boundryX;
 	this->boundryY = boundryY;
 	type = square;
@@ -121,17 +121,83 @@ bool Hitbox::CalculateCollision(Hitbox *second)
 	}
 }
 
+bool Hitbox::CalculateCollision(HitboxType sType, double sPosX, double sPosY, double sRadius)
+{
+	if (type == dot)
+	{
+		/*if (second.type == dot){}else*/
+		if (sType == circle)
+		{
+			return false;
+		}
+		else if (type == square)
+		{
+			return false;
+		}
+		else
+		{
+			if (*posX == sPosX && *posY == sPosY)
+			{
+				return true;
+			}
+			return false;
+		}
+
+	}
+	else if (type == circle)
+	{
+
+		if (sType == dot)
+		{
+			if (*(this->posX) < sPosX + this->radius
+				&& *(this->posX) > sPosX - this->radius
+				&&*(this->posY) < sPosY + this->radius
+				&&*(this->posY) > sPosY - this->radius)
+			{
+				if (pow(*(this->posX) - sPosX, 2) + pow(*(this->posY) - sPosY, 2) <= pow(this->radius, 2))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		else if (sType == circle)
+		{
+			if (*(this->posX) < sPosX + this->radius + sRadius	
+				&& *(this->posX) > sPosX - this->radius - sRadius
+				&&*(this->posY) < sPosY + this->radius + sRadius
+				&&*(this->posY) > sPosY - this->radius - sRadius)
+			{
+				if (pow(*(this->posX) - sPosX, 2) + pow(*(this->posY) - sPosY, 2) <= pow(sRadius + this->radius, 2))
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+		else //if (type == square)
+		{
+
+		}
+	}
+	else //if (type == square)
+	{
+		if (sType == dot)
+		{
+
+		}
+		else if (sType == circle)
+		{
+
+		}
+		else //if (type == square)
+		{
+
+		}
+	}
+}
 
 Hitbox::~Hitbox()
-{
-	if (posX != NULL)
-	{
-		delete posX;
-	}
-	if (posY != NULL)
-	{
-		delete posY;
-	}
-	
+{	
 }
 	

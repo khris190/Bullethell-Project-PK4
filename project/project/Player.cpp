@@ -4,10 +4,10 @@
 Player::Player() : ship::ship()
 {
 }
-Player::Player(const char *filename, int radius) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius)
+Player::Player(const char *filename, int radius, int health) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius, health)
 {
 }
-Player::Player(const char *filename, int radius, int s) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius, s)
+Player::Player(const char *filename, int radius, int s, int health) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius, s)
 {
 }
 
@@ -104,9 +104,16 @@ void Player::calculatePosition()
 	}
 }
 
+void Player::CalculateCollisionsForPlayer()
+{
+		
+}
+
+
+
 void Player::DrawPlayer(int x, int y, int rotation, int scale)
 {
-	DrawObject(x, y, rotation, scale);
+	DrawShip(x, y, rotation, scale);
 }
 
 Player::~Player()

@@ -125,16 +125,20 @@ int Game::mainloop()
 	{
 		return -1;
 	}
-	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8);
+	basicBullets.setDmg(1);
+
+	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8, 10);
 	if (player.GetBitmap() == NULL)
 	{
 		return -1;
 	}
+
 	Bullets bulletsV2("Resources/shot1.png");
 	if (bulletsV2.GetBitmap() == NULL)
 	{
 		return -1;
 	}
+	bulletsV2.setDmg(1);
 
 	Object pause("Resources/pausesmall.png");
 
@@ -242,41 +246,18 @@ int Game::mainloop()
 			}
 			if (doloop && al_is_event_queue_empty(queue))
 			{
-				start = std::clock();
 				al_clear_to_color(al_map_rgb(0, 0, 0));
+#pragma region bulletdraw
 				al_hold_bitmap_drawing(true);
 
 				player.DrawPlayer(player.GetX(), player.GetY());
 				
-#pragma region bulletdraw
+
 				basicBullets.DrawBullets(1);
 				bulletsV2.DrawBullets(0.5);
-#pragma endregion
-
-				end = std::clock();
-				duration = (end - start);
-				czasy.push_back(duration);
 
 				al_hold_bitmap_drawing(false);
-
-				double new_time = al_get_time();
-				double delta = new_time - old_time;
-				int fps =1/ (delta);
-				char text[20];
-				char text2[20];
-				sprintf_s(text, "%d", fps);
-				sprintf_s(text2, "%d", bulletsV2.bullets.size() + basicBullets.bullets.size());
-				old_time = new_time;
-				if (fps>=60)
-				{
-					al_draw_text(font, al_map_rgb(0, 255, 0), 50, 10, ALLEGRO_ALIGN_CENTRE, text);
-					al_draw_text(font, al_map_rgb(0, 255, 0), 60, 45, ALLEGRO_ALIGN_CENTRE, text2);
-				}
-				else
-				{
-					al_draw_text(font, al_map_rgb(255, 0, 0), 50, 10, ALLEGRO_ALIGN_CENTRE, text);
-					al_draw_text(font, al_map_rgb(255, 0, 0), 60, 45, ALLEGRO_ALIGN_CENTRE, text2);
-				}
+#pragma endregion
 				
 				al_flip_display();
 			}
@@ -453,11 +434,10 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 				return 0;
 			}
 		}
-		for (int i = 0; i < 1; i++)
-		{
-			data->bullets->CalculateBullets();
-			data->bullets->CalcuclateBulletsCollision(data->player);
-		}
+		data->bullets->CalculateBullets();
+		data->player->CalculateCollisions(data->bullets);
+
+			
 		data->ready = false;
 
 	}
