@@ -120,53 +120,41 @@ int Game::mainloop()
 
 #pragma region objects
 
-	Bullets basicBullets("C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Resources/shot.bmp");
+	Bullets basicBullets("Resources/shot.bmp");
 	if (basicBullets.GetBitmap() == NULL)
 	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize bulletsboiz!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
-	basicBullets.setDmg(1);
+	basicBullets.setDmg(5);
 
-	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8, 10);
+	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8, PlayerHealth);
 	if (player.GetBitmap() == NULL)
 	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize playah!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
 
 	Bullets bulletsV2("Resources/shot1.png");
 	if (bulletsV2.GetBitmap() == NULL)
 	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize bulletsboizv2!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
-	bulletsV2.setDmg(1);
+	bulletsV2.setDmg(2);
 
 	Object pause("Resources/pausesmall.png");
 
 #pragma endregion	
 
-#pragma region threads
-
-	ALLEGRO_THREAD      *thread_1 = NULL;
-	ALLEGRO_THREAD      *thread_2 = NULL;	
-
-	DATA basicBulletsData(&basicBullets, &player);
-	DATA bulletsV2Data(&bulletsV2, &player);
-
-	thread_1 = al_create_thread(Func_ThreadBulletsCalculations, &basicBulletsData);
-	thread_2 = al_create_thread(Func_ThreadBulletsCalculations, &bulletsV2Data);
-
-	al_start_thread(thread_1);
-	al_start_thread(thread_2);
-
-#pragma endregion
-
-#pragma endregion
-
 #pragma region testfbulletspawn
 
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 20; i++)
 	{
-		for (int y = 0; y < 100; y++)
+		for (int y = 0; y < 20; y++)
 		{
 
 			basicBullets.AddBullet(PI, 8 * i + 10, 9 * y, 0, 2, 2);
@@ -187,6 +175,26 @@ int Game::mainloop()
 	//}
 
 #pragma endregion
+
+#pragma region threads
+
+	ALLEGRO_THREAD      *thread_1 = NULL;
+	ALLEGRO_THREAD      *thread_2 = NULL;	
+
+	DATA basicBulletsData(&basicBullets, &player);
+	DATA bulletsV2Data(&bulletsV2, &player);
+
+	thread_1 = al_create_thread(Func_ThreadBulletsCalculations, &basicBulletsData);
+	thread_2 = al_create_thread(Func_ThreadBulletsCalculations, &bulletsV2Data);
+
+	al_start_thread(thread_1);
+	al_start_thread(thread_2);
+
+#pragma endregion
+
+#pragma endregion
+
+
 
 #pragma region setVariables
 
@@ -442,7 +450,7 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 
 	}
 
-	data->bullets->ClearBulletsByCollision();
+	//data->bullets->ClearBulletsByCollision();
 
 	return 0;
 }

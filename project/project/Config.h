@@ -14,5 +14,5 @@
 
 #define PI 3.14159265
 
-#define PlayerHealth 10;
+constexpr auto PlayerHealth = 100;
 
