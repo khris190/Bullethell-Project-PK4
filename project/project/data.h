@@ -18,9 +18,9 @@ public:
 	bool           ready;
 	DATA(Bullets *Playerbullets, Bullets *enemyBullets, Player *player);
 
-	void AddEnemy(const char *filename, int x, int y, double speed);
+	void AddEnemy(const char *filename, int x, int y, double speed, int period);
 	void DrawEnemies();
-	void calculateEnemies();
+	void calculateEnemies(int timer);
 	void ClearDeadEnemies();
 
 	~DATA();

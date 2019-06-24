@@ -18,6 +18,11 @@ ship::ship(const char *filename, int x, int y, int radius, int s, int health) : 
 	this->health = health;
 }
 
+
+int ship::GetHealth()
+{
+	return health;
+}
 double ship::GetX()
 {
 	return *posX;

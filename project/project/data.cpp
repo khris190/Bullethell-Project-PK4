@@ -10,17 +10,18 @@ DATA::DATA(Bullets *Playerbullets, Bullets *enemyBullets, Player *player)
 	ready = false;
 }
 
-void DATA::AddEnemy(const char *filename, int x, int y, double speed) {
+void DATA::AddEnemy(const char *filename, int x, int y, double speed, int period) {
 
-	Enemy * enemy = new Enemy(filename, x, y, speed);
+	Enemy * enemy = new Enemy(filename, x, y, speed, period);
 	enemies.push_back(enemy);
 }
 
-void DATA::calculateEnemies()
+void DATA::calculateEnemies(int timer)
 {
 	for (unsigned int i = 0; i < enemies.size(); i++)
 	{
  		enemies[i]->CalculateCollisions(Playerbullets);
+		enemies[i]->EntityShot(enemyBullets, timer);
 	}
 }
 

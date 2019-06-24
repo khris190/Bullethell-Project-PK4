@@ -189,10 +189,7 @@ int Game::mainloop()
 
 #pragma region testEnemiesSpawn
 
-	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 0);
-
-
-
+	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 0, 30);
 
 #pragma endregion
 
@@ -214,8 +211,7 @@ int Game::mainloop()
 	double old_time = al_get_time();
 
 #pragma endregion
-
-
+	
 #pragma region MAINLOOP
 	try
 	{
@@ -292,6 +288,11 @@ int Game::mainloop()
 
 					PlayerBullets.DrawBullets(1);
 					EnemyBullets.DrawBullets(0.5);
+
+					std::string test = std::to_string(player.GetHealth());
+					const char* text = test.c_str();
+					al_draw_text(font, al_map_rgb(255, 255, 255),30, WindowHeight-50, ALLEGRO_ALIGN_CENTRE, text);
+
 
 					al_hold_bitmap_drawing(false);
 #pragma endregion
@@ -461,10 +462,12 @@ int Game::mainloop()
 
 void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 {
-	
+	int counter = 0;
 	DATA *data = (DATA*)arg;
 	while (!al_get_thread_should_stop(thr))
 	{
+		counter++;
+		counter = counter % 1000;
 		while (!data->ready)
 		{
 			al_rest(0.001);
@@ -474,12 +477,11 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 			}
 		}
 		data->Playerbullets->CalculateBullets();
-		data->calculateEnemies();
+		data->calculateEnemies(counter);
 		data->ClearDeadEnemies();
 
 			
 		data->ready = false;
-
 	}
 
 	//data->bullets->ClearBulletsByCollision();

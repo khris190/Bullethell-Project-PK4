@@ -17,7 +17,7 @@ public:
 	void calculatePosition();
 	void ShipShotShot(Bullets *bullets);
 	bool CalculateCollisions(Bullets *bullets);
-
+	int GetHealth();
 	double GetX();
 	double GetY();
 	double GetSpeed();

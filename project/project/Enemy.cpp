@@ -6,9 +6,18 @@ Enemy::Enemy() : ship::ship()
 {
 }
 
-Enemy::Enemy(const char *filename, int x, int y, double speed) : ship::ship(filename, x, y, 10, speed, 30)
+Enemy::Enemy(const char *filename, int x, int y, double speed, int period) : ship::ship(filename, x, y, 16, speed, 30)
 {
 	playerWeapons = new Weapons(enemy);
+	this->period = period;
+}
+
+void Enemy::EntityShot(Bullets *bullets, int timer)
+{
+	if (timer % period == 0)
+	{
+		bullets->AddBullet(0, GetX() , GetY() + 30, 0, 6, 3);
+	}
 }
 
 double Enemy::GetHealth()
@@ -34,8 +43,6 @@ void Enemy::DrawEntity(int x, int y, double rotation, int scale)
 {
 	DrawObject(x, y, rotation, scale);
 }
-
-
 
 Enemy::~Enemy()
 {
