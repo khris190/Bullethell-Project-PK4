@@ -7,6 +7,7 @@ private:
 	double rotation;
 	double speedX;
 	double speedY;
+	double startY;
 	
 public:
 
@@ -17,6 +18,7 @@ public:
 	//Bullet operator=(const Bullet& bullet);
 	double GetRotation();
 	int calculate();
+	int calculate(double f(double x));
 	 ~Bullet();
 };
 

@@ -118,7 +118,7 @@ bool Player::CalculateCollisionsForPlayer(Bullets *bullets)
 
 void Player::PlayerShot(Bullets *bullets)
 {
-	bullets->AddBullet(0, GetX() - 1, GetY() - 10, 0, -10, 3);
+	bullets->AddBullet(0, GetX() - 1, GetY() - 10, 0, -3, 3);
 }
 
 void Player::DrawPlayer(int x, int y, int rotation, int scale)

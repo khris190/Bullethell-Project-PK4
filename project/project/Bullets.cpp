@@ -2,6 +2,11 @@
 
 
 
+Bullets::Bullets(const char *filename, double(*f)(double)) : Object::Object(filename)
+{
+	this->f = f;
+}
+
 Bullets::Bullets(const char *filename) : Object::Object(filename)
 {
 }
@@ -37,6 +42,23 @@ void Bullets::CalculateBullets()
 	for (unsigned int i = 0; i < bullets.size(); i++)
 	{
 		if (!(bullets[i]->calculate()))
+		{
+			Bullet *swapper = bullets[i];
+			bullets[i] = bullets[bullets.size() - 1];
+			bullets[bullets.size() - 1] = swapper;
+			bullets.erase(bullets.end() - 1);
+			delete swapper;
+		}
+	}
+
+}
+
+void Bullets::CalculateBulletsV2(double f2(double x))
+{
+
+ 	for (unsigned int i = 0; i < bullets.size(); i++)
+	{
+		if (!(bullets[i]->calculate(f2)))
 		{
 			Bullet *swapper = bullets[i];
 			bullets[i] = bullets[bullets.size() - 1];

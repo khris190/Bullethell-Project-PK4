@@ -5,6 +5,7 @@ Game::Game()
 	result = mainloop();
 }
 
+
 int Game::mainloop()	
 {
 #pragma region INIT
@@ -120,14 +121,7 @@ int Game::mainloop()
 
 #pragma region objects
 
-	Bullets PlayerBullets("Resources/shot.bmp");
-	if (PlayerBullets.GetBitmap() == NULL)
-	{
-		al_show_native_message_box(display, "Error", "Error", "Failed to initialize bulletsboiz!",
-			NULL, ALLEGRO_MESSAGEBOX_ERROR);
-		return -1;
-	}
-	PlayerBullets.setDmg(5);
+
 
 	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8, PlayerHealth);
 	if (player.GetBitmap() == NULL)
@@ -136,6 +130,15 @@ int Game::mainloop()
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
+
+	Bullets PlayerBullets("Resources/shot.bmp", sin);
+	if (PlayerBullets.GetBitmap() == NULL)
+	{
+		al_show_native_message_box(display, "Error", "Error", "Failed to initialize bulletsboiz!",
+			NULL, ALLEGRO_MESSAGEBOX_ERROR);
+		return -1;
+	}
+	PlayerBullets.setDmg(5);
 
 	Bullets EnemyBullets("Resources/shot1.png");
 	if (EnemyBullets.GetBitmap() == NULL)
@@ -280,7 +283,8 @@ int Game::mainloop()
 				if (doloop && al_is_event_queue_empty(queue))
 				{
 					al_clear_to_color(al_map_rgb(0, 0, 0));
-#pragma region bulletdraw
+
+#pragma region draw
 					al_hold_bitmap_drawing(true);
 
 					player.DrawPlayer(player.GetX(), player.GetY());
@@ -447,8 +451,6 @@ int Game::mainloop()
 	al_uninstall_keyboard();
 	al_uninstall_mouse();
 
-	
-
 	al_destroy_display(display);
 	al_destroy_event_queue(queue);
 	al_destroy_timer(timer);
@@ -476,7 +478,7 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 				return 0;
 			}
 		}
-		data->Playerbullets->CalculateBullets();
+		data->Playerbullets->CalculateBulletsV2([](double a) { return sin(a - PI/2); });
 		data->calculateEnemies(counter);
 		data->ClearDeadEnemies();
 

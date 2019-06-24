@@ -6,7 +6,7 @@ Enemy::Enemy() : ship::ship()
 {
 }
 
-Enemy::Enemy(const char *filename, int x, int y, double speed, int period) : ship::ship(filename, x, y, 16, speed, 30)
+Enemy::Enemy(const char *filename, int x, int y, double speed, int period) : ship::ship(filename, x, y, 24, speed, 30)
 {
 	playerWeapons = new Weapons(enemy);
 	this->period = period;
