@@ -8,13 +8,11 @@ class Enemy :
 {
 private:
 	int rotation;
-	double speed;
-	double health;
 	Weapons *playerWeapons = NULL;
 public:
 
 	void calculatePosition(double offsetX, double offsetY, double xCubed, double xScuared, double x);
-	void DrawEntity(int x, int y, int rotation = 0, int scale = 1);
+	void DrawEntity(int x, int y, double rotation = 0, int scale = 1);
 	void EntityShot(Bullets *bullets);
 	double GetHealth();
 	double GetX();

@@ -187,6 +187,16 @@ int Game::mainloop()
 
 #pragma endregion
 
+#pragma region testEnemiesSpawn
+
+	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 0);
+
+
+
+
+#pragma endregion
+
+
 #pragma endregion
 
 #pragma region setVariables
@@ -195,6 +205,7 @@ int Game::mainloop()
 
 	bool done = false;
 	bool doloop = true;
+	bool playerDead = false;
 	bool mauseInPasueButton = false;
 	bool mauseInDisplay = true;
 	std::clock_t start, end;
@@ -228,40 +239,7 @@ int Game::mainloop()
 
 		case ALLEGRO_EVENT_TIMER: /* Dla eventu od timera, odœwierz display */
 
-			if (doloop)
-			{
-
-				gameData.ready = true;
-				player.calculatePosition();
-
-				gameData.enemyBullets->CalculateBullets();
-				gameData.player->CalculateCollisions(gameData.enemyBullets);
-
-
-				while (gameData.ready)
-				{
-					al_rest(0.001);
-				}
-			}
-			if (doloop && al_is_event_queue_empty(queue))
-			{
-				al_clear_to_color(al_map_rgb(0, 0, 0));
-#pragma region bulletdraw
-				al_hold_bitmap_drawing(true);
-
-				player.DrawPlayer(player.GetX(), player.GetY());
-				
-
-				PlayerBullets.DrawBullets(1);
-				EnemyBullets.DrawBullets(0.5);
-
-				al_hold_bitmap_drawing(false);
-#pragma endregion
-				
-				al_flip_display();
-			}
-
-			else if (mauseInDisplay&& al_is_event_queue_empty(queue))
+			if (playerDead)
 			{
 				al_get_mouse_state(&state);
 				if (state.x < WindowWidth / 2 + 80 && state.x > WindowWidth / 2 - 80 && state.y < WindowHeight / 2 + 100 && state.y > WindowHeight / 2 - 100)
@@ -283,7 +261,67 @@ int Game::mainloop()
 				al_draw_scaled_rotated_bitmap(pause.GetBitmap(), 128, 128, WindowWidth / 2, WindowHeight / 2, 1, 1, 0, 0);
 				al_flip_display();
 			}
+			else
+			{
+				if (doloop)
+				{
 
+					gameData.ready = true;
+					player.calculatePosition();
+
+					gameData.enemyBullets->CalculateBullets();
+					if (gameData.player->CalculateCollisionsForPlayer(gameData.enemyBullets))
+					{
+						playerDead = true;
+					}
+
+
+					while (gameData.ready)
+					{
+						al_rest(0.001);
+					}
+				}
+				if (doloop && al_is_event_queue_empty(queue))
+				{
+					al_clear_to_color(al_map_rgb(0, 0, 0));
+#pragma region bulletdraw
+					al_hold_bitmap_drawing(true);
+
+					player.DrawPlayer(player.GetX(), player.GetY());
+					gameData.DrawEnemies();
+
+					PlayerBullets.DrawBullets(1);
+					EnemyBullets.DrawBullets(0.5);
+
+					al_hold_bitmap_drawing(false);
+#pragma endregion
+
+					al_flip_display();
+				}
+
+				else if (mauseInDisplay&& al_is_event_queue_empty(queue))
+				{
+					al_get_mouse_state(&state);
+					if (state.x < WindowWidth / 2 + 80 && state.x > WindowWidth / 2 - 80 && state.y < WindowHeight / 2 + 100 && state.y > WindowHeight / 2 - 100)
+					{
+
+						mauseInPasueButton = true;
+						pause.ChangeBitmap("Resources/pauseACTIVEsmall.png");
+					}
+					else if (state.x < WindowWidth / 2 + 100 && state.x > WindowWidth / 2 - 100 && state.y < WindowHeight / 2 + 80 && state.y > WindowHeight / 2 - 80)
+					{
+						mauseInPasueButton = true;
+						pause.ChangeBitmap("Resources/pauseACTIVEsmall.png");
+					}
+					else
+					{
+						mauseInPasueButton = false;
+						pause.ChangeBitmap("Resources/pausesmall.png");
+					}
+					al_draw_scaled_rotated_bitmap(pause.GetBitmap(), 128, 128, WindowWidth / 2, WindowHeight / 2, 1, 1, 0, 0);
+					al_flip_display();
+				}
+			}
 			break;
 #pragma endregion
 
@@ -321,6 +359,9 @@ int Game::mainloop()
 				break;
 			case ALLEGRO_KEY_D:
 				player.right = true;
+				break;
+			case ALLEGRO_KEY_SPACE:
+				player.PlayerShot(&PlayerBullets);
 				break;
 			default:
 				break;
@@ -434,6 +475,7 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 		}
 		data->Playerbullets->CalculateBullets();
 		data->calculateEnemies();
+		data->ClearDeadEnemies();
 
 			
 		data->ready = false;

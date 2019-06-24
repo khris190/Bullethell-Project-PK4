@@ -19,6 +19,7 @@ public:
 	DATA(Bullets *Playerbullets, Bullets *enemyBullets, Player *player);
 
 	void AddEnemy(const char *filename, int x, int y, double speed);
+	void DrawEnemies();
 	void calculateEnemies();
 	void ClearDeadEnemies();
 

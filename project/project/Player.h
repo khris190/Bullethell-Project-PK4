@@ -17,7 +17,7 @@ public:
 	Player(const char *filename, int radius, int s, int health);
 	void calculatePosition();
 	void DrawPlayer(int x, int y, int rotation = 0, int scale = 1);
-	void CalculateCollisionsForPlayer(Bullets *bullets);
+	bool CalculateCollisionsForPlayer(Bullets *bullets);
 	void PlayerShot(Bullets *bullets);
 	double GetX();
 	double GetY();

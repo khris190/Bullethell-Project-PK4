@@ -5,7 +5,7 @@
 #include "Weapons.h"
 class ship : public Object
 {
-private:
+protected:
 	int rotation;
 		double speed;
 		int health;

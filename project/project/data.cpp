@@ -20,7 +20,17 @@ void DATA::calculateEnemies()
 {
 	for (unsigned int i = 0; i < enemies.size(); i++)
 	{
-		enemies[i]->CalculateCollisions(Playerbullets);
+ 		enemies[i]->CalculateCollisions(Playerbullets);
+	}
+}
+
+void DATA::DrawEnemies()
+{
+	{
+		for (unsigned int i = 0; i < enemies.size(); i++)
+		{
+			enemies[i]->DrawEntity(enemies[i]->GetX(), enemies[i]->GetY(), PI);
+		}
 	}
 }
 
