@@ -37,7 +37,7 @@ int Game::mainloop()
 	}
 
 #pragma endregion
-
+	
 #pragma region fonts
 
 	if (!al_init_font_addon())
@@ -120,14 +120,14 @@ int Game::mainloop()
 
 #pragma region objects
 
-	Bullets basicBullets("Resources/shot.bmp");
-	if (basicBullets.GetBitmap() == NULL)
+	Bullets PlayerBullets("Resources/shot.bmp");
+	if (PlayerBullets.GetBitmap() == NULL)
 	{
 		al_show_native_message_box(display, "Error", "Error", "Failed to initialize bulletsboiz!",
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
-	basicBullets.setDmg(5);
+	PlayerBullets.setDmg(5);
 
 	Player player("Resources/space_breaker_asset/Ships/Small/body_01.png", 8, 8, PlayerHealth);
 	if (player.GetBitmap() == NULL)
@@ -137,14 +137,14 @@ int Game::mainloop()
 		return -1;
 	}
 
-	Bullets bulletsV2("Resources/shot1.png");
-	if (bulletsV2.GetBitmap() == NULL)
+	Bullets EnemyBullets("Resources/shot1.png");
+	if (EnemyBullets.GetBitmap() == NULL)
 	{
 		al_show_native_message_box(display, "Error", "Error", "Failed to initialize bulletsboizv2!",
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
-	bulletsV2.setDmg(2);
+	EnemyBullets.setDmg(2);
 
 	Object pause("Resources/pausesmall.png");
 
@@ -157,7 +157,7 @@ int Game::mainloop()
 		for (int y = 0; y < 20; y++)
 		{
 
-			basicBullets.AddBullet(PI, 8 * i + 10, 9 * y, 0, 2, 2);
+			//PlayerBullets.AddBullet(PI, 8 * i + 10, 9 * y, 0, 2, 2);
 			//bulletsV2.AddBullet(0, 4 * i + 10, 3 * y, 0, 1, 2);
 
 		}
@@ -179,22 +179,15 @@ int Game::mainloop()
 #pragma region threads
 
 	ALLEGRO_THREAD      *thread_1 = NULL;
-	ALLEGRO_THREAD      *thread_2 = NULL;	
+	DATA gameData(&PlayerBullets, &EnemyBullets, &player);
 
-	DATA basicBulletsData(&basicBullets, &player);
-	DATA bulletsV2Data(&bulletsV2, &player);
-
-	thread_1 = al_create_thread(Func_ThreadBulletsCalculations, &basicBulletsData);
-	thread_2 = al_create_thread(Func_ThreadBulletsCalculations, &bulletsV2Data);
+	thread_1 = al_create_thread(Func_ThreadBulletsCalculations, &gameData);
 
 	al_start_thread(thread_1);
-	al_start_thread(thread_2);
 
 #pragma endregion
 
 #pragma endregion
-
-
 
 #pragma region setVariables
 
@@ -238,16 +231,14 @@ int Game::mainloop()
 			if (doloop)
 			{
 
-				
-				bulletsV2Data.ready = true;
+				gameData.ready = true;
 				player.calculatePosition();
-				basicBulletsData.ready = true;
-				while (basicBulletsData.ready)
-				{
-					al_rest(0.001);
-				}
-				
-				while (bulletsV2Data.ready)
+
+				gameData.enemyBullets->CalculateBullets();
+				gameData.player->CalculateCollisions(gameData.enemyBullets);
+
+
+				while (gameData.ready)
 				{
 					al_rest(0.001);
 				}
@@ -261,8 +252,8 @@ int Game::mainloop()
 				player.DrawPlayer(player.GetX(), player.GetY());
 				
 
-				basicBullets.DrawBullets(1);
-				bulletsV2.DrawBullets(0.5);
+				PlayerBullets.DrawBullets(1);
+				EnemyBullets.DrawBullets(0.5);
 
 				al_hold_bitmap_drawing(false);
 #pragma endregion
@@ -308,7 +299,7 @@ int Game::mainloop()
 			}
 			else if (state.buttons & 1 && doloop)
 			{
-				bulletsV2.AddBullet(PI, state.x, state.y, 0, 1, 8);
+				EnemyBullets.AddBullet(PI, state.x, state.y, 0, 1, 8);
 			}
 			break;
 #pragma endregion
@@ -357,7 +348,7 @@ int Game::mainloop()
 					{
 
 						//basicBullets.AddBullet(0, 0 + 10 * i + 10, 800 - 10 * y, 0, 0, 8);
-						bulletsV2.AddBullet(0, 0 + 15 * i + 10, 15 * y, 0, 2.11, 8);
+						EnemyBullets.AddBullet(0, 0 + 15 * i + 10, 15 * y, 0, 2.11, 8);
 
 					}
 				}
@@ -410,7 +401,6 @@ int Game::mainloop()
 #pragma region deconstructors
 
 	al_destroy_thread(thread_1);
-	al_destroy_thread(thread_2);
 
 	al_uninstall_keyboard();
 	al_uninstall_mouse();
@@ -442,8 +432,8 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 				return 0;
 			}
 		}
-		data->bullets->CalculateBullets();
-		data->player->CalculateCollisions(data->bullets);
+		data->Playerbullets->CalculateBullets();
+		data->calculateEnemies();
 
 			
 		data->ready = false;

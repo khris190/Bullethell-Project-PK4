@@ -2,15 +2,19 @@
 
 
 
-Enemy::Enemy() : Object::Object()
+Enemy::Enemy() : ship::ship()
 {
 }
 
-Enemy::Enemy(const char *filename, int x, int y, double speedX, double speedY) : Object::Object(filename, WindowWidth / 2, WindowHeight - 32, x)
+Enemy::Enemy(const char *filename, int x, int y, double speed) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, x, 30)
 {
 	playerWeapons = new Weapons(enemy);
-	this->speedX = speedX;			
-	this->speedY = speedY;
+	this->speed = speed;
+}
+
+double Enemy::GetHealth()
+{
+	return health;
 }
 
 double Enemy::GetX()
@@ -22,13 +26,12 @@ double Enemy::GetY()
 	return *posY;
 }
 
-void Enemy::calculatePosition()
+void Enemy::calculatePosition(double offsetX, double offsetY, double xCubed, double xScuared, double x)
 {
-	*posX += speedX;
-	*posY += speedY;
+	
 }
 
-void Enemy::DrawPlayer(int x, int y, int rotation, int scale)
+void Enemy::DrawEntity(int x, int y, int rotation, int scale)
 {
 	DrawObject(x, y, rotation, scale);
 }
