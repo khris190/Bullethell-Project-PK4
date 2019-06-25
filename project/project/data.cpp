@@ -16,11 +16,18 @@ void DATA::AddEnemy(const char *filename, int x, int y, double speed, int period
 	enemies.push_back(enemy);
 }
 
+void DATA::AddEnemy(const char *filename, int x, int y, double speed, double(*f2)(double x), int period) {
+
+	Enemy * enemy = new Enemy(filename, x, y, speed, f2, period);
+	enemies.push_back(enemy);
+}
+
 void DATA::calculateEnemies(int timer)
 {
 	for (unsigned int i = 0; i < enemies.size(); i++)
 	{
- 		enemies[i]->CalculateCollisions(Playerbullets);
+		enemies[i]->calculatePosition();
+		enemies[i]->CalculateCollisions(Playerbullets);
 		enemies[i]->EntityShot(enemyBullets, timer);
 	}
 }
@@ -39,7 +46,7 @@ void DATA::ClearDeadEnemies() {
 
 	for (unsigned int i = 0; i < enemies.size(); i++)
 	{
-		if (enemies[i]->GetHealth() <= 0)
+		if (enemies[i]->GetHealthAndBoundarys() <= 0)
 		{
 			Enemy *swapper = enemies[i];
 			enemies[i] = enemies[enemies.size() - 1];
@@ -48,6 +55,7 @@ void DATA::ClearDeadEnemies() {
 			delete swapper;
 		}
 	}
+
 }
 
 

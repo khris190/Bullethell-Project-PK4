@@ -192,7 +192,11 @@ int Game::mainloop()
 
 #pragma region testEnemiesSpawn
 
-	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 0, 30);
+	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
+	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth *2 / 3, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
+	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 3, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
+
+
 
 #pragma endregion
 
@@ -478,7 +482,8 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 				return 0;
 			}
 		}
-		data->Playerbullets->CalculateBulletsV2([](double a) { return sin(a - PI/2); });
+		//data->Playerbullets->CalculateBullets();
+		data->Playerbullets->CalculateBulletsV2([](double a) { return sin(a - PI/2) /2; });
 		data->calculateEnemies(counter);
 		data->ClearDeadEnemies();
 

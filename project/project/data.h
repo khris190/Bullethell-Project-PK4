@@ -17,8 +17,9 @@ public:
 
 	bool           ready;
 	DATA(Bullets *Playerbullets, Bullets *enemyBullets, Player *player);
-
+	//vector of enemies should be put into its own class
 	void AddEnemy(const char *filename, int x, int y, double speed, int period);
+	void AddEnemy(const char *filename, int x, int y, double speed, double(*f2)(double x), int period);
 	void DrawEnemies();
 	void calculateEnemies(int timer);
 	void ClearDeadEnemies();
