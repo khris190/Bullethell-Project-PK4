@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classship" kind="class" prot="public">
+    <compoundname>ship</compoundname>
+    <basecompoundref refid="class_object" prot="public" virt="non-virtual">Object</basecompoundref>
+    <derivedcompoundref refid="class_enemy" prot="public" virt="non-virtual">Enemy</derivedcompoundref>
+    <derivedcompoundref refid="class_player" prot="public" virt="non-virtual">Player</derivedcompoundref>
+    <includes refid="ship_8h" local="no">ship.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classship_1ac37c32c7de05413ac55bdfbd66751e8c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ship::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="9" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classship_1ad320351e65237d459fb6cf29b001159d" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ship::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classship_1a0ff329ef317f778cf7024e1022254067" compoundref="ship_8cpp" startline="34" endline="37">GetSpeed</referencedby>
+        <referencedby refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" compoundref="ship_8cpp" startline="3" endline="7">ship</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classship_1a36db50422b5f9b5e9240a0f81779557b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ship::health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">CalculateCollisions</referencedby>
+        <referencedby refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" compoundref="ship_8cpp" startline="22" endline="25">GetHealth</referencedby>
+        <referencedby refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" compoundref="_enemy_8cpp" startline="34" endline="45">Enemy::GetHealth</referencedby>
+        <referencedby refid="class_enemy_1a0b9b8c319880720710947c99076dab5a" compoundref="_enemy_8cpp" startline="46" endline="57">Enemy::GetHealthAndBoundarys</referencedby>
+        <referencedby refid="classship_1ab174d904c0308e3cac53df83e055706a" compoundref="ship_8cpp" startline="8" endline="13">ship</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classship_1a85ae4582c87c67a93f30258c52c55a84" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_weapons" kindref="compound">Weapons</ref> *</type>
+        <definition>Weapons* ship::playerWeapons</definition>
+        <argsstring></argsstring>
+        <name>playerWeapons</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" compoundref="ship_8cpp" startline="3" endline="7">ship</referencedby>
+        <referencedby refid="classship_1a9ce640cd66ad06fb53ba256b09720816" compoundref="ship_8cpp" startline="74" endline="77">~ship</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classship_1a002c8f2eea35e3b4f0c8003850a782d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ship::ship</definition>
+        <argsstring>()</argsstring>
+        <name>ship</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="14" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="3" bodyend="7"/>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" compoundref="_side_enum_8h" startline="3">player</references>
+        <references refid="classship_1a85ae4582c87c67a93f30258c52c55a84" compoundref="ship_8h" startline="12">playerWeapons</references>
+        <references refid="classship_1ad320351e65237d459fb6cf29b001159d" compoundref="ship_8h" startline="10">speed</references>
+      </memberdef>
+      <memberdef kind="function" id="classship_1ab174d904c0308e3cac53df83e055706a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ship::ship</definition>
+        <argsstring>(const char *filename, int x, int y, int radius, int health)</argsstring>
+        <name>ship</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="15" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="8" bodyend="13"/>
+        <references refid="classship_1a36db50422b5f9b5e9240a0f81779557b" compoundref="ship_8h" startline="11">health</references>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" compoundref="_side_enum_8h" startline="3">player</references>
+        <references refid="classship_1a85ae4582c87c67a93f30258c52c55a84" compoundref="ship_8h" startline="12">playerWeapons</references>
+        <references refid="classship_1ad320351e65237d459fb6cf29b001159d" compoundref="ship_8h" startline="10">speed</references>
+      </memberdef>
+      <memberdef kind="function" id="classship_1ae6c205955d4dcf6d476cf0136b77b688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ship::ship</definition>
+        <argsstring>(const char *filename, int x, int y, int radius, double s, int health)</argsstring>
+        <name>ship</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="14" bodyend="19"/>
+        <references refid="classship_1a36db50422b5f9b5e9240a0f81779557b" compoundref="ship_8h" startline="11">health</references>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" compoundref="_side_enum_8h" startline="3">player</references>
+        <references refid="classship_1a85ae4582c87c67a93f30258c52c55a84" compoundref="ship_8h" startline="12">playerWeapons</references>
+        <references refid="classship_1ad320351e65237d459fb6cf29b001159d" compoundref="ship_8h" startline="10">speed</references>
+      </memberdef>
+      <memberdef kind="function" id="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ship::CalculateCollisions</definition>
+        <argsstring>(Bullets *bullets)</argsstring>
+        <name>CalculateCollisions</name>
+        <param>
+          <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+          <declname>bullets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="44" bodyend="67"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">Bullets::bullets</references>
+        <references refid="class_bullets_1a81b222aea8b9e5bf1f8abe4ae2b1f84c" compoundref="_bullets_8h" startline="11">Bullets::damage</references>
+        <references refid="classship_1a36db50422b5f9b5e9240a0f81779557b" compoundref="ship_8h" startline="11">health</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" compoundref="_hitbox_8h" startline="8">Hitbox::radius</references>
+        <referencedby refid="class_player_1a0924fd1003260b5cef4f7c08afc6f186" compoundref="_player_8cpp" startline="132" endline="140">Player::CalculateCollisionsForPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classship_1a0976d4ce93a8bb5a7a29edc297c42223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ship::GetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="22" bodyend="25"/>
+        <references refid="classship_1a36db50422b5f9b5e9240a0f81779557b" compoundref="ship_8h" startline="11">health</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classship_1aa953e67ecab211a01d4a327304a174a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ship::GetX</definition>
+        <argsstring>()</argsstring>
+        <name>GetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+      </memberdef>
+      <memberdef kind="function" id="classship_1afeec2db3150c47d7152ae961df1992dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ship::GetY</definition>
+        <argsstring>()</argsstring>
+        <name>GetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="30" bodyend="33"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+      </memberdef>
+      <memberdef kind="function" id="classship_1a0ff329ef317f778cf7024e1022254067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ship::GetSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>GetSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="34" bodyend="37"/>
+        <references refid="classship_1ad320351e65237d459fb6cf29b001159d" compoundref="ship_8h" startline="10">speed</references>
+        <referencedby refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" compoundref="_enemy_8cpp" startline="68" endline="77">Enemy::calculatePosition</referencedby>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">Player::calculatePosition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classship_1a9ce640cd66ad06fb53ba256b09720816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ship::~ship</definition>
+        <argsstring>()</argsstring>
+        <name>~ship</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="74" bodyend="77"/>
+        <references refid="classship_1a85ae4582c87c67a93f30258c52c55a84" compoundref="ship_8h" startline="12">playerWeapons</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classship_1a4c3adc9f2c6093095c9f348f1e58e441" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ship::DrawShip</definition>
+        <argsstring>(int x, int y, int rotation=0, int scale=1)</argsstring>
+        <name>DrawShip</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotation</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp" bodystart="69" bodyend="72"/>
+        <references refid="class_object_1a44ea217e657aa0eb204f0d746773326f" compoundref="_object_8cpp" startline="37" endline="40">Object::DrawObject</references>
+        <referencedby refid="class_player_1ac08da8b993ba03687fd046d8ce058fc3" compoundref="_player_8cpp" startline="150" endline="153">Player::DrawPlayer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="103">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+      <node id="106">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="108">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="113" relation="usage">
+          <edgelabel>playerWeapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="115">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="116" relation="usage">
+          <edgelabel>bullets</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="114" relation="usage">
+          <edgelabel>weapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="109">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+        <childnode refid="112" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="117">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="111" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="116">
+        <label>std::vector&lt; Bullet * &gt;</label>
+        <childnode refid="117" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="112">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="114">
+        <label>std::vector&lt; Bullets * &gt;</label>
+        <childnode refid="115" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" line="7" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" prot="protected" virt="non-virtual"><scope>ship</scope><name>bitmapa</name></member>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>ship</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>ship</scope><name>boundryY</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>ship</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>ship</scope><name>CalculateCollision</name></member>
+      <member refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" prot="public" virt="non-virtual"><scope>ship</scope><name>CalculateCollisions</name></member>
+      <member refid="class_object_1aed084a85d0a40590be323d90fb68c44e" prot="public" virt="non-virtual"><scope>ship</scope><name>ChangeBitmap</name></member>
+      <member refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" prot="public" virt="non-virtual"><scope>ship</scope><name>CollisionCalculate</name></member>
+      <member refid="class_object_1a44ea217e657aa0eb204f0d746773326f" prot="protected" virt="non-virtual"><scope>ship</scope><name>DrawObject</name></member>
+      <member refid="class_object_1a7382271d52d647c940cb234f44a22ebf" prot="protected" virt="non-virtual"><scope>ship</scope><name>DrawObjecttest</name></member>
+      <member refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" prot="protected" virt="non-virtual"><scope>ship</scope><name>DrawShip</name></member>
+      <member refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" prot="public" virt="non-virtual"><scope>ship</scope><name>GetBitmap</name></member>
+      <member refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" prot="public" virt="non-virtual"><scope>ship</scope><name>GetHealth</name></member>
+      <member refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" prot="public" virt="non-virtual"><scope>ship</scope><name>GetSizeX</name></member>
+      <member refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" prot="public" virt="non-virtual"><scope>ship</scope><name>GetSizeY</name></member>
+      <member refid="classship_1a0ff329ef317f778cf7024e1022254067" prot="public" virt="non-virtual"><scope>ship</scope><name>GetSpeed</name></member>
+      <member refid="classship_1aa953e67ecab211a01d4a327304a174a5" prot="public" virt="non-virtual"><scope>ship</scope><name>GetX</name></member>
+      <member refid="classship_1afeec2db3150c47d7152ae961df1992dd" prot="public" virt="non-virtual"><scope>ship</scope><name>GetY</name></member>
+      <member refid="classship_1a36db50422b5f9b5e9240a0f81779557b" prot="protected" virt="non-virtual"><scope>ship</scope><name>health</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>ship</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>ship</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>ship</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>ship</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>ship</scope><name>HitboxHELPME</name></member>
+      <member refid="class_object_1aea2952b0ed70add86517aaa67cc37958" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1a0100999b4fb6331d9ee44d6d89838c73" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1aa965ff676265eb8053afa99afa2054b5" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1a8a12cba46b0145a45935c926fc778624" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="class_object_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>ship</scope><name>Object</name></member>
+      <member refid="classship_1a85ae4582c87c67a93f30258c52c55a84" prot="protected" virt="non-virtual"><scope>ship</scope><name>playerWeapons</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>ship</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>ship</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>ship</scope><name>radius</name></member>
+      <member refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" prot="protected" virt="non-virtual"><scope>ship</scope><name>rotation</name></member>
+      <member refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" prot="public" virt="non-virtual"><scope>ship</scope><name>ship</name></member>
+      <member refid="classship_1ab174d904c0308e3cac53df83e055706a" prot="public" virt="non-virtual"><scope>ship</scope><name>ship</name></member>
+      <member refid="classship_1ae6c205955d4dcf6d476cf0136b77b688" prot="public" virt="non-virtual"><scope>ship</scope><name>ship</name></member>
+      <member refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" prot="protected" virt="non-virtual"><scope>ship</scope><name>sizeX</name></member>
+      <member refid="class_object_1a9951998336ee6906a052572d37019e89" prot="protected" virt="non-virtual"><scope>ship</scope><name>sizeY</name></member>
+      <member refid="classship_1ad320351e65237d459fb6cf29b001159d" prot="protected" virt="non-virtual"><scope>ship</scope><name>speed</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>ship</scope><name>type</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>ship</scope><name>~Hitbox</name></member>
+      <member refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="virtual"><scope>ship</scope><name>~Object</name></member>
+      <member refid="classship_1a9ce640cd66ad06fb53ba256b09720816" prot="public" virt="non-virtual"><scope>ship</scope><name>~ship</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

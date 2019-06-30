@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_my_bitmap_8h" kind="file">
+    <compoundname>MyBitmap.h</compoundname>
+    <includes local="yes">allegro5\allegro5.h</includes>
+    <includes local="no">allegro5/allegro_image.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_bullets_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</includedby>
+    <includedby refid="_object_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</includedby>
+    <includedby refid="_game_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</includedby>
+    <includedby refid="_my_bitmap_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp</includedby>
+    <incdepgraph>
+      <node id="349">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h</label>
+        <link refid="MyBitmap.h"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="352">
+        <label>string</label>
+      </node>
+      <node id="350">
+        <label>allegro5\allegro5.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="353">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h</label>
+        <link refid="MyBitmap.h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/saced.cpp</label>
+        <link refid="saced_8cpp"/>
+      </node>
+      <node id="360">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="355">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp</label>
+        <link refid="_bullets_8cpp"/>
+      </node>
+      <node id="354">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="362">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp</label>
+        <link refid="_object_8cpp"/>
+      </node>
+      <node id="372">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp</label>
+        <link refid="_my_bitmap_8cpp"/>
+      </node>
+      <node id="356">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="366">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="357">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="364">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="363">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="367">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_my_bitmap" prot="public">MyBitmap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;allegro5\allegro5.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_image.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_image.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_my_bitmap" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_my_bitmap" kindref="compound">MyBitmap</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*<sp/><ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" kindref="member">MyBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" kindref="member">ChangeBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" kindref="member">~MyBitmap</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_enemy" kind="class" prot="public">
+    <compoundname>Enemy</compoundname>
+    <basecompoundref refid="classship" prot="public" virt="non-virtual">ship</basecompoundref>
+    <includes refid="_enemy_8h" local="no">Enemy.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_enemy_1a0eeca21ea934f0cfba373c90c121127e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enemy::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enemy::period</definition>
+        <argsstring></argsstring>
+        <name>period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" compoundref="_enemy_8cpp" startline="9" endline="15">Enemy</referencedby>
+        <referencedby refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" compoundref="_enemy_8cpp" startline="26" endline="32">EntityShot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Enemy::startX</definition>
+        <argsstring></argsstring>
+        <name>startX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" compoundref="_enemy_8cpp" startline="9" endline="15">Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Enemy::startY</definition>
+        <argsstring></argsstring>
+        <name>startY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" compoundref="_enemy_8cpp" startline="68" endline="77">calculatePosition</referencedby>
+        <referencedby refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" compoundref="_enemy_8cpp" startline="9" endline="15">Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" prot="protected" static="no" mutable="no">
+        <type>double(*</type>
+        <definition>double(* Enemy::f)(double a)</definition>
+        <argsstring>)(double a)</argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="13" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" compoundref="_enemy_8cpp" startline="68" endline="77">calculatePosition</referencedby>
+        <referencedby refid="class_enemy_1ab289c970c7681450919f07d99edde7ef" compoundref="_enemy_8cpp" startline="17" endline="24">Enemy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_weapons" kindref="compound">Weapons</ref> *</type>
+        <definition>Weapons* Enemy::playerWeapons</definition>
+        <argsstring></argsstring>
+        <name>playerWeapons</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="15" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" compoundref="_enemy_8cpp" startline="9" endline="15">Enemy</referencedby>
+        <referencedby refid="class_enemy_1ac0eec4755e28c02688065f9657150ac3" compoundref="_enemy_8cpp" startline="84" endline="87">~Enemy</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy::calculatePosition</definition>
+        <argsstring>()</argsstring>
+        <name>calculatePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="18" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="68" bodyend="77"/>
+        <references refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" compoundref="_enemy_8h" startline="13">f</references>
+        <references refid="classship_1a0ff329ef317f778cf7024e1022254067" compoundref="ship_8cpp" startline="34" endline="37">ship::GetSpeed</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" compoundref="_enemy_8h" startline="12">startY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a81f09cf639d685c4d33e305be6610fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy::DrawEntity</definition>
+        <argsstring>(int x, int y, double rotation=0, int scale=1)</argsstring>
+        <name>DrawEntity</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="79" bodyend="82"/>
+        <references refid="class_object_1a44ea217e657aa0eb204f0d746773326f" compoundref="_object_8cpp" startline="37" endline="40">Object::DrawObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enemy::EntityShot</definition>
+        <argsstring>(Bullets *bullets, int timer)</argsstring>
+        <name>EntityShot</name>
+        <param>
+          <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+          <declname>bullets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="26" bodyend="32"/>
+        <references refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" compoundref="_bullets_8cpp" startline="17" endline="21">Bullets::AddBullet</references>
+        <references refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" compoundref="_enemy_8cpp" startline="59" endline="62">GetX</references>
+        <references refid="class_enemy_1afb46819090c0052387207176e90ed3ee" compoundref="_enemy_8cpp" startline="63" endline="66">GetY</references>
+        <references refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" compoundref="_enemy_8h" startline="11">period</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Enemy::GetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="34" bodyend="45"/>
+        <references refid="classship_1a36db50422b5f9b5e9240a0f81779557b" compoundref="ship_8h" startline="11">ship::health</references>
+        <references refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" compoundref="_config_8h" startline="5">WindowHeight</references>
+        <references refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" compoundref="_config_8h" startline="6">WindowWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a0b9b8c319880720710947c99076dab5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Enemy::GetHealthAndBoundarys</definition>
+        <argsstring>()</argsstring>
+        <name>GetHealthAndBoundarys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="46" bodyend="57"/>
+        <references refid="classship_1a36db50422b5f9b5e9240a0f81779557b" compoundref="ship_8h" startline="11">ship::health</references>
+        <references refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" compoundref="_config_8h" startline="5">WindowHeight</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a32a21b406465ac663e8167b8b6a57086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Enemy::GetX</definition>
+        <argsstring>()</argsstring>
+        <name>GetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="59" bodyend="62"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <referencedby refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" compoundref="_enemy_8cpp" startline="26" endline="32">EntityShot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1afb46819090c0052387207176e90ed3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Enemy::GetY</definition>
+        <argsstring>()</argsstring>
+        <name>GetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="63" bodyend="66"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <referencedby refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" compoundref="_enemy_8cpp" startline="26" endline="32">EntityShot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Enemy::Enemy</definition>
+        <argsstring>()</argsstring>
+        <name>Enemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Enemy::Enemy</definition>
+        <argsstring>(const char *filename, int x, int y, double speed, int period)</argsstring>
+        <name>Enemy</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="9" bodyend="15"/>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" compoundref="_side_enum_8h" startline="4">enemy</references>
+        <references refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" compoundref="_enemy_8h" startline="11">period</references>
+        <references refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" compoundref="_enemy_8h" startline="15">playerWeapons</references>
+        <references refid="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" compoundref="_enemy_8h" startline="12">startX</references>
+        <references refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" compoundref="_enemy_8h" startline="12">startY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ab289c970c7681450919f07d99edde7ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Enemy::Enemy</definition>
+        <argsstring>(const char *filename, int x, int y, double speed, double(*f2)(double x), int period)</argsstring>
+        <name>Enemy</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>double(*)(double x)</type>
+          <declname>f2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="17" bodyend="24"/>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" compoundref="_side_enum_8h" startline="4">enemy</references>
+        <references refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" compoundref="_enemy_8h" startline="13">f</references>
+        <references refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" compoundref="_enemy_8h" startline="11">period</references>
+        <references refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" compoundref="_enemy_8h" startline="15">playerWeapons</references>
+        <references refid="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" compoundref="_enemy_8h" startline="12">startX</references>
+        <references refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" compoundref="_enemy_8h" startline="12">startY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ac0eec4755e28c02688065f9657150ac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Enemy::~Enemy</definition>
+        <argsstring>()</argsstring>
+        <name>~Enemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="28" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp" bodystart="84" bodyend="87"/>
+        <references refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" compoundref="_enemy_8h" startline="15">playerWeapons</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="49">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+      <node id="48">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>playerWeapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="usage">
+          <edgelabel>bullets</edgelabel>
+        </childnode>
+      </node>
+      <node id="58">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="59" relation="usage">
+          <edgelabel>weapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="54">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="56" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="61">
+        <label>std::vector&lt; Bullet * &gt;</label>
+        <childnode refid="62" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>playerWeapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="59">
+        <label>std::vector&lt; Bullets * &gt;</label>
+        <childnode refid="60" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="56">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>bitmapa</name></member>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>Enemy</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>Enemy</scope><name>boundryY</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>Enemy</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>Enemy</scope><name>CalculateCollision</name></member>
+      <member refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" prot="public" virt="non-virtual"><scope>Enemy</scope><name>CalculateCollisions</name></member>
+      <member refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>calculatePosition</name></member>
+      <member refid="class_object_1aed084a85d0a40590be323d90fb68c44e" prot="public" virt="non-virtual"><scope>Enemy</scope><name>ChangeBitmap</name></member>
+      <member refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" prot="public" virt="non-virtual"><scope>Enemy</scope><name>CollisionCalculate</name></member>
+      <member refid="class_enemy_1a81f09cf639d685c4d33e305be6610fe8" prot="public" virt="non-virtual"><scope>Enemy</scope><name>DrawEntity</name></member>
+      <member refid="class_object_1a44ea217e657aa0eb204f0d746773326f" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>DrawObject</name></member>
+      <member refid="class_object_1a7382271d52d647c940cb234f44a22ebf" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>DrawObjecttest</name></member>
+      <member refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>DrawShip</name></member>
+      <member refid="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Enemy</name></member>
+      <member refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Enemy</name></member>
+      <member refid="class_enemy_1ab289c970c7681450919f07d99edde7ef" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Enemy</name></member>
+      <member refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" prot="public" virt="non-virtual"><scope>Enemy</scope><name>EntityShot</name></member>
+      <member refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>f</name></member>
+      <member refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetBitmap</name></member>
+      <member refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetHealth</name></member>
+      <member refid="class_enemy_1a0b9b8c319880720710947c99076dab5a" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetHealthAndBoundarys</name></member>
+      <member refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetSizeX</name></member>
+      <member refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetSizeY</name></member>
+      <member refid="classship_1a0ff329ef317f778cf7024e1022254067" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetSpeed</name></member>
+      <member refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetX</name></member>
+      <member refid="class_enemy_1afb46819090c0052387207176e90ed3ee" prot="public" virt="non-virtual"><scope>Enemy</scope><name>GetY</name></member>
+      <member refid="classship_1a36db50422b5f9b5e9240a0f81779557b" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>health</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>Enemy</scope><name>HitboxHELPME</name></member>
+      <member refid="class_object_1aea2952b0ed70add86517aaa67cc37958" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1a0100999b4fb6331d9ee44d6d89838c73" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1aa965ff676265eb8053afa99afa2054b5" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1a8a12cba46b0145a45935c926fc778624" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_object_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Object</name></member>
+      <member refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>period</name></member>
+      <member refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>playerWeapons</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>radius</name></member>
+      <member refid="class_enemy_1a0eeca21ea934f0cfba373c90c121127e" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>rotation</name></member>
+      <member refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" prot="public" virt="non-virtual"><scope>Enemy</scope><name>ship</name></member>
+      <member refid="classship_1ab174d904c0308e3cac53df83e055706a" prot="public" virt="non-virtual"><scope>Enemy</scope><name>ship</name></member>
+      <member refid="classship_1ae6c205955d4dcf6d476cf0136b77b688" prot="public" virt="non-virtual"><scope>Enemy</scope><name>ship</name></member>
+      <member refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>sizeX</name></member>
+      <member refid="class_object_1a9951998336ee6906a052572d37019e89" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>sizeY</name></member>
+      <member refid="classship_1ad320351e65237d459fb6cf29b001159d" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>speed</name></member>
+      <member refid="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>startX</name></member>
+      <member refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>startY</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>type</name></member>
+      <member refid="class_enemy_1ac0eec4755e28c02688065f9657150ac3" prot="public" virt="non-virtual"><scope>Enemy</scope><name>~Enemy</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>Enemy</scope><name>~Hitbox</name></member>
+      <member refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="virtual"><scope>Enemy</scope><name>~Object</name></member>
+      <member refid="classship_1a9ce640cd66ad06fb53ba256b09720816" prot="public" virt="non-virtual"><scope>Enemy</scope><name>~ship</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

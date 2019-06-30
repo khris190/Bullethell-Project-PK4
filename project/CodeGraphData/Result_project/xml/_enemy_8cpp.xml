@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_enemy_8cpp" kind="file">
+    <compoundname>Enemy.cpp</compoundname>
+    <includes refid="_enemy_8h" local="yes">Enemy.h</includes>
+    <incdepgraph>
+      <node id="182">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="184">
+        <label>string</label>
+      </node>
+      <node id="194">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="185">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="190">
+        <label>Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="Enemy.cpp"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>vector</label>
+      </node>
+      <node id="178">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>math.h</label>
+      </node>
+      <node id="187">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="181">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="193">
+        <label>Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enemy_8h" kindref="compound">Enemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" refkind="member"><highlight class="normal"><ref refid="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" kindref="member">Enemy::Enemy</ref>()<sp/>:<sp/><ref refid="classship" kindref="compound">ship</ref>::<ref refid="classship" kindref="compound">ship</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" refkind="member"><highlight class="normal"><ref refid="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" kindref="member">Enemy::Enemy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period)<sp/>:<sp/><ref refid="classship" kindref="compound">ship</ref>::<ref refid="classship" kindref="compound">ship</ref>(filename,<sp/>x,<sp/>y,<sp/>24,<sp/>speed,<sp/>30)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" kindref="member">playerWeapons</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref>(<ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" kindref="member">enemy</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" kindref="member">startX</ref><sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" kindref="member">startY</ref><sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;period<sp/>=<sp/><ref refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" kindref="member">period</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_enemy_1ab289c970c7681450919f07d99edde7ef" refkind="member"><highlight class="normal"><ref refid="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" kindref="member">Enemy::Enemy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(*f2)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x),<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period)<sp/>:<sp/><ref refid="classship" kindref="compound">ship</ref>::<ref refid="classship" kindref="compound">ship</ref>(filename,<sp/>x,<sp/>y,<sp/>24,<sp/>speed,<sp/>30)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" kindref="member">playerWeapons</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref>(<ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" kindref="member">enemy</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" kindref="member">startX</ref><sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" kindref="member">startY</ref><sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;period<sp/>=<sp/><ref refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" kindref="member">period</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" kindref="member">f</ref><sp/>=<sp/>f2;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" kindref="member">Enemy::EntityShot</ref>(<ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*bullets,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timer<sp/>%<sp/><ref refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" kindref="member">period</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bullets-&gt;<ref refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" kindref="member">AddBullet</ref>(0,<sp/><ref refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" kindref="member">GetX</ref>()<sp/>,<sp/><ref refid="class_enemy_1afb46819090c0052387207176e90ed3ee" kindref="member">GetY</ref>()<sp/>+<sp/>30,<sp/>0,<sp/>6,<sp/>3);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" kindref="member">Enemy::GetHealth</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*posX<sp/>&lt;<sp/>0<sp/>||<sp/>*posX<sp/>&gt;<sp/><ref refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" kindref="member">WindowWidth</ref>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*posY<sp/>&lt;<sp/>0<sp/>||<sp/>*posY<sp/>&gt;<sp/><ref refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" kindref="member">WindowHeight</ref>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46" refid="class_enemy_1a0b9b8c319880720710947c99076dab5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a0b9b8c319880720710947c99076dab5a" kindref="member">Enemy::GetHealthAndBoundarys</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*if<sp/>(*posX<sp/>&lt;<sp/>0<sp/>||<sp/>*posX<sp/>&gt;<sp/>WindowWidth)</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>else*/</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*posY<sp/>&lt;<sp/>0<sp/>||<sp/>*posY<sp/>&gt;<sp/><ref refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" kindref="member">WindowHeight</ref>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" kindref="member">Enemy::GetX</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63" refid="class_enemy_1afb46819090c0052387207176e90ed3ee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1afb46819090c0052387207176e90ed3ee" kindref="member">Enemy::GetY</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" kindref="member">Enemy::calculatePosition</ref>()</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" kindref="member">f</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref><sp/>+=<sp/><ref refid="classship_1a0ff329ef317f778cf7024e1022254067" kindref="member">GetSpeed</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref><sp/>+=<sp/><ref refid="classship_1a0ff329ef317f778cf7024e1022254067" kindref="member">GetSpeed</ref>()<sp/>*<sp/><ref refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" kindref="member">f</ref>((*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref><sp/>-<sp/><ref refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" kindref="member">startY</ref>)<sp/>/<sp/>50)<sp/>*<sp/>2;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_enemy_1a81f09cf639d685c4d33e305be6610fe8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a81f09cf639d685c4d33e305be6610fe8" kindref="member">Enemy::DrawEntity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a44ea217e657aa0eb204f0d746773326f" kindref="member">DrawObject</ref>(x,<sp/>y,<sp/>rotation,<sp/>scale);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="class_enemy_1ac0eec4755e28c02688065f9657150ac3" refkind="member"><highlight class="normal"><ref refid="class_enemy_1ac0eec4755e28c02688065f9657150ac3" kindref="member">Enemy::~Enemy</ref>()</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" kindref="member">playerWeapons</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp"/>
+  </compounddef>
+</doxygen>

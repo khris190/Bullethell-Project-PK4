@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="bitmap_8c" kind="file">
+    <compoundname>bitmap.c</compoundname>
+    <includes refid="algif_8h" local="yes">algif.h</includes>
+    <incdepgraph>
+      <node id="16">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c</label>
+        <link refid="bitmap.c"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>allegro5/allegro5.h</label>
+      </node>
+      <node id="17">
+        <label>algif.h</label>
+        <link refid="algif_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+        <definition>ALGIF_BITMAP* algif_create_bitmap</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>algif_create_bitmap</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" line="3" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" bodystart="3" bodyend="9"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8c_1a2a5a82f50d2c014f87985dd0840a22fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_destroy_bitmap</definition>
+        <argsstring>(ALGIF_BITMAP *bitmap)</argsstring>
+        <name>algif_destroy_bitmap</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" bodystart="11" bodyend="14"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <referencedby refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" compoundref="gif_8c" startline="9" endline="25">algif_destroy_animation</referencedby>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bitmap_8c_1a402ed5778f346117ca734b52032f9946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_blit</definition>
+        <argsstring>(ALGIF_BITMAP *from, ALGIF_BITMAP *to, int xf, int yf, int xt, int yt, int w, int h)</argsstring>
+        <name>algif_blit</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" bodystart="16" bodyend="74"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="algif_8h" kindref="compound">algif.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" refkind="member"><highlight class="normal"><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*<ref refid="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" kindref="member">algif_create_bitmap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*bitmap<sp/>=<sp/>calloc(1,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>*bitmap);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>bitmap-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref><sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>bitmap-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref><sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>bitmap-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kindref="member">data</ref><sp/>=<sp/>calloc(1,<sp/>w<sp/>*<sp/>h);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bitmap;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="bitmap_8c_1a2a5a82f50d2c014f87985dd0840a22fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bitmap_8c_1a2a5a82f50d2c014f87985dd0840a22fe" kindref="member">algif_destroy_bitmap</ref>(<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*bitmap)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>free(bitmap-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>free(bitmap);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="bitmap_8c_1a402ed5778f346117ca734b52032f9946" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bitmap_8c_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref>(<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*from,<sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*to,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yt,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(w<sp/>&lt;=<sp/>0<sp/>||<sp/>h<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>source<sp/>clipping<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(xf<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>+=<sp/>xf;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xt<sp/>-=<sp/>xf;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xf<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yf<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>+=<sp/>yf;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yt<sp/>-=<sp/>yf;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yf<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wf<sp/>=<sp/>from-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hf<sp/>=<sp/>from-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(xf<sp/>+<sp/>w<sp/>&gt;<sp/>wf)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>=<sp/>wf<sp/>-<sp/>xf;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yf<sp/>+<sp/>h<sp/>&gt;<sp/>hf)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>=<sp/>hf<sp/>-<sp/>yf;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>destination<sp/>clipping<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(xt<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>+=<sp/>xt;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xf<sp/>-=<sp/>xt;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yt<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>+=<sp/>yt;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yf<sp/>-=<sp/>yt;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wt<sp/>=<sp/>to-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ht<sp/>=<sp/>to-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(xt<sp/>+<sp/>w<sp/>&gt;<sp/>wt)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>=<sp/>wt<sp/>-<sp/>xt;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(yt<sp/>+<sp/>h<sp/>&gt;<sp/>ht)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>=<sp/>ht<sp/>-<sp/>yt;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(w<sp/>&lt;=<sp/>0<sp/>||<sp/>h<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>copy<sp/>row<sp/>by<sp/>row<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*pf<sp/>=<sp/>from-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kindref="member">data</ref><sp/>+<sp/>yf<sp/>*<sp/>from-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*pt<sp/>=<sp/>to-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kindref="member">data</ref><sp/>+<sp/>yt<sp/>*<sp/>to-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>h;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memmove(pt<sp/>+<sp/>xt,<sp/>pf<sp/>+<sp/>xf,<sp/>w);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pf<sp/>+=<sp/>from-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>+=<sp/>to-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c"/>
+  </compounddef>
+</doxygen>

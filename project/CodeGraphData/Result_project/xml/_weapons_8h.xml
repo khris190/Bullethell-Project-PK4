@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_weapons_8h" kind="file">
+    <compoundname>Weapons.h</compoundname>
+    <includes refid="_bullets_8h" local="yes">bullets.h</includes>
+    <includes refid="_side_enum_8h" local="yes">SideEnum.h</includes>
+    <includedby refid="ship_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</includedby>
+    <includedby refid="_player_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</includedby>
+    <includedby refid="_enemy_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</includedby>
+    <includedby refid="_weapons_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</includedby>
+    <incdepgraph>
+      <node id="593">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="596">
+        <label>string</label>
+      </node>
+      <node id="605">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="598">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="592">
+        <label>bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+      <node id="603">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+      </node>
+      <node id="604">
+        <label>vector</label>
+      </node>
+      <node id="601">
+        <label>math.h</label>
+      </node>
+      <node id="600">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="594">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="591">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="Weapons.h"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="613">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="616">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="608">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="617">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="610">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="615">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="614">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="606">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="Weapons.h"/>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+      </node>
+      <node id="607">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_weapons" prot="public">Weapons</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullets_8h" kindref="compound">bullets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_side_enum_8h" kindref="compound">SideEnum.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_weapons" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_weapons" kindref="compound">Weapons</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7" refid="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector<sp/>&lt;<sp/>Bullets<sp/>*&gt;<sp/><ref refid="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" kindref="member">weapons</ref>;</highlight></codeline>
+<codeline lineno="8" refid="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" kindref="member">Side</ref><sp/><ref refid="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" kindref="member">side</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1aecd81c1ed9efff890c83bb7090a80e83" kindref="member">Weapons</ref>(<ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" kindref="member">Side</ref><sp/><ref refid="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" kindref="member">side</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_weapons_1a1d911b6ecc86212b5396726806715471" kindref="member">AddWeapon</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" kindref="member">~Weapons</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h"/>
+  </compounddef>
+</doxygen>

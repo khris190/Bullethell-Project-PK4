@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_player_8h" kind="file">
+    <compoundname>Player.h</compoundname>
+    <includes refid="ship_8h" local="yes">ship.h</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_bullets_8h" local="yes">Bullets.h</includes>
+    <includes refid="_weapons_8h" local="yes">Weapons.h</includes>
+    <includedby refid="data_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</includedby>
+    <includedby refid="_game_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</includedby>
+    <includedby refid="_player_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</includedby>
+    <incdepgraph>
+      <node id="436">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="438">
+        <label>string</label>
+      </node>
+      <node id="448">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="439">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="444">
+        <label>Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="Player.h"/>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>vector</label>
+      </node>
+      <node id="442">
+        <label>math.h</label>
+      </node>
+      <node id="441">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="435">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="447">
+        <label>Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="454">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="449">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="Player.h"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="451">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="452">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_player" prot="public">Player</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ship_8h" kindref="compound">ship.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullets_8h" kindref="compound">Bullets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_weapons_8h" kindref="compound">Weapons.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player" kindref="compound">Player</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classship" kindref="compound">ship</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="class_player_1a749c92b68d265f527c6f83e82b59ed2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a749c92b68d265f527c6f83e82b59ed2d" kindref="member">up</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" kindref="member">down</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" kindref="member">left</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="class_player_1a8a40c57ac05cddb400b3160bba974063" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a8a40c57ac05cddb400b3160bba974063" kindref="member">right</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="class_player_1af1782cc3d35231181addec8de1eaf7e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1af1782cc3d35231181addec8de1eaf7e8" kindref="member">shooting</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kindref="member">Player</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kindref="member">Player</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" kindref="member">radius</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kindref="member">Player</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" kindref="member">radius</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" kindref="member">calculatePosition</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1ac08da8b993ba03687fd046d8ce058fc3" kindref="member">DrawPlayer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" kindref="member">rotation</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_1a0924fd1003260b5cef4f7c08afc6f186" kindref="member">CalculateCollisionsForPlayer</ref>(<ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*bullets);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a7990f800855f5677900fffe617307919" kindref="member">PlayerShot</ref>(<ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*bullets,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>counter);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1acad938f794172fe1c7b52e465b968d2f" kindref="member">SetUp</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a5d1204b9ff886ad55f388166084324b2" kindref="member">SetDown</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a8eee8bbd132e23e4fee69627f513ce9f" kindref="member">SetLeft</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a2704e0194eff2a730cc2b6c6ec91cec2" kindref="member">SetRight</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_1a90f2712d0f70ff1642432ea49e94fcde" kindref="member">SetShooting</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_player_1a4675847a50a68b4f07f61a499f2b226b" kindref="member">GetX</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" kindref="member">GetY</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_1a749d2c00e1fe0f5c2746f7505a58c062" kindref="member">~Player</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h"/>
+  </compounddef>
+</doxygen>

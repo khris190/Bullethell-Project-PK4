@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_semaphore" kind="class" prot="public">
+    <compoundname>Semaphore</compoundname>
+    <includes refid="_semaphore_8h" local="no">Semaphore.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semaphore_1a7f5e2978748697966f3cbaf3379fc1cb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Semaphore::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" line="6" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_semaphore_1ac5ff4584f6a5cbb6b0c2e14cb0efedc4" compoundref="_semaphore_8cpp" startline="10" endline="17">Lock_Semaphore</referencedby>
+        <referencedby refid="class_semaphore_1aca1661adbce12634d2fa9d7e0c09d121" compoundref="_semaphore_8cpp" startline="5" endline="8">Semaphore</referencedby>
+        <referencedby refid="class_semaphore_1ad1261f5a720623f16c3f9205eb776ea8" compoundref="_semaphore_8cpp" startline="19" endline="22">Unlock_Semaphore</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semaphore_1aca1661adbce12634d2fa9d7e0c09d121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Semaphore::Semaphore</definition>
+        <argsstring>(int count=0)</argsstring>
+        <name>Semaphore</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.cpp" bodystart="5" bodyend="8"/>
+        <references refid="class_semaphore_1a7f5e2978748697966f3cbaf3379fc1cb" compoundref="_semaphore_8h" startline="6">count</references>
+      </memberdef>
+      <memberdef kind="function" id="class_semaphore_1a633658a6fde276bffc912028725c6ade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Semaphore::~Semaphore</definition>
+        <argsstring>()</argsstring>
+        <name>~Semaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_semaphore_1ac5ff4584f6a5cbb6b0c2e14cb0efedc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semaphore::Lock_Semaphore</definition>
+        <argsstring>(Semaphore sem, int count=1)</argsstring>
+        <name>Lock_Semaphore</name>
+        <param>
+          <type><ref refid="class_semaphore" kindref="compound">Semaphore</ref></type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" line="9" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.cpp" bodystart="10" bodyend="17"/>
+        <references refid="class_semaphore_1a7f5e2978748697966f3cbaf3379fc1cb" compoundref="_semaphore_8h" startline="6">count</references>
+      </memberdef>
+      <memberdef kind="function" id="class_semaphore_1ad1261f5a720623f16c3f9205eb776ea8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semaphore::Unlock_Semaphore</definition>
+        <argsstring>(Semaphore sem, int count=1)</argsstring>
+        <name>Unlock_Semaphore</name>
+        <param>
+          <type><ref refid="class_semaphore" kindref="compound">Semaphore</ref></type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.cpp" bodystart="19" bodyend="22"/>
+        <references refid="class_semaphore_1a7f5e2978748697966f3cbaf3379fc1cb" compoundref="_semaphore_8h" startline="6">count</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" line="4" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Semaphore.h" bodystart="3" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_semaphore_1a7f5e2978748697966f3cbaf3379fc1cb" prot="private" virt="non-virtual"><scope>Semaphore</scope><name>count</name></member>
+      <member refid="class_semaphore_1ac5ff4584f6a5cbb6b0c2e14cb0efedc4" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Lock_Semaphore</name></member>
+      <member refid="class_semaphore_1aca1661adbce12634d2fa9d7e0c09d121" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Semaphore</name></member>
+      <member refid="class_semaphore_1ad1261f5a720623f16c3f9205eb776ea8" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Unlock_Semaphore</name></member>
+      <member refid="class_semaphore_1a633658a6fde276bffc912028725c6ade" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>~Semaphore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

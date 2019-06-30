@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player" kind="class" prot="public">
+    <compoundname>Player</compoundname>
+    <basecompoundref refid="classship" prot="public" virt="non-virtual">ship</basecompoundref>
+    <includes refid="_player_8h" local="no">Player.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_1a749c92b68d265f527c6f83e82b59ed2d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="9" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">calculatePosition</referencedby>
+        <referencedby refid="class_player_1acad938f794172fe1c7b52e465b968d2f" compoundref="_player_8cpp" startline="16" endline="19">SetUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">calculatePosition</referencedby>
+        <referencedby refid="class_player_1a5d1204b9ff886ad55f388166084324b2" compoundref="_player_8cpp" startline="20" endline="23">SetDown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">calculatePosition</referencedby>
+        <referencedby refid="class_player_1a8eee8bbd132e23e4fee69627f513ce9f" compoundref="_player_8cpp" startline="24" endline="27">SetLeft</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1a8a40c57ac05cddb400b3160bba974063" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">calculatePosition</referencedby>
+        <referencedby refid="class_player_1a2704e0194eff2a730cc2b6c6ec91cec2" compoundref="_player_8cpp" startline="28" endline="31">SetRight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_1af1782cc3d35231181addec8de1eaf7e8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Player::shooting</definition>
+        <argsstring></argsstring>
+        <name>shooting</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="13" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_player_1a7990f800855f5677900fffe617307919" compoundref="_player_8cpp" startline="142" endline="148">PlayerShot</referencedby>
+        <referencedby refid="class_player_1a90f2712d0f70ff1642432ea49e94fcde" compoundref="_player_8cpp" startline="32" endline="35">SetShooting</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::Player</definition>
+        <argsstring>()</argsstring>
+        <name>Player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1ab1b9a6da7f071107ec509bd0d644031f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::Player</definition>
+        <argsstring>(const char *filename, int radius, int health)</argsstring>
+        <name>Player</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="18" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a01d443cd95a8923ecb956728219bfbb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::Player</definition>
+        <argsstring>(const char *filename, int radius, int s, int health)</argsstring>
+        <name>Player</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a93076fbfb49b562a9b2ad0484519f516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::calculatePosition</definition>
+        <argsstring>()</argsstring>
+        <name>calculatePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="48" bodyend="130"/>
+        <references refid="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" compoundref="_player_8h" startline="10">down</references>
+        <references refid="classship_1a0ff329ef317f778cf7024e1022254067" compoundref="ship_8cpp" startline="34" endline="37">ship::GetSpeed</references>
+        <references refid="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" compoundref="_player_8h" startline="11">left</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_player_1a8a40c57ac05cddb400b3160bba974063" compoundref="_player_8h" startline="12">right</references>
+        <references refid="class_player_1a749c92b68d265f527c6f83e82b59ed2d" compoundref="_player_8h" startline="9">up</references>
+        <references refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" compoundref="_config_8h" startline="5">WindowHeight</references>
+        <references refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" compoundref="_config_8h" startline="6">WindowWidth</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1ac08da8b993ba03687fd046d8ce058fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::DrawPlayer</definition>
+        <argsstring>(int x, int y, int rotation=0, int scale=1)</argsstring>
+        <name>DrawPlayer</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotation</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="150" bodyend="153"/>
+        <references refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" compoundref="ship_8cpp" startline="69" endline="72">ship::DrawShip</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a0924fd1003260b5cef4f7c08afc6f186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Player::CalculateCollisionsForPlayer</definition>
+        <argsstring>(Bullets *bullets)</argsstring>
+        <name>CalculateCollisionsForPlayer</name>
+        <param>
+          <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+          <declname>bullets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="132" bodyend="140"/>
+        <references refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">ship::CalculateCollisions</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a7990f800855f5677900fffe617307919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::PlayerShot</definition>
+        <argsstring>(Bullets *bullets, int counter)</argsstring>
+        <name>PlayerShot</name>
+        <param>
+          <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+          <declname>bullets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>counter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="142" bodyend="148"/>
+        <references refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" compoundref="_bullets_8cpp" startline="17" endline="21">Bullets::AddBullet</references>
+        <references refid="class_player_1a4675847a50a68b4f07f61a499f2b226b" compoundref="_player_8cpp" startline="39" endline="42">GetX</references>
+        <references refid="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" compoundref="_player_8cpp" startline="43" endline="46">GetY</references>
+        <references refid="class_player_1af1782cc3d35231181addec8de1eaf7e8" compoundref="_player_8h" startline="13">shooting</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1acad938f794172fe1c7b52e465b968d2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::SetUp</definition>
+        <argsstring>(bool var)</argsstring>
+        <name>SetUp</name>
+        <param>
+          <type>bool</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="16" bodyend="19"/>
+        <references refid="class_player_1a749c92b68d265f527c6f83e82b59ed2d" compoundref="_player_8h" startline="9">up</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a5d1204b9ff886ad55f388166084324b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::SetDown</definition>
+        <argsstring>(bool var)</argsstring>
+        <name>SetDown</name>
+        <param>
+          <type>bool</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="20" bodyend="23"/>
+        <references refid="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" compoundref="_player_8h" startline="10">down</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a8eee8bbd132e23e4fee69627f513ce9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::SetLeft</definition>
+        <argsstring>(bool var)</argsstring>
+        <name>SetLeft</name>
+        <param>
+          <type>bool</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="24" bodyend="27"/>
+        <references refid="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" compoundref="_player_8h" startline="11">left</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a2704e0194eff2a730cc2b6c6ec91cec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::SetRight</definition>
+        <argsstring>(bool var)</argsstring>
+        <name>SetRight</name>
+        <param>
+          <type>bool</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="28" bodyend="31"/>
+        <references refid="class_player_1a8a40c57ac05cddb400b3160bba974063" compoundref="_player_8h" startline="12">right</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a90f2712d0f70ff1642432ea49e94fcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Player::SetShooting</definition>
+        <argsstring>(bool var)</argsstring>
+        <name>SetShooting</name>
+        <param>
+          <type>bool</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="28" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="32" bodyend="35"/>
+        <references refid="class_player_1af1782cc3d35231181addec8de1eaf7e8" compoundref="_player_8h" startline="13">shooting</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a4675847a50a68b4f07f61a499f2b226b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Player::GetX</definition>
+        <argsstring>()</argsstring>
+        <name>GetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="29" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="39" bodyend="42"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+        <referencedby refid="class_player_1a7990f800855f5677900fffe617307919" compoundref="_player_8cpp" startline="142" endline="148">PlayerShot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Player::GetY</definition>
+        <argsstring>()</argsstring>
+        <name>GetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="30" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="43" bodyend="46"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+        <referencedby refid="class_player_1a7990f800855f5677900fffe617307919" compoundref="_player_8cpp" startline="142" endline="148">PlayerShot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_1a749d2c00e1fe0f5c2746f7505a58c062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Player::~Player</definition>
+        <argsstring>()</argsstring>
+        <name>~Player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="31" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp" bodystart="155" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="87">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+      <node id="86">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="91">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+        <childnode refid="96" relation="usage">
+          <edgelabel>playerWeapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>bullets</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="97" relation="usage">
+          <edgelabel>weapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="92">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+        <childnode refid="95" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="94" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>std::vector&lt; Bullet * &gt;</label>
+        <childnode refid="100" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="95">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="97">
+        <label>std::vector&lt; Bullets * &gt;</label>
+        <childnode refid="98" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="90">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" line="7" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" prot="protected" virt="non-virtual"><scope>Player</scope><name>bitmapa</name></member>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>Player</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>Player</scope><name>boundryY</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>Player</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>Player</scope><name>CalculateCollision</name></member>
+      <member refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" prot="public" virt="non-virtual"><scope>Player</scope><name>CalculateCollisions</name></member>
+      <member refid="class_player_1a0924fd1003260b5cef4f7c08afc6f186" prot="public" virt="non-virtual"><scope>Player</scope><name>CalculateCollisionsForPlayer</name></member>
+      <member refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" prot="public" virt="non-virtual"><scope>Player</scope><name>calculatePosition</name></member>
+      <member refid="class_object_1aed084a85d0a40590be323d90fb68c44e" prot="public" virt="non-virtual"><scope>Player</scope><name>ChangeBitmap</name></member>
+      <member refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" prot="public" virt="non-virtual"><scope>Player</scope><name>CollisionCalculate</name></member>
+      <member refid="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" prot="private" virt="non-virtual"><scope>Player</scope><name>down</name></member>
+      <member refid="class_object_1a44ea217e657aa0eb204f0d746773326f" prot="protected" virt="non-virtual"><scope>Player</scope><name>DrawObject</name></member>
+      <member refid="class_object_1a7382271d52d647c940cb234f44a22ebf" prot="protected" virt="non-virtual"><scope>Player</scope><name>DrawObjecttest</name></member>
+      <member refid="class_player_1ac08da8b993ba03687fd046d8ce058fc3" prot="public" virt="non-virtual"><scope>Player</scope><name>DrawPlayer</name></member>
+      <member refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" prot="protected" virt="non-virtual"><scope>Player</scope><name>DrawShip</name></member>
+      <member refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" prot="public" virt="non-virtual"><scope>Player</scope><name>GetBitmap</name></member>
+      <member refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" prot="public" virt="non-virtual"><scope>Player</scope><name>GetHealth</name></member>
+      <member refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" prot="public" virt="non-virtual"><scope>Player</scope><name>GetSizeX</name></member>
+      <member refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" prot="public" virt="non-virtual"><scope>Player</scope><name>GetSizeY</name></member>
+      <member refid="classship_1a0ff329ef317f778cf7024e1022254067" prot="public" virt="non-virtual"><scope>Player</scope><name>GetSpeed</name></member>
+      <member refid="class_player_1a4675847a50a68b4f07f61a499f2b226b" prot="public" virt="non-virtual"><scope>Player</scope><name>GetX</name></member>
+      <member refid="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" prot="public" virt="non-virtual"><scope>Player</scope><name>GetY</name></member>
+      <member refid="classship_1a36db50422b5f9b5e9240a0f81779557b" prot="protected" virt="non-virtual"><scope>Player</scope><name>health</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>Player</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>Player</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>Player</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>Player</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>Player</scope><name>HitboxHELPME</name></member>
+      <member refid="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" prot="private" virt="non-virtual"><scope>Player</scope><name>left</name></member>
+      <member refid="class_object_1aea2952b0ed70add86517aaa67cc37958" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1a0100999b4fb6331d9ee44d6d89838c73" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1aa965ff676265eb8053afa99afa2054b5" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1a8a12cba46b0145a45935c926fc778624" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_object_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
+      <member refid="class_player_1ab1b9a6da7f071107ec509bd0d644031f" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
+      <member refid="class_player_1a01d443cd95a8923ecb956728219bfbb8" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
+      <member refid="class_player_1a7990f800855f5677900fffe617307919" prot="public" virt="non-virtual"><scope>Player</scope><name>PlayerShot</name></member>
+      <member refid="classship_1a85ae4582c87c67a93f30258c52c55a84" prot="protected" virt="non-virtual"><scope>Player</scope><name>playerWeapons</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>Player</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>Player</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>Player</scope><name>radius</name></member>
+      <member refid="class_player_1a8a40c57ac05cddb400b3160bba974063" prot="private" virt="non-virtual"><scope>Player</scope><name>right</name></member>
+      <member refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" prot="protected" virt="non-virtual"><scope>Player</scope><name>rotation</name></member>
+      <member refid="class_player_1a5d1204b9ff886ad55f388166084324b2" prot="public" virt="non-virtual"><scope>Player</scope><name>SetDown</name></member>
+      <member refid="class_player_1a8eee8bbd132e23e4fee69627f513ce9f" prot="public" virt="non-virtual"><scope>Player</scope><name>SetLeft</name></member>
+      <member refid="class_player_1a2704e0194eff2a730cc2b6c6ec91cec2" prot="public" virt="non-virtual"><scope>Player</scope><name>SetRight</name></member>
+      <member refid="class_player_1a90f2712d0f70ff1642432ea49e94fcde" prot="public" virt="non-virtual"><scope>Player</scope><name>SetShooting</name></member>
+      <member refid="class_player_1acad938f794172fe1c7b52e465b968d2f" prot="public" virt="non-virtual"><scope>Player</scope><name>SetUp</name></member>
+      <member refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" prot="public" virt="non-virtual"><scope>Player</scope><name>ship</name></member>
+      <member refid="classship_1ab174d904c0308e3cac53df83e055706a" prot="public" virt="non-virtual"><scope>Player</scope><name>ship</name></member>
+      <member refid="classship_1ae6c205955d4dcf6d476cf0136b77b688" prot="public" virt="non-virtual"><scope>Player</scope><name>ship</name></member>
+      <member refid="class_player_1af1782cc3d35231181addec8de1eaf7e8" prot="private" virt="non-virtual"><scope>Player</scope><name>shooting</name></member>
+      <member refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" prot="protected" virt="non-virtual"><scope>Player</scope><name>sizeX</name></member>
+      <member refid="class_object_1a9951998336ee6906a052572d37019e89" prot="protected" virt="non-virtual"><scope>Player</scope><name>sizeY</name></member>
+      <member refid="classship_1ad320351e65237d459fb6cf29b001159d" prot="protected" virt="non-virtual"><scope>Player</scope><name>speed</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>Player</scope><name>type</name></member>
+      <member refid="class_player_1a749c92b68d265f527c6f83e82b59ed2d" prot="private" virt="non-virtual"><scope>Player</scope><name>up</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>Player</scope><name>~Hitbox</name></member>
+      <member refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="virtual"><scope>Player</scope><name>~Object</name></member>
+      <member refid="class_player_1a749d2c00e1fe0f5c2746f7505a58c062" prot="public" virt="non-virtual"><scope>Player</scope><name>~Player</name></member>
+      <member refid="classship_1a9ce640cd66ad06fb53ba256b09720816" prot="public" virt="non-virtual"><scope>Player</scope><name>~ship</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

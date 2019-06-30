@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bullet" kind="class" prot="public">
+    <compoundname>Bullet</compoundname>
+    <basecompoundref refid="class_hitbox" prot="public" virt="non-virtual">Hitbox</basecompoundref>
+    <includes refid="_bullet_8h" local="no">Bullet.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Bullet::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="7" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" compoundref="_bullet_8cpp" startline="3" endline="10">Bullet</referencedby>
+        <referencedby refid="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" compoundref="_bullet_8cpp" startline="30" endline="33">GetRotation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Bullet::speedX</definition>
+        <argsstring></argsstring>
+        <name>speedX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" compoundref="_bullet_8cpp" startline="3" endline="10">Bullet</referencedby>
+        <referencedby refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" compoundref="_bullet_8cpp" startline="34" endline="47">calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bullet_1a902c0a699b180045a4b486afaf1534aa" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Bullet::speedY</definition>
+        <argsstring></argsstring>
+        <name>speedY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="9" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" compoundref="_bullet_8cpp" startline="3" endline="10">Bullet</referencedby>
+        <referencedby refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" compoundref="_bullet_8cpp" startline="34" endline="47">calculate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Bullet::startY</definition>
+        <argsstring></argsstring>
+        <name>startY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" compoundref="_bullet_8cpp" startline="3" endline="10">Bullet</referencedby>
+        <referencedby refid="class_bullet_1af4a9561ed519dddfc36342bcb07bc8ba" compoundref="_bullet_8cpp" startline="49" endline="62">calculate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullet::Bullet</definition>
+        <argsstring>(double rotation, double posX, double posY, double speedX, double speedY)</argsstring>
+        <name>Bullet</name>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="15" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="3" bodyend="10"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" compoundref="_bullet_8h" startline="7">rotation</references>
+        <references refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" compoundref="_bullet_8h" startline="8">speedX</references>
+        <references refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" compoundref="_bullet_8h" startline="9">speedY</references>
+        <references refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" compoundref="_bullet_8h" startline="10">startY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullet_1a527eed15fda3686a78d4ca58f157484f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullet::Bullet</definition>
+        <argsstring>(double rotation, double posX, double posY, double speedX, double speedY, double sizeX)</argsstring>
+        <name>Bullet</name>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="11" bodyend="19"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" compoundref="_bullet_8h" startline="7">rotation</references>
+        <references refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" compoundref="_bullet_8h" startline="8">speedX</references>
+        <references refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" compoundref="_bullet_8h" startline="9">speedY</references>
+        <references refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" compoundref="_bullet_8h" startline="10">startY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullet_1a47d3ab46ecf015ac89533fe076277208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullet::Bullet</definition>
+        <argsstring>(double rotation, double posX, double posY, double speedX, double speedY, double sizeX, double sizeY)</argsstring>
+        <name>Bullet</name>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="20" bodyend="27"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" compoundref="_bullet_8h" startline="7">rotation</references>
+        <references refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" compoundref="_bullet_8h" startline="8">speedX</references>
+        <references refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" compoundref="_bullet_8h" startline="9">speedY</references>
+        <references refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" compoundref="_bullet_8h" startline="10">startY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Bullet::GetRotation</definition>
+        <argsstring>()</argsstring>
+        <name>GetRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="30" bodyend="33"/>
+        <references refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" compoundref="_bullet_8h" startline="7">rotation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullet_1a8b66928213748cb82d17aa518e035e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bullet::calculate</definition>
+        <argsstring>()</argsstring>
+        <name>calculate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="34" bodyend="47"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" compoundref="_bullet_8h" startline="8">speedX</references>
+        <references refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" compoundref="_bullet_8h" startline="9">speedY</references>
+        <references refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" compoundref="_config_8h" startline="5">WindowHeight</references>
+        <references refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" compoundref="_config_8h" startline="6">WindowWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullet_1af4a9561ed519dddfc36342bcb07bc8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bullet::calculate</definition>
+        <argsstring>(double f(double x))</argsstring>
+        <name>calculate</name>
+        <param>
+          <type>double </type>
+          <declname>f</declname>
+          <array>double x</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="49" bodyend="62"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">Hitbox::posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">Hitbox::posY</references>
+        <references refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" compoundref="_bullet_8h" startline="9">speedY</references>
+        <references refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" compoundref="_bullet_8h" startline="10">startY</references>
+        <references refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" compoundref="_config_8h" startline="5">WindowHeight</references>
+        <references refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" compoundref="_config_8h" startline="6">WindowWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullet_1aaeb5cb41d7db89f49007b08b41f1bfcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullet::~Bullet</definition>
+        <argsstring>()</argsstring>
+        <name>~Bullet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="18">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" line="5" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h" bodystart="4" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>Bullet</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>Bullet</scope><name>boundryY</name></member>
+      <member refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Bullet</name></member>
+      <member refid="class_bullet_1a527eed15fda3686a78d4ca58f157484f" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Bullet</name></member>
+      <member refid="class_bullet_1a47d3ab46ecf015ac89533fe076277208" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Bullet</name></member>
+      <member refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" prot="public" virt="non-virtual"><scope>Bullet</scope><name>calculate</name></member>
+      <member refid="class_bullet_1af4a9561ed519dddfc36342bcb07bc8ba" prot="public" virt="non-virtual"><scope>Bullet</scope><name>calculate</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>Bullet</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>Bullet</scope><name>CalculateCollision</name></member>
+      <member refid="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" prot="public" virt="non-virtual"><scope>Bullet</scope><name>GetRotation</name></member>
+      <member refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" prot="public" virt="non-virtual"><scope>Bullet</scope><name>GetX</name></member>
+      <member refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" prot="public" virt="non-virtual"><scope>Bullet</scope><name>GetY</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>Bullet</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>Bullet</scope><name>HitboxHELPME</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>Bullet</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>Bullet</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>Bullet</scope><name>radius</name></member>
+      <member refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" prot="private" virt="non-virtual"><scope>Bullet</scope><name>rotation</name></member>
+      <member refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" prot="private" virt="non-virtual"><scope>Bullet</scope><name>speedX</name></member>
+      <member refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" prot="private" virt="non-virtual"><scope>Bullet</scope><name>speedY</name></member>
+      <member refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" prot="private" virt="non-virtual"><scope>Bullet</scope><name>startY</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>Bullet</scope><name>type</name></member>
+      <member refid="class_bullet_1aaeb5cb41d7db89f49007b08b41f1bfcf" prot="public" virt="non-virtual"><scope>Bullet</scope><name>~Bullet</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>Bullet</scope><name>~Hitbox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

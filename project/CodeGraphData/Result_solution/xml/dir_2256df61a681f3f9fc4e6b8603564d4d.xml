@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_2256df61a681f3f9fc4e6b8603564d4d" kind="dir">
+    <compoundname>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project</compoundname>
+    <innerdir refid="dir_4cbd5e020a528c0740508a4b836b79db">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5</innerdir>
+    <innerfile refid="_bullet_8cpp">Bullet.cpp</innerfile>
+    <innerfile refid="_bullet_8h">Bullet.h</innerfile>
+    <innerfile refid="_bullets_8cpp">Bullets.cpp</innerfile>
+    <innerfile refid="_bullets_8h">Bullets.h</innerfile>
+    <innerfile refid="_config_8h">Config.h</innerfile>
+    <innerfile refid="data_8cpp">data.cpp</innerfile>
+    <innerfile refid="data_8h">data.h</innerfile>
+    <innerfile refid="_enemy_8cpp">Enemy.cpp</innerfile>
+    <innerfile refid="_enemy_8h">Enemy.h</innerfile>
+    <innerfile refid="_game_8cpp">Game.cpp</innerfile>
+    <innerfile refid="_game_8h">Game.h</innerfile>
+    <innerfile refid="_hitbox_8cpp">Hitbox.cpp</innerfile>
+    <innerfile refid="_hitbox_8h">Hitbox.h</innerfile>
+    <innerfile refid="_hitbox_type_enum_8h">HitboxTypeEnum.h</innerfile>
+    <innerfile refid="_my_bitmap_8cpp">MyBitmap.cpp</innerfile>
+    <innerfile refid="_my_bitmap_8h">MyBitmap.h</innerfile>
+    <innerfile refid="_object_8cpp">Object.cpp</innerfile>
+    <innerfile refid="_object_8h">Object.h</innerfile>
+    <innerfile refid="_player_8cpp">Player.cpp</innerfile>
+    <innerfile refid="_player_8h">Player.h</innerfile>
+    <innerfile refid="saced_8cpp">saced.cpp</innerfile>
+    <innerfile refid="_semaphore_8cpp">Semaphore.cpp</innerfile>
+    <innerfile refid="_semaphore_8h">Semaphore.h</innerfile>
+    <innerfile refid="ship_8cpp">ship.cpp</innerfile>
+    <innerfile refid="ship_8h">ship.h</innerfile>
+    <innerfile refid="_side_enum_8h">SideEnum.h</innerfile>
+    <innerfile refid="_source_8cpp">Source.cpp</innerfile>
+    <innerfile refid="_weapons_8cpp">Weapons.cpp</innerfile>
+    <innerfile refid="_weapons_8h">Weapons.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/"/>
+  </compounddef>
+</doxygen>

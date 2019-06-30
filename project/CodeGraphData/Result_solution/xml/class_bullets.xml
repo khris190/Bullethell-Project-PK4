@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bullets" kind="class" prot="public">
+    <compoundname>Bullets</compoundname>
+    <basecompoundref refid="class_object" prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="_bullets_8h" local="no">Bullets.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_bullet" kindref="compound">Bullet</ref> * &gt;</type>
+        <definition>std::vector&lt; Bullet * &gt; Bullets::bullets</definition>
+        <argsstring></argsstring>
+        <name>bullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" compoundref="_bullets_8cpp" startline="17" endline="21">AddBullet</referencedby>
+        <referencedby refid="class_bullets_1a026c979c3f071430224ce573b85c849f" compoundref="_bullets_8cpp" startline="73" endline="84">CalcuclateBulletsCollision</referencedby>
+        <referencedby refid="class_bullets_1aca3fc8591a3d209c32e795ab67d8df5c" compoundref="_bullets_8cpp" startline="39" endline="54">CalculateBullets</referencedby>
+        <referencedby refid="class_bullets_1a7b6f9556c43672b6b01aa8b21e9ffe30" compoundref="_bullets_8cpp" startline="56" endline="71">CalculateBulletsV2</referencedby>
+        <referencedby refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">ship::CalculateCollisions</referencedby>
+        <referencedby refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" compoundref="_bullets_8cpp" startline="108" endline="118">DrawBullets</referencedby>
+        <referencedby refid="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" compoundref="_bullets_8cpp" startline="119" endline="125">DrawBulletstest</referencedby>
+        <referencedby refid="class_bullets_1a8585dadd976a62544a28682e6fd73352" compoundref="_bullets_8cpp" startline="126" endline="129">GetBullets</referencedby>
+        <referencedby refid="class_bullets_1a1bf441b2c64f66d8c1afa3de7f308b71" compoundref="_bullets_8cpp" startline="131" endline="141">~Bullets</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bullets_1a81b222aea8b9e5bf1f8abe4ae2b1f84c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Bullets::damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">ship::CalculateCollisions</referencedby>
+        <referencedby refid="class_bullets_1a5745c15e43bc84fb86d8e8106c3e0f65" compoundref="_bullets_8cpp" startline="33" endline="36">setDmg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bullets_1abed7f9d0864b2b24e27aeb4043f1b3f2" prot="public" static="no" mutable="no">
+        <type>double(*</type>
+        <definition>double(* Bullets::f)(double)</definition>
+        <argsstring>)(double)</argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="13" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_bullets_1ace129acbcb0197aeddeda0496c1f5221" compoundref="_bullets_8cpp" startline="5" endline="8">Bullets</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bullets_1ace129acbcb0197aeddeda0496c1f5221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullets::Bullets</definition>
+        <argsstring>(const char *filename, double(*f)(double))</argsstring>
+        <name>Bullets</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>double(*)(double)</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="5" bodyend="8"/>
+        <references refid="class_bullets_1abed7f9d0864b2b24e27aeb4043f1b3f2" compoundref="_bullets_8h" startline="13">f</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1aa7fcaa946e44c97c96445bf4abe145a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullets::Bullets</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>Bullets</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a6ed87f3884b4b078a8fd58609849c9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullets::Bullets</definition>
+        <argsstring>()</argsstring>
+        <name>Bullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="18" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="14" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::AddBullet</definition>
+        <argsstring>(double rotation, double posX, double posY, double speedX, double speedY)</argsstring>
+        <name>AddBullet</name>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="17" bodyend="21"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <referencedby refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" compoundref="_enemy_8cpp" startline="26" endline="32">Enemy::EntityShot</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+        <referencedby refid="class_player_1a7990f800855f5677900fffe617307919" compoundref="_player_8cpp" startline="142" endline="148">Player::PlayerShot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1ac01654985d09b52593fdd052a59d6346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::AddBullet</definition>
+        <argsstring>(double rotation, double posX, double posY, double speedX, double speedY, double sizeX)</argsstring>
+        <name>AddBullet</name>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="22" bodyend="26"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a00dd9aaa29a31ab32274b2cddcd03416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::AddBullet</definition>
+        <argsstring>(double rotation, double posX, double posY, double speedX, double speedY, double sizeX, double sizeY)</argsstring>
+        <name>AddBullet</name>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speedY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="27" bodyend="31"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a5745c15e43bc84fb86d8e8106c3e0f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::setDmg</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setDmg</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="33" bodyend="36"/>
+        <references refid="class_bullets_1a81b222aea8b9e5bf1f8abe4ae2b1f84c" compoundref="_bullets_8h" startline="11">damage</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1aca3fc8591a3d209c32e795ab67d8df5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::CalculateBullets</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateBullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="39" bodyend="54"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a7b6f9556c43672b6b01aa8b21e9ffe30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::CalculateBulletsV2</definition>
+        <argsstring>(double f2(double x))</argsstring>
+        <name>CalculateBulletsV2</name>
+        <param>
+          <type>double </type>
+          <declname>f2</declname>
+          <array>double x</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="56" bodyend="71"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a026c979c3f071430224ce573b85c849f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::CalcuclateBulletsCollision</definition>
+        <argsstring>(double posX, double posY, int objBouncerX, int objBouncerY)</argsstring>
+        <name>CalcuclateBulletsCollision</name>
+        <param>
+          <type>double</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>objBouncerX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>objBouncerY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="73" bodyend="84"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <references refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" compoundref="_object_8cpp" startline="50" endline="60">Object::CollisionCalculate</references>
+        <references refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" compoundref="_hitbox_8cpp" startline="38" endline="41">Hitbox::GetX</references>
+        <references refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" compoundref="_hitbox_8cpp" startline="42" endline="45">Hitbox::GetY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1aa62020a66537feffcc87af99f8a320ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bullets::CalcuclateBulletsCollision</definition>
+        <argsstring>(Hitbox *hitbox)</argsstring>
+        <name>CalcuclateBulletsCollision</name>
+        <param>
+          <type><ref refid="class_hitbox" kindref="compound">Hitbox</ref> *</type>
+          <declname>hitbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="85" bodyend="101"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <references refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" compoundref="_hitbox_8cpp" startline="48" endline="122">Hitbox::CalculateCollision</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a967524f7f519020974b7eeab7f65d365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::ClearBulletsByCollision</definition>
+        <argsstring>()</argsstring>
+        <name>ClearBulletsByCollision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1ada07690e67204c954299ffd238dd8d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::DrawBullets</definition>
+        <argsstring>(float scale=1)</argsstring>
+        <name>DrawBullets</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="28" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="108" bodyend="118"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <references refid="class_object_1a44ea217e657aa0eb204f0d746773326f" compoundref="_object_8cpp" startline="37" endline="40">Object::DrawObject</references>
+        <references refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" compoundref="_hitbox_8cpp" startline="38" endline="41">Hitbox::GetX</references>
+        <references refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" compoundref="_hitbox_8cpp" startline="42" endline="45">Hitbox::GetY</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullets::DrawBulletstest</definition>
+        <argsstring>(float scale=1)</argsstring>
+        <name>DrawBulletstest</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="29" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="119" bodyend="125"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+        <references refid="class_object_1a7382271d52d647c940cb234f44a22ebf" compoundref="_object_8cpp" startline="41" endline="44">Object::DrawObjecttest</references>
+        <references refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" compoundref="_hitbox_8cpp" startline="38" endline="41">Hitbox::GetX</references>
+        <references refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" compoundref="_hitbox_8cpp" startline="42" endline="45">Hitbox::GetY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a8585dadd976a62544a28682e6fd73352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="class_bullet" kindref="compound">Bullet</ref> * &gt; *</type>
+        <definition>std::vector&lt; Bullet * &gt; * Bullets::GetBullets</definition>
+        <argsstring>()</argsstring>
+        <name>GetBullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="31" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="126" bodyend="129"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bullets_1a1bf441b2c64f66d8c1afa3de7f308b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Bullets::~Bullets</definition>
+        <argsstring>()</argsstring>
+        <name>~Bullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="32" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp" bodystart="131" bodyend="141"/>
+        <references refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" compoundref="_bullets_8h" startline="10">bullets</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="26">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>bullets</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>std::vector&lt; Bullet * &gt;</label>
+        <childnode refid="32" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="29">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" line="7" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h" bodystart="6" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" prot="public" virt="non-virtual"><scope>Bullets</scope><name>AddBullet</name></member>
+      <member refid="class_bullets_1ac01654985d09b52593fdd052a59d6346" prot="public" virt="non-virtual"><scope>Bullets</scope><name>AddBullet</name></member>
+      <member refid="class_bullets_1a00dd9aaa29a31ab32274b2cddcd03416" prot="public" virt="non-virtual"><scope>Bullets</scope><name>AddBullet</name></member>
+      <member refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>bitmapa</name></member>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>Bullets</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>Bullets</scope><name>boundryY</name></member>
+      <member refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" prot="public" virt="non-virtual"><scope>Bullets</scope><name>bullets</name></member>
+      <member refid="class_bullets_1ace129acbcb0197aeddeda0496c1f5221" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Bullets</name></member>
+      <member refid="class_bullets_1aa7fcaa946e44c97c96445bf4abe145a4" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Bullets</name></member>
+      <member refid="class_bullets_1a6ed87f3884b4b078a8fd58609849c9db" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Bullets</name></member>
+      <member refid="class_bullets_1a026c979c3f071430224ce573b85c849f" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CalcuclateBulletsCollision</name></member>
+      <member refid="class_bullets_1aa62020a66537feffcc87af99f8a320ae" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CalcuclateBulletsCollision</name></member>
+      <member refid="class_bullets_1aca3fc8591a3d209c32e795ab67d8df5c" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CalculateBullets</name></member>
+      <member refid="class_bullets_1a7b6f9556c43672b6b01aa8b21e9ffe30" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CalculateBulletsV2</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CalculateCollision</name></member>
+      <member refid="class_object_1aed084a85d0a40590be323d90fb68c44e" prot="public" virt="non-virtual"><scope>Bullets</scope><name>ChangeBitmap</name></member>
+      <member refid="class_bullets_1a967524f7f519020974b7eeab7f65d365" prot="public" virt="non-virtual"><scope>Bullets</scope><name>ClearBulletsByCollision</name></member>
+      <member refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" prot="public" virt="non-virtual"><scope>Bullets</scope><name>CollisionCalculate</name></member>
+      <member refid="class_bullets_1a81b222aea8b9e5bf1f8abe4ae2b1f84c" prot="public" virt="non-virtual"><scope>Bullets</scope><name>damage</name></member>
+      <member refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" prot="public" virt="non-virtual"><scope>Bullets</scope><name>DrawBullets</name></member>
+      <member refid="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" prot="public" virt="non-virtual"><scope>Bullets</scope><name>DrawBulletstest</name></member>
+      <member refid="class_object_1a44ea217e657aa0eb204f0d746773326f" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>DrawObject</name></member>
+      <member refid="class_object_1a7382271d52d647c940cb234f44a22ebf" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>DrawObjecttest</name></member>
+      <member refid="class_bullets_1abed7f9d0864b2b24e27aeb4043f1b3f2" prot="public" virt="non-virtual"><scope>Bullets</scope><name>f</name></member>
+      <member refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" prot="public" virt="non-virtual"><scope>Bullets</scope><name>GetBitmap</name></member>
+      <member refid="class_bullets_1a8585dadd976a62544a28682e6fd73352" prot="public" virt="non-virtual"><scope>Bullets</scope><name>GetBullets</name></member>
+      <member refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" prot="public" virt="non-virtual"><scope>Bullets</scope><name>GetSizeX</name></member>
+      <member refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" prot="public" virt="non-virtual"><scope>Bullets</scope><name>GetSizeY</name></member>
+      <member refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" prot="public" virt="non-virtual"><scope>Bullets</scope><name>GetX</name></member>
+      <member refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" prot="public" virt="non-virtual"><scope>Bullets</scope><name>GetY</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>Bullets</scope><name>HitboxHELPME</name></member>
+      <member refid="class_object_1aea2952b0ed70add86517aaa67cc37958" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1a0100999b4fb6331d9ee44d6d89838c73" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1aa965ff676265eb8053afa99afa2054b5" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1a8a12cba46b0145a45935c926fc778624" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_object_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Bullets</scope><name>Object</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>radius</name></member>
+      <member refid="class_bullets_1a5745c15e43bc84fb86d8e8106c3e0f65" prot="public" virt="non-virtual"><scope>Bullets</scope><name>setDmg</name></member>
+      <member refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>sizeX</name></member>
+      <member refid="class_object_1a9951998336ee6906a052572d37019e89" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>sizeY</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>Bullets</scope><name>type</name></member>
+      <member refid="class_bullets_1a1bf441b2c64f66d8c1afa3de7f308b71" prot="public" virt="non-virtual"><scope>Bullets</scope><name>~Bullets</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>Bullets</scope><name>~Hitbox</name></member>
+      <member refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="virtual"><scope>Bullets</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

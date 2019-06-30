@@ -13,6 +13,7 @@
 #include "Bullets.h"
 #include "data.h"
 #include <math.h>
+#include <random>
 #include <ctime>
 //#define NOPAUSE
 class Game

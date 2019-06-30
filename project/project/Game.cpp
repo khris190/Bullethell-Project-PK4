@@ -138,7 +138,7 @@ int Game::mainloop()
 			NULL, ALLEGRO_MESSAGEBOX_ERROR);
 		return -1;
 	}
-	PlayerBullets.setDmg(5);
+	PlayerBullets.setDmg(PlayerDmg);
 
 	Bullets EnemyBullets("Resources/shot1.png");
 	if (EnemyBullets.GetBitmap() == NULL)
@@ -192,9 +192,9 @@ int Game::mainloop()
 
 #pragma region testEnemiesSpawn
 
-	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
-	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth *2 / 3, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
-	gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 3, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
+	//gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 2, 32, 0.5, [](double a) { return sin(a - PI / 2); }, 30);
+	//gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth *2 / 3, 32, 1, [](double a) { return sin(a - PI / 2); }, 30);
+	//gameData.AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png", WindowWidth / 3, 32, 1.5, [](double a) { return sin(a - PI / 2); }, 30);
 
 
 
@@ -212,10 +212,6 @@ int Game::mainloop()
 	bool playerDead = false;
 	bool mauseInPasueButton = false;
 	bool mauseInDisplay = true;
-	std::clock_t start, end;
-	std::clock_t duration;
-	std::vector <std::clock_t> czasy;
-	double old_time = al_get_time();
 
 #pragma endregion
 	
@@ -268,7 +264,7 @@ int Game::mainloop()
 			{
 				if (doloop)
 				{
-
+					
 					gameData.ready = true;
 					player.calculatePosition();
 
@@ -278,7 +274,7 @@ int Game::mainloop()
 						playerDead = true;
 					}
 
-
+					player.PlayerShot(&PlayerBullets, gameData.counter);
 					while (gameData.ready)
 					{
 						al_rest(0.001);
@@ -358,19 +354,19 @@ int Game::mainloop()
 			switch (ev1.keyboard.keycode)
 			{
 			case ALLEGRO_KEY_W:
-				player.up = true;
+				player.SetUp(true);
 				break;
 			case ALLEGRO_KEY_S:
-				player.down = true;
+				player.SetDown(true);
 				break;
 			case ALLEGRO_KEY_A:
-				player.left = true;
+				player.SetLeft(true);
 				break;
 			case ALLEGRO_KEY_D:
-				player.right = true;
+				player.SetRight(true);
 				break;
 			case ALLEGRO_KEY_SPACE:
-				player.PlayerShot(&PlayerBullets);
+				player.SetShooting(true);
 				break;
 			default:
 				break;
@@ -380,17 +376,18 @@ int Game::mainloop()
 			switch (ev1.keyboard.keycode)
 			{
 			case ALLEGRO_KEY_W:
-				player.up = false;
+				player.SetUp(false);
 				break;
 			case ALLEGRO_KEY_S:
-				player.down = false;
+				player.SetDown(false);
 				break;
 			case ALLEGRO_KEY_A:
-				player.left = false;
+				player.SetLeft(false);
 				break;
 			case ALLEGRO_KEY_D:
-				player.right = false;
+				player.SetRight(false);
 				break;
+
 			case ALLEGRO_KEY_1:
 				for (int i = 0; i < 40; i++)
 				{
@@ -398,10 +395,13 @@ int Game::mainloop()
 					{
 
 						//basicBullets.AddBullet(0, 0 + 10 * i + 10, 800 - 10 * y, 0, 0, 8);
-						EnemyBullets.AddBullet(0, 0 + 15 * i + 10, 15 * y, 0, 2.11, 8);
+						EnemyBullets.AddBullet(0, 0 + 15 * i + 10, 15 * y, 0, 11, 8);
 
 					}
 				}
+				break;
+			case ALLEGRO_KEY_SPACE:
+				player.SetShooting(false);
 				break;
 			default:
 				break;
@@ -437,7 +437,6 @@ int Game::mainloop()
 		default: break;
 		}
 	}
-
 	}
 	catch (const std::exception& thing)
 	{
@@ -468,12 +467,11 @@ int Game::mainloop()
 
 void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 {
-	int counter = 0;
 	DATA *data = (DATA*)arg;
 	while (!al_get_thread_should_stop(thr))
 	{
-		counter++;
-		counter = counter % 1000;
+		data->counter++;
+		data->counter = data->counter % 1800;
 		while (!data->ready)
 		{
 			al_rest(0.001);
@@ -483,10 +481,20 @@ void *Game::Func_ThreadBulletsCalculations(ALLEGRO_THREAD *thr, void *arg)
 			}
 		}
 		//data->Playerbullets->CalculateBullets();
-		data->Playerbullets->CalculateBulletsV2([](double a) { return sin(a - PI/2) /2; });
-		data->calculateEnemies(counter);
+		
+		data->Playerbullets->CalculateBulletsWithFunction([](double a) { return a * 0; });
+		data->calculateEnemies(data->counter);
 		data->ClearDeadEnemies();
 
+
+		if (data->counter % TicsForEnemySpawn == 0)
+		{
+			data->AddEnemy("Resources/space_breaker_asset/Ships/Small/body_02.png",
+				(rand() % (WindowWidth - 64)) + 32, 
+				32, 
+				(double)((rand() % 100)+50)/100, [](double a) { return sin(a - PI / 2); }, 
+				30);
+		}
 			
 		data->ready = false;
 	}

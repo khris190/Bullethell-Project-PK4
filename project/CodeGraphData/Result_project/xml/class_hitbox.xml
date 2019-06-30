@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_hitbox" kind="class" prot="public">
+    <compoundname>Hitbox</compoundname>
+    <derivedcompoundref refid="class_bullet" prot="public" virt="non-virtual">Bullet</derivedcompoundref>
+    <derivedcompoundref refid="class_object" prot="public" virt="non-virtual">Object</derivedcompoundref>
+    <includes refid="_hitbox_8h" local="no">Hitbox.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Hitbox::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" compoundref="_hitbox_8cpp" startline="48" endline="122">CalculateCollision</referencedby>
+        <referencedby refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">ship::CalculateCollisions</referencedby>
+        <referencedby refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" compoundref="_hitbox_8cpp" startline="12" endline="18">Hitbox</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" static="no" mutable="no">
+        <type><ref refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623" kindref="member">HitboxType</ref></type>
+        <definition>HitboxType Hitbox::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="9" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" compoundref="_hitbox_8cpp" startline="48" endline="122">CalculateCollision</referencedby>
+        <referencedby refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" compoundref="_hitbox_8cpp" startline="6" endline="11">Hitbox</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; double &gt;</type>
+        <definition>std::unique_ptr&lt;double&gt; Hitbox::posX</definition>
+        <argsstring></argsstring>
+        <name>posX</name>
+        <initializer>= std::make_unique&lt;double&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" compoundref="_bullet_8cpp" startline="34" endline="47">Bullet::calculate</referencedby>
+        <referencedby refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" compoundref="_hitbox_8cpp" startline="48" endline="122">CalculateCollision</referencedby>
+        <referencedby refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">ship::CalculateCollisions</referencedby>
+        <referencedby refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" compoundref="_enemy_8cpp" startline="68" endline="77">Enemy::calculatePosition</referencedby>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">Player::calculatePosition</referencedby>
+        <referencedby refid="classship_1aa953e67ecab211a01d4a327304a174a5" compoundref="ship_8cpp" startline="26" endline="29">ship::GetX</referencedby>
+        <referencedby refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" compoundref="_enemy_8cpp" startline="59" endline="62">Enemy::GetX</referencedby>
+        <referencedby refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" compoundref="_hitbox_8cpp" startline="38" endline="41">GetX</referencedby>
+        <referencedby refid="class_player_1a4675847a50a68b4f07f61a499f2b226b" compoundref="_player_8cpp" startline="39" endline="42">Player::GetX</referencedby>
+        <referencedby refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" compoundref="_hitbox_8cpp" startline="6" endline="11">Hitbox</referencedby>
+        <referencedby refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" compoundref="_hitbox_8cpp" startline="29" endline="37">HitboxHELPME</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; double &gt;</type>
+        <definition>std::unique_ptr&lt;double&gt; Hitbox::posY</definition>
+        <argsstring></argsstring>
+        <name>posY</name>
+        <initializer>= std::make_unique&lt;double&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" compoundref="_bullet_8cpp" startline="3" endline="10">Bullet::Bullet</referencedby>
+        <referencedby refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" compoundref="_bullet_8cpp" startline="34" endline="47">Bullet::calculate</referencedby>
+        <referencedby refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" compoundref="_hitbox_8cpp" startline="48" endline="122">CalculateCollision</referencedby>
+        <referencedby refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" compoundref="ship_8cpp" startline="44" endline="67">ship::CalculateCollisions</referencedby>
+        <referencedby refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" compoundref="_enemy_8cpp" startline="68" endline="77">Enemy::calculatePosition</referencedby>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">Player::calculatePosition</referencedby>
+        <referencedby refid="classship_1afeec2db3150c47d7152ae961df1992dd" compoundref="ship_8cpp" startline="30" endline="33">ship::GetY</referencedby>
+        <referencedby refid="class_enemy_1afb46819090c0052387207176e90ed3ee" compoundref="_enemy_8cpp" startline="63" endline="66">Enemy::GetY</referencedby>
+        <referencedby refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" compoundref="_hitbox_8cpp" startline="42" endline="45">GetY</referencedby>
+        <referencedby refid="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" compoundref="_player_8cpp" startline="43" endline="46">Player::GetY</referencedby>
+        <referencedby refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" compoundref="_hitbox_8cpp" startline="6" endline="11">Hitbox</referencedby>
+        <referencedby refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" compoundref="_hitbox_8cpp" startline="29" endline="37">HitboxHELPME</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Hitbox::boundryX</definition>
+        <argsstring></argsstring>
+        <name>boundryX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" compoundref="_object_8cpp" startline="50" endline="60">Object::CollisionCalculate</referencedby>
+        <referencedby refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" compoundref="_hitbox_8cpp" startline="19" endline="26">Hitbox</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Hitbox::boundryY</definition>
+        <argsstring></argsstring>
+        <name>boundryY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="18" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" compoundref="_object_8cpp" startline="50" endline="60">Object::CollisionCalculate</referencedby>
+        <referencedby refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" compoundref="_hitbox_8cpp" startline="19" endline="26">Hitbox</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hitbox::Hitbox</definition>
+        <argsstring>()</argsstring>
+        <name>Hitbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hitbox::Hitbox</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>Hitbox</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="6" bodyend="11"/>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" compoundref="_hitbox_type_enum_8h" startline="4">dot</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+        <references refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" compoundref="_hitbox_8h" startline="9">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hitbox::Hitbox</definition>
+        <argsstring>(double x, double y, double radius)</argsstring>
+        <name>Hitbox</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="12" bodyend="18"/>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" compoundref="_hitbox_type_enum_8h" startline="6">circle</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+        <references refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" compoundref="_hitbox_8h" startline="8">radius</references>
+        <references refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" compoundref="_hitbox_8h" startline="9">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hitbox::Hitbox</definition>
+        <argsstring>(double x, double y, double boundryX, double boundryY)</argsstring>
+        <name>Hitbox</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>boundryX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>boundryY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="19" bodyend="26"/>
+        <references refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" compoundref="_hitbox_8h" startline="17">boundryX</references>
+        <references refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" compoundref="_hitbox_8h" startline="18">boundryY</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" compoundref="_hitbox_type_enum_8h" startline="5">square</references>
+        <references refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" compoundref="_hitbox_8h" startline="9">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hitbox::HitboxHELPME</definition>
+        <argsstring>(double x, double y, bool flag)</argsstring>
+        <name>HitboxHELPME</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="29" bodyend="37"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Hitbox::GetX</definition>
+        <argsstring>()</argsstring>
+        <name>GetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="38" bodyend="41"/>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <referencedby refid="class_bullets_1a026c979c3f071430224ce573b85c849f" compoundref="_bullets_8cpp" startline="73" endline="84">Bullets::CalcuclateBulletsCollision</referencedby>
+        <referencedby refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" compoundref="_bullets_8cpp" startline="108" endline="118">Bullets::DrawBullets</referencedby>
+        <referencedby refid="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" compoundref="_bullets_8cpp" startline="119" endline="125">Bullets::DrawBulletstest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Hitbox::GetY</definition>
+        <argsstring>()</argsstring>
+        <name>GetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="42" bodyend="45"/>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+        <referencedby refid="class_bullets_1a026c979c3f071430224ce573b85c849f" compoundref="_bullets_8cpp" startline="73" endline="84">Bullets::CalcuclateBulletsCollision</referencedby>
+        <referencedby refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" compoundref="_bullets_8cpp" startline="108" endline="118">Bullets::DrawBullets</referencedby>
+        <referencedby refid="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" compoundref="_bullets_8cpp" startline="119" endline="125">Bullets::DrawBulletstest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hitbox::CalculateCollision</definition>
+        <argsstring>(Hitbox *second)</argsstring>
+        <name>CalculateCollision</name>
+        <param>
+          <type><ref refid="class_hitbox" kindref="compound">Hitbox</ref> *</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="48" bodyend="122"/>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" compoundref="_hitbox_type_enum_8h" startline="6">circle</references>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" compoundref="_hitbox_type_enum_8h" startline="4">dot</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+        <references refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" compoundref="_hitbox_8h" startline="8">radius</references>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" compoundref="_hitbox_type_enum_8h" startline="5">square</references>
+        <references refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" compoundref="_hitbox_8h" startline="9">type</references>
+        <referencedby refid="class_bullets_1aa62020a66537feffcc87af99f8a320ae" compoundref="_bullets_8cpp" startline="85" endline="101">Bullets::CalcuclateBulletsCollision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hitbox::CalculateCollision</definition>
+        <argsstring>(HitboxType sType, double sPosX, double sPosY, double sRadius)</argsstring>
+        <name>CalculateCollision</name>
+        <param>
+          <type><ref refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623" kindref="member">HitboxType</ref></type>
+          <declname>sType</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sPosX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sPosY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sRadius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="124" bodyend="198"/>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" compoundref="_hitbox_type_enum_8h" startline="6">circle</references>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" compoundref="_hitbox_type_enum_8h" startline="4">dot</references>
+        <references refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" compoundref="_hitbox_8h" startline="10">posX</references>
+        <references refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" compoundref="_hitbox_8h" startline="11">posY</references>
+        <references refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" compoundref="_hitbox_8h" startline="8">radius</references>
+        <references refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" compoundref="_hitbox_type_enum_8h" startline="5">square</references>
+        <references refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" compoundref="_hitbox_8h" startline="9">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Hitbox::~Hitbox</definition>
+        <argsstring>()</argsstring>
+        <name>~Hitbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="28" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp" bodystart="200" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="69">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+      <node id="70">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="72">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="73" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="73">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" line="6" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h" bodystart="5" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>boundryY</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>GetX</name></member>
+      <member refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>GetY</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>Hitbox</scope><name>HitboxHELPME</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>Hitbox</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>Hitbox</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>Hitbox</scope><name>radius</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>Hitbox</scope><name>type</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>Hitbox</scope><name>~Hitbox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

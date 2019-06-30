@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_a_l_g_i_f___b_i_t_m_a_p" kind="struct" prot="public">
+    <compoundname>ALGIF_BITMAP</compoundname>
+    <includes refid="algif_8h" local="no">algif.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ALGIF_BITMAP::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="bitmap_8c_1a402ed5778f346117ca734b52032f9946" compoundref="bitmap_8c" startline="16" endline="74">algif_blit</referencedby>
+        <referencedby refid="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" compoundref="bitmap_8c" startline="3" endline="9">algif_create_bitmap</referencedby>
+        <referencedby refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</referencedby>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ALGIF_BITMAP::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="bitmap_8c_1a402ed5778f346117ca734b52032f9946" compoundref="bitmap_8c" startline="16" endline="74">algif_blit</referencedby>
+        <referencedby refid="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" compoundref="bitmap_8c" startline="3" endline="9">algif_create_bitmap</referencedby>
+        <referencedby refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</referencedby>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* ALGIF_BITMAP::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="bitmap_8c_1a402ed5778f346117ca734b52032f9946" compoundref="bitmap_8c" startline="16" endline="74">algif_blit</referencedby>
+        <referencedby refid="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" compoundref="bitmap_8c" startline="3" endline="9">algif_create_bitmap</referencedby>
+        <referencedby refid="bitmap_8c_1a2a5a82f50d2c014f87985dd0840a22fe" compoundref="bitmap_8c" startline="11" endline="14">algif_destroy_bitmap</referencedby>
+        <referencedby refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</referencedby>
+        <referencedby refid="lzw_8c_1af0925fb5910899c42de64674c481d82e" compoundref="lzw_8c" startline="37" endline="145">LZW_decode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="25" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" prot="public" virt="non-virtual"><scope>ALGIF_BITMAP</scope><name>data</name></member>
+      <member refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" prot="public" virt="non-virtual"><scope>ALGIF_BITMAP</scope><name>h</name></member>
+      <member refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" prot="public" virt="non-virtual"><scope>ALGIF_BITMAP</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

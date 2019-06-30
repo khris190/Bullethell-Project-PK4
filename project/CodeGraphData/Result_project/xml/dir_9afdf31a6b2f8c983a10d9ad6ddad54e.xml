@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_9afdf31a6b2f8c983a10d9ad6ddad54e" kind="dir">
+    <compoundname>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src</compoundname>
+    <innerfile refid="algif_8c">algif.c</innerfile>
+    <innerfile refid="algif_8h">algif.h</innerfile>
+    <innerfile refid="bitmap_8c">bitmap.c</innerfile>
+    <innerfile refid="gif_8c">gif.c</innerfile>
+    <innerfile refid="lzw_8c">lzw.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/"/>
+  </compounddef>
+</doxygen>

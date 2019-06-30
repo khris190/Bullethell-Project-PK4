@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ship_8h" kind="file">
+    <compoundname>ship.h</compoundname>
+    <includes refid="_object_8h" local="yes">Object.h</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_bullets_8h" local="yes">Bullets.h</includes>
+    <includes refid="_weapons_8h" local="yes">Weapons.h</includes>
+    <includedby refid="_player_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</includedby>
+    <includedby refid="_enemy_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</includedby>
+    <includedby refid="ship_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</includedby>
+    <incdepgraph>
+      <node id="500">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="502">
+        <label>string</label>
+      </node>
+      <node id="512">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="503">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="508">
+        <label>Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>vector</label>
+      </node>
+      <node id="506">
+        <label>math.h</label>
+      </node>
+      <node id="505">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="499">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="511">
+        <label>Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship.h"/>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="519">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="522">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="514">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="523">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="516">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="521">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="513">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship.h"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classship" prot="public">ship</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_object_8h" kindref="compound">Object.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullets_8h" kindref="compound">Bullets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_weapons_8h" kindref="compound">Weapons.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classship" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classship" kindref="compound">ship</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_object" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="10" refid="classship_1ad320351e65237d459fb6cf29b001159d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1ad320351e65237d459fb6cf29b001159d" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="11" refid="classship_1a36db50422b5f9b5e9240a0f81779557b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classship_1a85ae4582c87c67a93f30258c52c55a84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref><sp/>*<ref refid="classship_1a85ae4582c87c67a93f30258c52c55a84" kindref="member">playerWeapons</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kindref="member">ship</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kindref="member">ship</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" kindref="member">radius</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kindref="member">ship</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" kindref="member">radius</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>calculatePosition();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>ShipShotShot(Bullets<sp/>*bullets);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" kindref="member">CalculateCollisions</ref>(<ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*bullets);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" kindref="member">GetHealth</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1aa953e67ecab211a01d4a327304a174a5" kindref="member">GetX</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1afeec2db3150c47d7152ae961df1992dd" kindref="member">GetY</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1a0ff329ef317f778cf7024e1022254067" kindref="member">GetSpeed</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a9ce640cd66ad06fb53ba256b09720816" kindref="member">~ship</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" kindref="member">DrawShip</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" kindref="member">rotation</ref><sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h"/>
+  </compounddef>
+</doxygen>

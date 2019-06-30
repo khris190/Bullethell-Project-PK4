@@ -2,13 +2,10 @@
 
 
 
-Enemy::Enemy() : ship::ship()
-{
-}
 
 Enemy::Enemy(const char *filename, int x, int y, double speed, int period) : ship::ship(filename, x, y, 24, speed, 30)
 {
-	playerWeapons = new Weapons(enemy);
+	//playerWeapons = new Weapons(enemy);
 	this->startX = x;
 	this->startY = y;
 	this->period = period;
@@ -16,7 +13,7 @@ Enemy::Enemy(const char *filename, int x, int y, double speed, int period) : shi
 
 Enemy::Enemy(const char *filename, int x, int y, double speed, double(*f2)(double x), int period) : ship::ship(filename, x, y, 24, speed, 30)
 {
-	playerWeapons = new Weapons(enemy);
+	//playerWeapons = new Weapons(enemy);
 	this->startX = x;
 	this->startY = y;
 	this->period = period;
@@ -45,11 +42,11 @@ double Enemy::GetHealth()
 }
 double Enemy::GetHealthAndBoundarys()
 {
-	if (*posX < 0 || *posX > WindowWidth)
+	/*if (*posX < 0 || *posX > WindowWidth)
 	{
 		return 0;
 	}
-	else if (*posY < 0 || *posY > WindowHeight)
+	else*/ if (*posY < 0 || *posY > WindowHeight)
 	{
 		return 0;
 	}
@@ -83,5 +80,5 @@ void Enemy::DrawEntity(int x, int y, double rotation, int scale)
 
 Enemy::~Enemy()
 {
-	delete playerWeapons;
+	//delete playerWeapons;
 }

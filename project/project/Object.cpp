@@ -26,9 +26,7 @@ Object::Object(const char *filename, int posX, int posY, int x, int y) : Hitbox:
 	sizeX = al_get_bitmap_width(bitmapa->image);
 	sizeY = al_get_bitmap_height(bitmapa->image);
 }
-Object::Object(Hitbox * hitbox)
-{
-}
+
 
 
 #pragma endregion
@@ -47,17 +45,17 @@ void Object::ChangeBitmap(const char *filename)
 	bitmapa->ChangeBitmap(filename);
 }
 
-bool Object::CollisionCalculate(double x, double y, double objX, double objY, int objBouncerX, int objBouncerY)
-{
-	if (x  < objX + objBouncerX + boundryX
-		&& x > objX - objBouncerX - boundryX
-		&& y  < objY + objBouncerY + boundryY
-		&& y  > objY - objBouncerY - boundryY)
-	{
-		return true;
-	}
-	return false;
-}
+//bool Object::CollisionCalculate(double x, double y, double objX, double objY, int objBouncerX, int objBouncerY)
+//{
+//	if (x  < objX + objBouncerX + boundryX
+//		&& x > objX - objBouncerX - boundryX
+//		&& y  < objY + objBouncerY + boundryY
+//		&& y  > objY - objBouncerY - boundryY)
+//	{
+//		return true;
+//	}
+//	return false;
+//}
 
 
 

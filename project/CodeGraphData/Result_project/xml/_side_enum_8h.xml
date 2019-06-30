@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_side_enum_8h" kind="file">
+    <compoundname>SideEnum.h</compoundname>
+    <includedby refid="_weapons_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</includedby>
+    <invincdepgraph>
+      <node id="533">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="525">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/SideEnum.h</label>
+        <link refid="SideEnum.h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="536">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="528">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+      </node>
+      <node id="529">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="537">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="530">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="535">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+      </node>
+      <node id="538">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="534">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="526">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" prot="public" static="no">
+        <name>Side</name>
+        <enumvalue id="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" prot="public">
+          <name>player</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" prot="public">
+          <name>enemy</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/SideEnum.h" line="2" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/SideEnum.h" bodystart="2" bodyend="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2" refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" kindref="member">Side</ref><sp/>{</highlight></codeline>
+<codeline lineno="3" refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" kindref="member">player</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="4" refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" kindref="member">enemy</ref><sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/SideEnum.h"/>
+  </compounddef>
+</doxygen>

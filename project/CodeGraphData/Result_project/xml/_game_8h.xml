@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_game_8h" kind="file">
+    <compoundname>Game.h</compoundname>
+    <includes local="yes">allegro5\allegro5.h</includes>
+    <includes local="yes">allegro5/allegro_native_dialog.h</includes>
+    <includes local="no">allegro5/allegro_primitives.h</includes>
+    <includes local="no">allegro5/allegro_font.h</includes>
+    <includes local="no">allegro5/allegro_ttf.h</includes>
+    <includes refid="algif_8h" local="yes">ALgif5/src/algif.h</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_object_8h" local="yes">Object.h</includes>
+    <includes refid="_my_bitmap_8h" local="yes">MyBitmap.h</includes>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_bullets_8h" local="yes">Bullets.h</includes>
+    <includes refid="data_8h" local="yes">data.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">random</includes>
+    <includes local="no">ctime</includes>
+    <includedby refid="_game_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</includedby>
+    <includedby refid="_source_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</includedby>
+    <incdepgraph>
+      <node id="264">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>allegro5/allegro5.h</label>
+      </node>
+      <node id="274">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="266">
+        <label>string</label>
+      </node>
+      <node id="257">
+        <label>allegro5/allegro_font.h</label>
+      </node>
+      <node id="277">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="262">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="256">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="273">
+        <label>Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="282">
+        <label>random</label>
+      </node>
+      <node id="271">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>ctime</label>
+      </node>
+      <node id="275">
+        <label>vector</label>
+      </node>
+      <node id="278">
+        <label>data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>math.h</label>
+      </node>
+      <node id="261">
+        <label>iostream</label>
+      </node>
+      <node id="255">
+        <label>allegro5/allegro_native_dialog.h</label>
+      </node>
+      <node id="268">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="259">
+        <label>ALgif5/src/algif.h</label>
+        <link refid="algif_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>allegro5/allegro_ttf.h</label>
+      </node>
+      <node id="254">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="276">
+        <label>Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>stdio.h</label>
+      </node>
+      <node id="270">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="286">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="285">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="284">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="Game.h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_game" prot="public">Game</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;allegro5\allegro5.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;allegro5/allegro_native_dialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_primitives.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_font.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_ttf.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="algif_8h" kindref="compound">ALgif5/src/algif.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_object_8h" kindref="compound">Object.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_my_bitmap_8h" kindref="compound">MyBitmap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullets_8h" kindref="compound">Bullets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data_8h" kindref="compound">data.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NOPAUSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_game" kindref="compound">Game</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="class_game_1a7f99be1d73886fcd844eecf053663d1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_game_1a7f99be1d73886fcd844eecf053663d1e" kindref="member">result</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_game_1ad59df6562a58a614fda24622d3715b65" kindref="member">Game</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="class_game_1a340fe38d2e3eb547f36994598155b667" kindref="member">Func_ThreadBulletsCalculations</ref>(ALLEGRO_THREAD<sp/>*thr,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_game_1a6f4086fc159e19900d86edda79e46088" kindref="member">mainloop</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" kindref="member">~Game</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h"/>
+  </compounddef>
+</doxygen>

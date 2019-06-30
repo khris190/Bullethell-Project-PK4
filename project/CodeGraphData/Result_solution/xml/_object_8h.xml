@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_object_8h" kind="file">
+    <compoundname>Object.h</compoundname>
+    <includes local="yes">allegro5\allegro5.h</includes>
+    <includes refid="_my_bitmap_8h" local="yes">MyBitmap.h</includes>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_hitbox_8h" local="yes">Hitbox.h</includes>
+    <includedby refid="_bullets_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</includedby>
+    <includedby refid="ship_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</includedby>
+    <includedby refid="_game_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</includedby>
+    <includedby refid="_object_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp</includedby>
+    <includedby refid="_source_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</includedby>
+    <incdepgraph>
+      <node id="387">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="389">
+        <label>string</label>
+      </node>
+      <node id="390">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="391">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</label>
+        <link refid="Object.h"/>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>math.h</label>
+      </node>
+      <node id="392">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="386">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="394">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="411">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/saced.cpp</label>
+        <link refid="saced_8cpp"/>
+      </node>
+      <node id="402">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="397">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp</label>
+        <link refid="_bullets_8cpp"/>
+      </node>
+      <node id="396">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="404">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</label>
+        <link refid="Object.h"/>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp</label>
+        <link refid="_object_8cpp"/>
+      </node>
+      <node id="398">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="408">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="399">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="406">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="405">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="409">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_object" prot="public">Object</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_object_8h_1a1ac41480eb2e4aadd52252ee550b630a" prot="public" static="no">
+        <name>new</name>
+        <initializer>new</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="7" column="11" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>_DEBUG</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>new<sp/>new<sp/>(<sp/>_NORMAL_BLOCK<sp/>,<sp/>__FILE__<sp/>,<sp/>__LINE__<sp/>)</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="comment">//<sp/>Replace<sp/>_NORMAL_BLOCK<sp/>with<sp/>_CLIENT_BLOCK<sp/>if<sp/>you<sp/>want<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>allocations<sp/>to<sp/>be<sp/>of<sp/>_CLIENT_BLOCK<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="7" refid="_object_8h_1a1ac41480eb2e4aadd52252ee550b630a" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>new<sp/>new</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;allegro5\allegro5.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_my_bitmap_8h" kindref="compound">MyBitmap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_hitbox_8h" kindref="compound">Hitbox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_object" kindref="compound">Object</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_object_1a44ea217e657aa0eb204f0d746773326f" kindref="member">DrawObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_object_1a7382271d52d647c940cb234f44a22ebf" kindref="member">DrawObjecttest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="18" refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kindref="member">sizeX</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_object_1a9951998336ee6906a052572d37019e89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_object_1a9951998336ee6906a052572d37019e89" kindref="member">sizeY</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_my_bitmap" kindref="compound">MyBitmap</ref><sp/>*<sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kindref="member">sizeX</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref><sp/>*<sp/>hitbox);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref><sp/>*<sp/>hitbox);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="class_hitbox" kindref="compound">Hitbox</ref><sp/>*<sp/>hitbox);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref><sp/>*<sp/>hitbox);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_object_1aed084a85d0a40590be323d90fb68c44e" kindref="member">ChangeBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" kindref="member">CollisionCalculate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>objX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>objY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>objBouncerX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>objBouncerY);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*<ref refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" kindref="member">GetBitmap</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" kindref="member">GetSizeX</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" kindref="member">GetSizeY</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" kindref="member">~Object</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h"/>
+  </compounddef>
+</doxygen>

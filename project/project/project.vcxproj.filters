@@ -122,5 +122,8 @@
     <ClInclude Include="Semaphore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TemplateVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

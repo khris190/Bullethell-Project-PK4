@@ -10,17 +10,15 @@ protected:
 	std::unique_ptr<double> posX = std::make_unique<double>();
 	std::unique_ptr<double> posY = std::make_unique<double>();
 
+	double boundryX;
+	double boundryY;
 	//double *posX = NULL;
 	//double *posY = NULL;
 public:
-
-	double boundryX;
-	double boundryY;
-	Hitbox();
+	Hitbox() {}
 	Hitbox(double x, double y);
 	Hitbox(double x, double y, double radius);
 	Hitbox(double x, double y, double boundryX, double boundryY);
-	void HitboxHELPME(double x, double y, bool flag);
 	double GetX();
 	double GetY();
 	bool CalculateCollision(Hitbox *second);

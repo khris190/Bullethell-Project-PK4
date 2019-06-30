@@ -1,33 +1,29 @@
-#include "Bullets.h"
+#include "bullets.h"
 
 
+Bullets::Bullets(const char *filename) : Object::Object(filename)
+{
+}
 
 Bullets::Bullets(const char *filename, double(*f)(double)) : Object::Object(filename)
 {
 	this->f = f;
 }
 
-Bullets::Bullets(const char *filename) : Object::Object(filename)
-{
-}
-
-Bullets::Bullets()
-{}
-
 void Bullets::AddBullet(double rotation, double posX, double posY, double speedX, double speedY)
 {
 	Bullet * bullet = new Bullet(rotation, posX, posY, speedX, speedY);
-	bullets.push_back(bullet);
+	vector.push_back(bullet);
 }
 void Bullets::AddBullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX)
 {
 	Bullet * bullet = new Bullet(rotation, posX, posY, speedX, speedY, sizeX);
-	bullets.push_back(bullet);
+	vector.push_back(bullet);
 }
 void Bullets::AddBullet(double rotation, double posX, double posY, double speedX, double speedY, double sizeX, double sizeY)
 {
 	Bullet * bullet = new Bullet(rotation, posX, posY, speedX, speedY, sizeX, sizeY);
-	bullets.push_back(bullet);
+	vector.push_back(bullet);
 }
 
 void Bullets::setDmg(int value)
@@ -39,103 +35,76 @@ void Bullets::setDmg(int value)
 void Bullets::CalculateBullets()
 {
 	
-	for (unsigned int i = 0; i < bullets.size(); i++)
+	for (unsigned int i = 0; i < vector.size(); i++)
 	{
-		if (!(bullets[i]->calculate()))
+		if (!(vector[i]->calculate()))
 		{
-			Bullet *swapper = bullets[i];
-			bullets[i] = bullets[bullets.size() - 1];
-			bullets[bullets.size() - 1] = swapper;
-			bullets.erase(bullets.end() - 1);
-			delete swapper;
+			vector.DeleteElement(i);
 		}
 	}
 
 }
 
-void Bullets::CalculateBulletsV2(double f2(double x))
+void Bullets::CalculateBulletsWithFunction()
 {
 
- 	for (unsigned int i = 0; i < bullets.size(); i++)
+	for (unsigned int i = 0; i < vector.size(); i++)
 	{
-		if (!(bullets[i]->calculate(f2)))
+		if (!(vector[i]->calculate(this->f)))
 		{
-			Bullet *swapper = bullets[i];
-			bullets[i] = bullets[bullets.size() - 1];
-			bullets[bullets.size() - 1] = swapper;
-			bullets.erase(bullets.end() - 1);
-			delete swapper;
+			vector.DeleteElement(i);
 		}
 	}
 
 }
 
-void Bullets::CalcuclateBulletsCollision(double posX, double posY, int objBouncerX, int objBouncerY)
+void Bullets::CalculateBulletsWithFunction(double f2(double x))
 {
-	
-	for (unsigned int i = 0; i < bullets.size(); i++)
+
+	for (unsigned int i = 0; i < vector.size(); i++)
 	{
-		if (CollisionCalculate(bullets[i]->GetX(), bullets[i]->GetY(), posX, posY, objBouncerX, objBouncerX))
+		if (!(vector[i]->calculate(f2)))
 		{
-			bullets[i] = bullets[bullets.size() - 1];
-			bullets.erase(bullets.end() - 1);
+			vector.DeleteElement(i);
 		}
 	}
+
 }
+
 int Bullets::CalcuclateBulletsCollision(Hitbox *hitbox)
 {
 	int result = 0;
-	for (unsigned int i = 0; i < bullets.size(); i++)
+	for (unsigned int i = 0; i < vector.size(); i++)
 	{
-		if (bullets[i]->CalculateCollision(hitbox))
+		if (vector[i]->CalculateCollision(hitbox))
 		{
-			Bullet *swapper = bullets[i];
-			bullets[i] = bullets[bullets.size() - 1];
-			bullets[bullets.size() - 1] = swapper;
-			bullets.erase(bullets.end() - 1);
-			delete swapper;
+			vector.DeleteElement(i);
 			result++;
 		}
 	}
 	return result;
 }
 
-void Bullets::ClearBulletsByCollision()
-{
-}
 
 
 void Bullets::DrawBullets(float scale)
 {
-	for (unsigned int i = 0; i < bullets.size(); i++)
+	for (unsigned int i = 0; i < vector.size(); i++)
 	{
-		if (i < bullets.size())
+		if (i < vector.size())
 		{
-			DrawObject((int)bullets[i]->GetX(), (int)bullets[i]->GetY(), bullets[i]->GetRotation(), scale);
+			DrawObject((int)vector[i]->GetX(), (int)vector[i]->GetY(), vector[i]->GetRotation(), scale);
 		}
 		
 	}
 }
-void Bullets::DrawBulletstest(float scale)
-{
-	for (unsigned int i = 0; i < bullets.size(); i++)
-	{
-		DrawObjecttest(bullets[i]->GetX(), bullets[i]->GetY(), bullets[i]->GetRotation(), scale);
-	}
-}
+
 std::vector < Bullet *> *Bullets::GetBullets()
 {
-	return &bullets;
+	return &vector.Vector;
 }
 
 Bullets::~Bullets()
 {
-	while (bullets.size() > 0)
-	{
-		Bullet *swapper = bullets[0];
-		bullets[0] = bullets[bullets.size() - 1];
-		bullets[bullets.size() - 1] = swapper;
-		bullets.erase(bullets.end() - 1);
-		delete swapper;
-	}
+
 }

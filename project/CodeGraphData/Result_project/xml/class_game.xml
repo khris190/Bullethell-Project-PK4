@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_game" kind="class" prot="public">
+    <compoundname>Game</compoundname>
+    <includes refid="_game_8h" local="no">Game.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_1a7f99be1d73886fcd844eecf053663d1e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Game::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" line="22" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_game_1ad59df6562a58a614fda24622d3715b65" compoundref="_game_8cpp" startline="3" endline="6">Game</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_1ad59df6562a58a614fda24622d3715b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Game::Game</definition>
+        <argsstring>()</argsstring>
+        <name>Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">mainloop</references>
+        <references refid="class_game_1a7f99be1d73886fcd844eecf053663d1e" compoundref="_game_8h" startline="22">result</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1ae3d112ca6e0e55150d2fdbc704474530" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Game::~Game</definition>
+        <argsstring>()</argsstring>
+        <name>~Game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" line="28" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp" bodystart="511" bodyend="513"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_game_1a340fe38d2e3eb547f36994598155b667" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * Game::Func_ThreadBulletsCalculations</definition>
+        <argsstring>(ALLEGRO_THREAD *thr, void *arg)</argsstring>
+        <name>Func_ThreadBulletsCalculations</name>
+        <param>
+          <type>ALLEGRO_THREAD *</type>
+          <declname>thr</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp" bodystart="472" bodyend="509"/>
+        <references refid="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" compoundref="data_8cpp" startline="14" endline="18">DATA::AddEnemy</references>
+        <references refid="class_bullets_1a7b6f9556c43672b6b01aa8b21e9ffe30" compoundref="_bullets_8cpp" startline="56" endline="71">Bullets::CalculateBulletsV2</references>
+        <references refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" compoundref="data_8cpp" startline="26" endline="34">DATA::calculateEnemies</references>
+        <references refid="class_d_a_t_a_1a8ebcf37ee1e12ed016585ecf5e5f0973" compoundref="data_8cpp" startline="46" endline="60">DATA::ClearDeadEnemies</references>
+        <references refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" compoundref="data_8h" startline="16">DATA::counter</references>
+        <references refid="_config_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_config_8h" startline="15">PI</references>
+        <references refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" compoundref="data_8h" startline="14">DATA::Playerbullets</references>
+        <references refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" compoundref="data_8h" startline="19">DATA::ready</references>
+        <references refid="_config_8h_1a3b0539b6c8ce710f9cd88babdcdf3735" compoundref="_config_8h" startline="18">TicsForEnemySpawn</references>
+        <references refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" compoundref="_config_8h" startline="6">WindowWidth</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_1a6f4086fc159e19900d86edda79e46088" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Game::mainloop</definition>
+        <argsstring>()</argsstring>
+        <name>mainloop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp" bodystart="9" bodyend="470"/>
+        <references refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" compoundref="_bullets_8cpp" startline="17" endline="21">Bullets::AddBullet</references>
+        <references refid="class_bullets_1aca3fc8591a3d209c32e795ab67d8df5c" compoundref="_bullets_8cpp" startline="39" endline="54">Bullets::CalculateBullets</references>
+        <references refid="class_player_1a0924fd1003260b5cef4f7c08afc6f186" compoundref="_player_8cpp" startline="132" endline="140">Player::CalculateCollisionsForPlayer</references>
+        <references refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">Player::calculatePosition</references>
+        <references refid="class_object_1aed084a85d0a40590be323d90fb68c44e" compoundref="_object_8cpp" startline="45" endline="48">Object::ChangeBitmap</references>
+        <references refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" compoundref="data_8h" startline="16">DATA::counter</references>
+        <references refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" compoundref="_bullets_8cpp" startline="108" endline="118">Bullets::DrawBullets</references>
+        <references refid="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" compoundref="data_8cpp" startline="36" endline="44">DATA::DrawEnemies</references>
+        <references refid="class_player_1ac08da8b993ba03687fd046d8ce058fc3" compoundref="_player_8cpp" startline="150" endline="153">Player::DrawPlayer</references>
+        <references refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" compoundref="data_8h" startline="14">DATA::enemyBullets</references>
+        <references refid="_config_8h_1ad04ae0397d0740262c49252d369284ab" compoundref="_config_8h" startline="11">FPScount</references>
+        <references refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Func_ThreadBulletsCalculations</references>
+        <references refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" compoundref="_object_8cpp" startline="64" endline="72">Object::GetBitmap</references>
+        <references refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" compoundref="ship_8cpp" startline="22" endline="25">ship::GetHealth</references>
+        <references refid="class_player_1a4675847a50a68b4f07f61a499f2b226b" compoundref="_player_8cpp" startline="39" endline="42">Player::GetX</references>
+        <references refid="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" compoundref="_player_8cpp" startline="43" endline="46">Player::GetY</references>
+        <references refid="_config_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_config_8h" startline="15">PI</references>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" compoundref="_side_enum_8h" startline="3">player</references>
+        <references refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" compoundref="data_8h" startline="15">DATA::player</references>
+        <references refid="_config_8h_1a48e9025e95285941c6e62ec25f46984e" compoundref="_config_8h" startline="17">PlayerDmg</references>
+        <references refid="_config_8h_1a6ea53b7a5532fe92235a7681bc48a153" compoundref="_config_8h" startline="19">PlayerHealth</references>
+        <references refid="class_player_1a7990f800855f5677900fffe617307919" compoundref="_player_8cpp" startline="142" endline="148">Player::PlayerShot</references>
+        <references refid="_config_8h_1a98edc98c795eda0ac5157ac2bc7fe579" compoundref="_config_8h" startline="13">programName</references>
+        <references refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" compoundref="data_8h" startline="19">DATA::ready</references>
+        <references refid="class_bullets_1a5745c15e43bc84fb86d8e8106c3e0f65" compoundref="_bullets_8cpp" startline="33" endline="36">Bullets::setDmg</references>
+        <references refid="class_player_1a5d1204b9ff886ad55f388166084324b2" compoundref="_player_8cpp" startline="20" endline="23">Player::SetDown</references>
+        <references refid="class_player_1a8eee8bbd132e23e4fee69627f513ce9f" compoundref="_player_8cpp" startline="24" endline="27">Player::SetLeft</references>
+        <references refid="class_player_1a2704e0194eff2a730cc2b6c6ec91cec2" compoundref="_player_8cpp" startline="28" endline="31">Player::SetRight</references>
+        <references refid="class_player_1a90f2712d0f70ff1642432ea49e94fcde" compoundref="_player_8cpp" startline="32" endline="35">Player::SetShooting</references>
+        <references refid="class_player_1acad938f794172fe1c7b52e465b968d2f" compoundref="_player_8cpp" startline="16" endline="19">Player::SetUp</references>
+        <references refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" compoundref="_config_8h" startline="5">WindowHeight</references>
+        <references refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" compoundref="_config_8h" startline="6">WindowWidth</references>
+        <referencedby refid="class_game_1ad59df6562a58a614fda24622d3715b65" compoundref="_game_8cpp" startline="3" endline="6">Game</referencedby>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="21" endline="28">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h" bodystart="19" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_game_1a340fe38d2e3eb547f36994598155b667" prot="public" virt="non-virtual"><scope>Game</scope><name>Func_ThreadBulletsCalculations</name></member>
+      <member refid="class_game_1ad59df6562a58a614fda24622d3715b65" prot="public" virt="non-virtual"><scope>Game</scope><name>Game</name></member>
+      <member refid="class_game_1a6f4086fc159e19900d86edda79e46088" prot="public" virt="non-virtual"><scope>Game</scope><name>mainloop</name></member>
+      <member refid="class_game_1a7f99be1d73886fcd844eecf053663d1e" prot="private" virt="non-virtual"><scope>Game</scope><name>result</name></member>
+      <member refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" prot="public" virt="non-virtual"><scope>Game</scope><name>~Game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

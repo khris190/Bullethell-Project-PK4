@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_bullet_8h" kind="file">
+    <compoundname>Bullet.h</compoundname>
+    <includes refid="_config_8h" local="yes">Config.h</includes>
+    <includes refid="_hitbox_8h" local="yes">Hitbox.h</includes>
+    <includedby refid="_bullet_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp</includedby>
+    <includedby refid="_bullets_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</includedby>
+    <incdepgraph>
+      <node id="38">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h</label>
+        <link refid="Bullet.h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="40">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>math.h</label>
+      </node>
+      <node id="41">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="43">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="61">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/saced.cpp</label>
+        <link refid="saced_8cpp"/>
+      </node>
+      <node id="44">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h</label>
+        <link refid="Bullet.h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="47">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp</label>
+        <link refid="_bullets_8cpp"/>
+      </node>
+      <node id="46">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="54">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="58">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="49">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="56">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="55">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="45">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="59">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_bullet" prot="public">Bullet</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_config_8h" kindref="compound">Config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_hitbox_8h" kindref="compound">Hitbox.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_bullet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bullet" kindref="compound">Bullet</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7" refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="8" refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" kindref="member">startY</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kindref="member">Bullet</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kindref="member">Bullet</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sizeX);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kindref="member">Bullet</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sizeX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sizeY);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Bullet<sp/>operator=(const<sp/>Bullet&amp;<sp/>bullet);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" kindref="member">GetRotation</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" kindref="member">calculate</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" kindref="member">calculate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>f(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_bullet_1aaeb5cb41d7db89f49007b08b41f1bfcf" kindref="member">~Bullet</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h"/>
+  </compounddef>
+</doxygen>

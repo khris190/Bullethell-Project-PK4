@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_object" kind="class" prot="public">
+    <compoundname>Object</compoundname>
+    <basecompoundref refid="class_hitbox" prot="public" virt="non-virtual">Hitbox</basecompoundref>
+    <derivedcompoundref refid="class_bullets" prot="public" virt="non-virtual">Bullets</derivedcompoundref>
+    <derivedcompoundref refid="classship" prot="public" virt="non-virtual">ship</derivedcompoundref>
+    <includes refid="_object_8h" local="no">Object.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_object_1a4296d4f6665a8c720abcedb3745a29d9" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object::sizeX</definition>
+        <argsstring></argsstring>
+        <name>sizeX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="18" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_object_1a44ea217e657aa0eb204f0d746773326f" compoundref="_object_8cpp" startline="37" endline="40">DrawObject</referencedby>
+        <referencedby refid="class_object_1aea2952b0ed70add86517aaa67cc37958" compoundref="_object_8cpp" startline="9" endline="14">Object</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_object_1a9951998336ee6906a052572d37019e89" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Object::sizeY</definition>
+        <argsstring></argsstring>
+        <name>sizeY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_object_1a44ea217e657aa0eb204f0d746773326f" compoundref="_object_8cpp" startline="37" endline="40">DrawObject</referencedby>
+        <referencedby refid="class_object_1aea2952b0ed70add86517aaa67cc37958" compoundref="_object_8cpp" startline="9" endline="14">Object</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_my_bitmap" kindref="compound">MyBitmap</ref> *</type>
+        <definition>MyBitmap* Object::bitmapa</definition>
+        <argsstring></argsstring>
+        <name>bitmapa</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_object_1aed084a85d0a40590be323d90fb68c44e" compoundref="_object_8cpp" startline="45" endline="48">ChangeBitmap</referencedby>
+        <referencedby refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" compoundref="_object_8cpp" startline="64" endline="72">GetBitmap</referencedby>
+        <referencedby refid="class_object_1aea2952b0ed70add86517aaa67cc37958" compoundref="_object_8cpp" startline="9" endline="14">Object</referencedby>
+        <referencedby refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" compoundref="_object_8cpp" startline="74" endline="77">~Object</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_object_1a44ea217e657aa0eb204f0d746773326f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Object::DrawObject</definition>
+        <argsstring>(int x, int y, double rotation=0, float scale=1)</argsstring>
+        <name>DrawObject</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="37" bodyend="40"/>
+        <references refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" compoundref="_object_8cpp" startline="64" endline="72">GetBitmap</references>
+        <references refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" compoundref="_object_8h" startline="18">sizeX</references>
+        <references refid="class_object_1a9951998336ee6906a052572d37019e89" compoundref="_object_8h" startline="19">sizeY</references>
+        <referencedby refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" compoundref="_bullets_8cpp" startline="108" endline="118">Bullets::DrawBullets</referencedby>
+        <referencedby refid="class_enemy_1a81f09cf639d685c4d33e305be6610fe8" compoundref="_enemy_8cpp" startline="79" endline="82">Enemy::DrawEntity</referencedby>
+        <referencedby refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" compoundref="ship_8cpp" startline="69" endline="72">ship::DrawShip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a7382271d52d647c940cb234f44a22ebf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Object::DrawObjecttest</definition>
+        <argsstring>(int x, int y, double rotation=0, int scale=1)</argsstring>
+        <name>DrawObjecttest</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rotation</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="41" bodyend="44"/>
+        <references refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" compoundref="_object_8cpp" startline="64" endline="72">GetBitmap</references>
+        <referencedby refid="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" compoundref="_bullets_8cpp" startline="119" endline="125">Bullets::DrawBulletstest</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_object_1aea2952b0ed70add86517aaa67cc37958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="9" bodyend="14"/>
+        <references refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" compoundref="_object_8h" startline="20">bitmapa</references>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">MyBitmap::image</references>
+        <references refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" compoundref="_object_8h" startline="18">sizeX</references>
+        <references refid="class_object_1a9951998336ee6906a052572d37019e89" compoundref="_object_8h" startline="19">sizeY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(const char *filename, int posX, int posY, int x)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="16" bodyend="21"/>
+        <references refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" compoundref="_object_8h" startline="20">bitmapa</references>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">MyBitmap::image</references>
+        <references refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" compoundref="_object_8h" startline="18">sizeX</references>
+        <references refid="class_object_1a9951998336ee6906a052572d37019e89" compoundref="_object_8h" startline="19">sizeY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(const char *filename, int posX, int posY, int x, int y)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="23" bodyend="28"/>
+        <references refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" compoundref="_object_8h" startline="20">bitmapa</references>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">MyBitmap::image</references>
+        <references refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" compoundref="_object_8h" startline="18">sizeX</references>
+        <references refid="class_object_1a9951998336ee6906a052572d37019e89" compoundref="_object_8h" startline="19">sizeY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(const char *filename, int posX, int posY, int x, int y, double sizeX)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeX</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a0100999b4fb6331d9ee44d6d89838c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(const char *filename, int posX, int posY, Hitbox *hitbox)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hitbox" kindref="compound">Hitbox</ref> *</type>
+          <declname>hitbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(const char *filename, int posX, int posY, int x, int y, Hitbox *hitbox)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hitbox" kindref="compound">Hitbox</ref> *</type>
+          <declname>hitbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1aa965ff676265eb8053afa99afa2054b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(Hitbox *hitbox)</argsstring>
+        <name>Object</name>
+        <param>
+          <type><ref refid="class_hitbox" kindref="compound">Hitbox</ref> *</type>
+          <declname>hitbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="29" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a8a12cba46b0145a45935c926fc778624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>(int x, int y, Hitbox *hitbox)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hitbox" kindref="compound">Hitbox</ref> *</type>
+          <declname>hitbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1aed084a85d0a40590be323d90fb68c44e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Object::ChangeBitmap</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>ChangeBitmap</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="32" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="45" bodyend="48"/>
+        <references refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" compoundref="_object_8h" startline="20">bitmapa</references>
+        <references refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" compoundref="_my_bitmap_8cpp" startline="10" endline="14">MyBitmap::ChangeBitmap</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Object::CollisionCalculate</definition>
+        <argsstring>(double x, double y, double objX, double objY, int objBouncerX, int objBouncerY)</argsstring>
+        <name>CollisionCalculate</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>objX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>objY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>objBouncerX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>objBouncerY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="33" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="50" bodyend="60"/>
+        <references refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" compoundref="_hitbox_8h" startline="17">Hitbox::boundryX</references>
+        <references refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" compoundref="_hitbox_8h" startline="18">Hitbox::boundryY</references>
+        <referencedby refid="class_bullets_1a026c979c3f071430224ce573b85c849f" compoundref="_bullets_8cpp" startline="73" endline="84">Bullets::CalcuclateBulletsCollision</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a13a4e0081ca87204a74fd2d34de0577b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP * Object::GetBitmap</definition>
+        <argsstring>()</argsstring>
+        <name>GetBitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="35" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="64" bodyend="72"/>
+        <references refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" compoundref="_object_8h" startline="20">bitmapa</references>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">MyBitmap::image</references>
+        <referencedby refid="class_object_1a44ea217e657aa0eb204f0d746773326f" compoundref="_object_8cpp" startline="37" endline="40">DrawObject</referencedby>
+        <referencedby refid="class_object_1a7382271d52d647c940cb234f44a22ebf" compoundref="_object_8cpp" startline="41" endline="44">DrawObjecttest</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Object::GetSizeX</definition>
+        <argsstring>()</argsstring>
+        <name>GetSizeX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Object::GetSizeY</definition>
+        <argsstring>()</argsstring>
+        <name>GetSizeY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1a40860402e64d8008fb42329df7097cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Object::Object</definition>
+        <argsstring>()</argsstring>
+        <name>Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="40" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Object::~Object</definition>
+        <argsstring>()</argsstring>
+        <name>~Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="41" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp" bodystart="74" bodyend="77"/>
+        <references refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" compoundref="_object_8h" startline="20">bitmapa</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="79">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+      </node>
+      <node id="80">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="82">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="84">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" line="14" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h" bodystart="13" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" prot="protected" virt="non-virtual"><scope>Object</scope><name>bitmapa</name></member>
+      <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" prot="public" virt="non-virtual"><scope>Object</scope><name>boundryX</name></member>
+      <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" prot="public" virt="non-virtual"><scope>Object</scope><name>boundryY</name></member>
+      <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" prot="public" virt="non-virtual"><scope>Object</scope><name>CalculateCollision</name></member>
+      <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" prot="public" virt="non-virtual"><scope>Object</scope><name>CalculateCollision</name></member>
+      <member refid="class_object_1aed084a85d0a40590be323d90fb68c44e" prot="public" virt="non-virtual"><scope>Object</scope><name>ChangeBitmap</name></member>
+      <member refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" prot="public" virt="non-virtual"><scope>Object</scope><name>CollisionCalculate</name></member>
+      <member refid="class_object_1a44ea217e657aa0eb204f0d746773326f" prot="protected" virt="non-virtual"><scope>Object</scope><name>DrawObject</name></member>
+      <member refid="class_object_1a7382271d52d647c940cb234f44a22ebf" prot="protected" virt="non-virtual"><scope>Object</scope><name>DrawObjecttest</name></member>
+      <member refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" prot="public" virt="non-virtual"><scope>Object</scope><name>GetBitmap</name></member>
+      <member refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" prot="public" virt="non-virtual"><scope>Object</scope><name>GetSizeX</name></member>
+      <member refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" prot="public" virt="non-virtual"><scope>Object</scope><name>GetSizeY</name></member>
+      <member refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" prot="public" virt="non-virtual"><scope>Object</scope><name>GetX</name></member>
+      <member refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" prot="public" virt="non-virtual"><scope>Object</scope><name>GetY</name></member>
+      <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" prot="public" virt="non-virtual"><scope>Object</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" prot="public" virt="non-virtual"><scope>Object</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" prot="public" virt="non-virtual"><scope>Object</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" prot="public" virt="non-virtual"><scope>Object</scope><name>Hitbox</name></member>
+      <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" prot="public" virt="non-virtual"><scope>Object</scope><name>HitboxHELPME</name></member>
+      <member refid="class_object_1aea2952b0ed70add86517aaa67cc37958" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1a0100999b4fb6331d9ee44d6d89838c73" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1aa965ff676265eb8053afa99afa2054b5" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1a8a12cba46b0145a45935c926fc778624" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_object_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Object</scope><name>Object</name></member>
+      <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" prot="protected" virt="non-virtual"><scope>Object</scope><name>posX</name></member>
+      <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" prot="protected" virt="non-virtual"><scope>Object</scope><name>posY</name></member>
+      <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" prot="protected" virt="non-virtual"><scope>Object</scope><name>radius</name></member>
+      <member refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" prot="protected" virt="non-virtual"><scope>Object</scope><name>sizeX</name></member>
+      <member refid="class_object_1a9951998336ee6906a052572d37019e89" prot="protected" virt="non-virtual"><scope>Object</scope><name>sizeY</name></member>
+      <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" prot="protected" virt="non-virtual"><scope>Object</scope><name>type</name></member>
+      <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" prot="public" virt="virtual"><scope>Object</scope><name>~Hitbox</name></member>
+      <member refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="virtual"><scope>Object</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

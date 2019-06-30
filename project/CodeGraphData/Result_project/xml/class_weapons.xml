@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_weapons" kind="class" prot="public">
+    <compoundname>Weapons</compoundname>
+    <includes refid="_weapons_8h" local="no">Weapons.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_bullets" kindref="compound">Bullets</ref> * &gt;</type>
+        <definition>std::vector&lt; Bullets *&gt; Weapons::weapons</definition>
+        <argsstring></argsstring>
+        <name>weapons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" line="7" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_weapons_1a1d911b6ecc86212b5396726806715471" compoundref="_weapons_8cpp" startline="10" endline="14">AddWeapon</referencedby>
+        <referencedby refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" compoundref="_weapons_8cpp" startline="17" endline="27">~Weapons</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" prot="protected" static="no" mutable="no">
+        <type><ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" kindref="member">Side</ref></type>
+        <definition>Side Weapons::side</definition>
+        <argsstring></argsstring>
+        <name>side</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_weapons_1aecd81c1ed9efff890c83bb7090a80e83" compoundref="_weapons_8cpp" startline="5" endline="8">Weapons</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_weapons_1aecd81c1ed9efff890c83bb7090a80e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Weapons::Weapons</definition>
+        <argsstring>(Side side)</argsstring>
+        <name>Weapons</name>
+        <param>
+          <type><ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" kindref="member">Side</ref></type>
+          <declname>side</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp" bodystart="5" bodyend="8"/>
+        <references refid="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" compoundref="_weapons_8h" startline="8">side</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1a1d911b6ecc86212b5396726806715471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Weapons::AddWeapon</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>AddWeapon</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp" bodystart="10" bodyend="14"/>
+        <references refid="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" compoundref="_weapons_8h" startline="7">weapons</references>
+      </memberdef>
+      <memberdef kind="function" id="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Weapons::~Weapons</definition>
+        <argsstring>()</argsstring>
+        <name>~Weapons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" line="13" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp" bodystart="17" bodyend="27"/>
+        <references refid="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" compoundref="_weapons_8h" startline="7">weapons</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+        <childnode refid="126" relation="usage">
+          <edgelabel>bullets</edgelabel>
+        </childnode>
+      </node>
+      <node id="119">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="120" relation="usage">
+          <edgelabel>weapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="122">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="127">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="124" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="126">
+        <label>std::vector&lt; Bullet * &gt;</label>
+        <childnode refid="127" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="125">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="120">
+        <label>std::vector&lt; Bullets * &gt;</label>
+        <childnode refid="121" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="124">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" line="5" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h" bodystart="4" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_weapons_1a1d911b6ecc86212b5396726806715471" prot="public" virt="non-virtual"><scope>Weapons</scope><name>AddWeapon</name></member>
+      <member refid="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>side</name></member>
+      <member refid="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" prot="protected" virt="non-virtual"><scope>Weapons</scope><name>weapons</name></member>
+      <member refid="class_weapons_1aecd81c1ed9efff890c83bb7090a80e83" prot="public" virt="non-virtual"><scope>Weapons</scope><name>Weapons</name></member>
+      <member refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" prot="public" virt="non-virtual"><scope>Weapons</scope><name>~Weapons</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

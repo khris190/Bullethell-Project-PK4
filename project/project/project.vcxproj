@@ -189,6 +189,7 @@
     <ClInclude Include="Semaphore.h" />
     <ClInclude Include="ship.h" />
     <ClInclude Include="SideEnum.h" />
+    <ClInclude Include="TemplateVector.h" />
     <ClInclude Include="Weapons.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

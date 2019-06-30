@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ship_8cpp" kind="file">
+    <compoundname>ship.cpp</compoundname>
+    <includes refid="ship_8h" local="yes">ship.h</includes>
+    <incdepgraph>
+      <node id="483">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="485">
+        <label>string</label>
+      </node>
+      <node id="495">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="486">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="491">
+        <label>Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+      </node>
+      <node id="487">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>vector</label>
+      </node>
+      <node id="479">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship.cpp"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>math.h</label>
+      </node>
+      <node id="488">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="482">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="494">
+        <label>Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ship_8h" kindref="compound">ship.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" refkind="member"><highlight class="normal"><ref refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kindref="member">ship::ship</ref>()<sp/>:<sp/><ref refid="class_object" kindref="compound">Object</ref>::<ref refid="class_object" kindref="compound">Object</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a85ae4582c87c67a93f30258c52c55a84" kindref="member">playerWeapons</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref>(<ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" kindref="member">player</ref>);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1ad320351e65237d459fb6cf29b001159d" kindref="member">speed</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8" refid="classship_1ab174d904c0308e3cac53df83e055706a" refkind="member"><highlight class="normal"><ref refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kindref="member">ship::ship</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>health)<sp/>:<sp/><ref refid="class_object" kindref="compound">Object</ref>::<ref refid="class_object" kindref="compound">Object</ref>(filename,<sp/>x,<sp/>y,<sp/>radius)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a85ae4582c87c67a93f30258c52c55a84" kindref="member">playerWeapons</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref>(<ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" kindref="member">player</ref>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1ad320351e65237d459fb6cf29b001159d" kindref="member">speed</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;health<sp/>=<sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14" refid="classship_1ae6c205955d4dcf6d476cf0136b77b688" refkind="member"><highlight class="normal"><ref refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kindref="member">ship::ship</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>health)<sp/>:<sp/><ref refid="class_object" kindref="compound">Object</ref>::<ref refid="class_object" kindref="compound">Object</ref>(filename,x,<sp/>y,<sp/>radius)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1a85ae4582c87c67a93f30258c52c55a84" kindref="member">playerWeapons</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_weapons" kindref="compound">Weapons</ref>(<ref refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" kindref="member">player</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classship_1ad320351e65237d459fb6cf29b001159d" kindref="member">speed</ref><sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;health<sp/>=<sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" kindref="member">ship::GetHealth</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26" refid="classship_1aa953e67ecab211a01d4a327304a174a5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1aa953e67ecab211a01d4a327304a174a5" kindref="member">ship::GetX</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30" refid="classship_1afeec2db3150c47d7152ae961df1992dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1afeec2db3150c47d7152ae961df1992dd" kindref="member">ship::GetY</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34" refid="classship_1a0ff329ef317f778cf7024e1022254067" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classship_1a0ff329ef317f778cf7024e1022254067" kindref="member">ship::GetSpeed</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classship_1ad320351e65237d459fb6cf29b001159d" kindref="member">speed</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>ship::calculatePosition()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" kindref="member">ship::CalculateCollisions</ref>(<ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*bullets)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref><sp/>hTemp(*(this-&gt;<ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref>.get()),<sp/>*(this-&gt;<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>.get()),<sp/>this-&gt;<ref refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" kindref="member">radius</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>[i]-&gt;CalculateCollision(&amp;hTemp))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bullet" kindref="compound">Bullet</ref><sp/>*swapper<sp/>=<sp/>bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>[i];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>[i]<sp/>=<sp/>bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>[bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>.size()<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>[bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>.size()<sp/>-<sp/>1]<sp/>=<sp/>swapper;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>.erase(bullets-&gt;<ref refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kindref="member">bullets</ref>.end()<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>swapper;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result++;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref><sp/>-=<sp/>result<sp/>*<sp/>bullets-&gt;<ref refid="class_bullets_1a81b222aea8b9e5bf1f8abe4ae2b1f84c" kindref="member">damage</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kindref="member">health</ref><sp/>&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" kindref="member">ship::DrawShip</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a44ea217e657aa0eb204f0d746773326f" kindref="member">DrawObject</ref>(x,<sp/>y,<sp/>rotation,<sp/>scale);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classship_1a9ce640cd66ad06fb53ba256b09720816" refkind="member"><highlight class="normal"><ref refid="classship_1a9ce640cd66ad06fb53ba256b09720816" kindref="member">ship::~ship</ref>()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classship_1a85ae4582c87c67a93f30258c52c55a84" kindref="member">playerWeapons</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp"/>
+  </compounddef>
+</doxygen>

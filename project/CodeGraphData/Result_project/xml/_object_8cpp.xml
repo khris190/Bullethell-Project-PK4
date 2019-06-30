@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_object_8cpp" kind="file">
+    <compoundname>Object.cpp</compoundname>
+    <includes refid="_object_8h" local="yes">Object.h</includes>
+    <incdepgraph>
+      <node id="376">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="378">
+        <label>string</label>
+      </node>
+      <node id="379">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="380">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp</label>
+        <link refid="Object.cpp"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>math.h</label>
+      </node>
+      <node id="381">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="375">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="383">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_object_8h" kindref="compound">Object.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>constructors</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_object_1a40860402e64d8008fb42329df7097cdb" refkind="member"><highlight class="normal"><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object::Object</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_object_1aea2952b0ed70add86517aaa67cc37958" refkind="member"><highlight class="normal"><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object::Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_my_bitmap" kindref="compound">MyBitmap</ref>(filename);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kindref="member">sizeX</ref><sp/>=<sp/>al_get_bitmap_width(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a9951998336ee6906a052572d37019e89" kindref="member">sizeY</ref><sp/>=<sp/>al_get_bitmap_height(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" refkind="member"><highlight class="normal"><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object::Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)<sp/>:<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref>::<ref refid="class_hitbox" kindref="compound">Hitbox</ref>(posX,<sp/>posY,<sp/>x)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_my_bitmap" kindref="compound">MyBitmap</ref>(filename);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kindref="member">sizeX</ref><sp/>=<sp/>al_get_bitmap_width(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a9951998336ee6906a052572d37019e89" kindref="member">sizeY</ref><sp/>=<sp/>al_get_bitmap_height(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" refkind="member"><highlight class="normal"><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object::Object</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)<sp/>:<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref>::<ref refid="class_hitbox" kindref="compound">Hitbox</ref>(posX,<sp/>posY,<sp/>sizeX<sp/>/<sp/>2<sp/>-<sp/>1<sp/>,<sp/>sizeY<sp/>/<sp/>2<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_my_bitmap" kindref="compound">MyBitmap</ref>(filename);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kindref="member">sizeX</ref><sp/>=<sp/>al_get_bitmap_width(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1a9951998336ee6906a052572d37019e89" kindref="member">sizeY</ref><sp/>=<sp/>al_get_bitmap_height(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29" refid="class_object_1aa965ff676265eb8053afa99afa2054b5" refkind="member"><highlight class="normal"><ref refid="class_object_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object::Object</ref>(<ref refid="class_hitbox" kindref="compound">Hitbox</ref><sp/>*<sp/>hitbox)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_object_1a44ea217e657aa0eb204f0d746773326f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_object_1a44ea217e657aa0eb204f0d746773326f" kindref="member">Object::DrawObject</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>al_draw_scaled_rotated_bitmap(<ref refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" kindref="member">GetBitmap</ref>(),<sp/><ref refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kindref="member">sizeX</ref><sp/>/<sp/>2,<sp/><ref refid="class_object_1a9951998336ee6906a052572d37019e89" kindref="member">sizeY</ref><sp/>/<sp/>2,<sp/>x,<sp/>y,<sp/>scale,<sp/>scale,<sp/>rotation,<sp/>0);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41" refid="class_object_1a7382271d52d647c940cb234f44a22ebf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_object_1a7382271d52d647c940cb234f44a22ebf" kindref="member">Object::DrawObjecttest</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>al_draw_bitmap(<ref refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" kindref="member">GetBitmap</ref>(),<sp/>x,<sp/>y,<sp/>0);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45" refid="class_object_1aed084a85d0a40590be323d90fb68c44e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_object_1aed084a85d0a40590be323d90fb68c44e" kindref="member">Object::ChangeBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" kindref="member">ChangeBitmap</ref>(filename);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" kindref="member">Object::CollisionCalculate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>objX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>objY,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>objBouncerX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>objBouncerY)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/><sp/>&lt;<sp/>objX<sp/>+<sp/>objBouncerX<sp/>+<sp/><ref refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" kindref="member">boundryX</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>x<sp/>&gt;<sp/>objX<sp/>-<sp/>objBouncerX<sp/>-<sp/><ref refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" kindref="member">boundryX</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>y<sp/><sp/>&lt;<sp/>objY<sp/>+<sp/>objBouncerY<sp/>+<sp/><ref refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" kindref="member">boundryY</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>y<sp/><sp/>&gt;<sp/>objY<sp/>-<sp/>objBouncerY<sp/>-<sp/><ref refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" kindref="member">boundryY</ref>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" refkind="member"><highlight class="normal">ALLEGRO_BITMAP<sp/>*<ref refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" kindref="member">Object::GetBitmap</ref>()<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>-&gt;<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" refkind="member"><highlight class="normal"><ref refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" kindref="member">Object::~Object</ref>()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kindref="member">bitmapa</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp"/>
+  </compounddef>
+</doxygen>

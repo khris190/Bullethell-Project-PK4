@@ -48,7 +48,7 @@ int Bullet::calculate()
 
 int Bullet::calculate(double f(double x))
 {
-	*posX += speedY * f((*posY - startY) / 50) * 2;
+  	*posX += speedY * f((*posY - startY) / 50) * 2;
 	*posY += speedY;
 	if (*posX < 0 || *posX > WindowWidth)
 	{

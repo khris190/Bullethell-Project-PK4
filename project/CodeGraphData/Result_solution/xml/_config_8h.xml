@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_config_8h" kind="file">
+    <compoundname>Config.h</compoundname>
+    <includedby refid="_bullet_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h</includedby>
+    <includedby refid="_object_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</includedby>
+    <includedby refid="ship_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</includedby>
+    <includedby refid="_player_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</includedby>
+    <includedby refid="_enemy_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</includedby>
+    <includedby refid="_game_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</includedby>
+    <includedby refid="_source_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</includedby>
+    <invincdepgraph>
+      <node id="125">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/saced.cpp</label>
+        <link refid="saced_8cpp"/>
+      </node>
+      <node id="108">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="111">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp</label>
+        <link refid="_bullets_8cpp"/>
+      </node>
+      <node id="107">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h</label>
+        <link refid="Config.h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="118">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp</label>
+        <link refid="_object_8cpp"/>
+      </node>
+      <node id="112">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="122">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="113">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="120">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="119">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="109">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="123">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_config_8h_1a2ec915f902b2010979ebf49975b3f473" prot="public" static="no">
+        <name>WindowHeight</name>
+        <initializer>900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="5" column="9" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" compoundref="_bullet_8cpp" startline="34" endline="47">Bullet::calculate</referencedby>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">Player::calculatePosition</referencedby>
+        <referencedby refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" compoundref="_enemy_8cpp" startline="34" endline="45">Enemy::GetHealth</referencedby>
+        <referencedby refid="class_enemy_1a0b9b8c319880720710947c99076dab5a" compoundref="_enemy_8cpp" startline="46" endline="57">Enemy::GetHealthAndBoundarys</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" prot="public" static="no">
+        <name>WindowWidth</name>
+        <initializer>750</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="6" column="9" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" compoundref="_bullet_8cpp" startline="34" endline="47">Bullet::calculate</referencedby>
+        <referencedby refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" compoundref="_player_8cpp" startline="48" endline="130">Player::calculatePosition</referencedby>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+        <referencedby refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" compoundref="_enemy_8cpp" startline="34" endline="45">Enemy::GetHealth</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a11f028ea0fccac47423949e772d8a672" prot="public" static="no">
+        <name>blackRGB</name>
+        <initializer>0, 0, 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="9" column="9" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1ad04ae0397d0740262c49252d369284ab" prot="public" static="no">
+        <name>FPScount</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="11" column="9" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a98edc98c795eda0ac5157ac2bc7fe579" prot="public" static="no">
+        <name>programName</name>
+        <initializer>&quot;projekt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="13" column="9" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_config_8h_1a598a3330b3c21701223ee0ca14316eca" prot="public" static="no">
+        <name>PI</name>
+        <initializer>3.14159265</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="15" column="9" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" compoundref="data_8cpp" startline="36" endline="44">DATA::DrawEnemies</referencedby>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_config_8h_1a48e9025e95285941c6e62ec25f46984e" prot="public" static="no" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto PlayerDmg</definition>
+        <argsstring></argsstring>
+        <name>PlayerDmg</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_config_8h_1a3b0539b6c8ce710f9cd88babdcdf3735" prot="public" static="no" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto TicsForEnemySpawn</definition>
+        <argsstring></argsstring>
+        <name>TicsForEnemySpawn</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="18" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_config_8h_1a6ea53b7a5532fe92235a7681bc48a153" prot="public" static="no" mutable="no">
+        <type>constexpr auto</type>
+        <definition>constexpr auto PlayerHealth</definition>
+        <argsstring></argsstring>
+        <name>PlayerHealth</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WindowHeight<sp/>900<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6" refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WindowWidth<sp/>750</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_config_8h_1a11f028ea0fccac47423949e772d8a672" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>blackRGB<sp/>0,<sp/>0,<sp/>0</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_config_8h_1ad04ae0397d0740262c49252d369284ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FPScount<sp/>60</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_config_8h_1a98edc98c795eda0ac5157ac2bc7fe579" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>programName<sp/>&quot;projekt&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_config_8h_1a598a3330b3c21701223ee0ca14316eca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PI<sp/>3.14159265</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_config_8h_1a48e9025e95285941c6e62ec25f46984e" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="_config_8h_1a48e9025e95285941c6e62ec25f46984e" kindref="member">PlayerDmg</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="18" refid="_config_8h_1a3b0539b6c8ce710f9cd88babdcdf3735" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="_config_8h_1a3b0539b6c8ce710f9cd88babdcdf3735" kindref="member">TicsForEnemySpawn</ref><sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="19" refid="_config_8h_1a6ea53b7a5532fe92235a7681bc48a153" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="_config_8h_1a6ea53b7a5532fe92235a7681bc48a153" kindref="member">PlayerHealth</ref><sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Config.h"/>
+  </compounddef>
+</doxygen>

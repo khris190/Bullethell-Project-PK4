@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="algif_8h" kind="file">
+    <compoundname>algif.h</compoundname>
+    <includes local="no">allegro5/allegro5.h</includes>
+    <includedby refid="_game_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</includedby>
+    <includedby refid="algif_8c" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c</includedby>
+    <includedby refid="bitmap_8c" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c</includedby>
+    <includedby refid="gif_8c" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c</includedby>
+    <includedby refid="lzw_8c" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/lzw.c</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>allegro5/allegro5.h</label>
+      </node>
+      <node id="6">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h</label>
+        <link refid="algif.h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c</label>
+        <link refid="bitmap_8c"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c</label>
+        <link refid="gif_8c"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/lzw.c</label>
+        <link refid="lzw_8c"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c</label>
+        <link refid="algif_8c"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h</label>
+        <link refid="algif.h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_l_g_i_f___r_g_b" prot="public">ALGIF_RGB</innerclass>
+    <innerclass refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" prot="public">ALGIF_PALETTE</innerclass>
+    <innerclass refid="struct_a_l_g_i_f___b_i_t_m_a_p" prot="public">ALGIF_BITMAP</innerclass>
+    <innerclass refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" prot="public">ALGIF_ANIMATION</innerclass>
+    <innerclass refid="struct_a_l_g_i_f___f_r_a_m_e" prot="public">ALGIF_FRAME</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="algif_8h_1a530b526533e2164795ca79abec9885cb" prot="public" static="no">
+        <type>struct <ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref></type>
+        <definition>typedef struct ALGIF_ANIMATION ALGIF_ANIMATION</definition>
+        <argsstring></argsstring>
+        <name>ALGIF_ANIMATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="107" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="algif_8h_1aba4c4f9bad9c68f3a1d547a09b66db0f" prot="public" static="no">
+        <type>struct <ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref></type>
+        <definition>typedef struct ALGIF_FRAME ALGIF_FRAME</definition>
+        <argsstring></argsstring>
+        <name>ALGIF_FRAME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="107" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="algif_8h_1a7ff959b6c50854c6a95c5a3e5d1d07ba" prot="public" static="no">
+        <type>struct <ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref></type>
+        <definition>typedef struct ALGIF_PALETTE ALGIF_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>ALGIF_PALETTE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="107" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="algif_8h_1ac30f0d56ffed59b13a7845692e38c0b0" prot="public" static="no">
+        <type>struct <ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref></type>
+        <definition>typedef struct ALGIF_BITMAP ALGIF_BITMAP</definition>
+        <argsstring></argsstring>
+        <name>ALGIF_BITMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="107" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="algif_8h_1abcd22d2bb503fb5bc2144e1970f6d9bf" prot="public" static="no">
+        <type>struct <ref refid="struct_a_l_g_i_f___r_g_b" kindref="compound">ALGIF_RGB</ref></type>
+        <definition>typedef struct ALGIF_RGB ALGIF_RGB</definition>
+        <argsstring></argsstring>
+        <name>ALGIF_RGB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="107" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="algif_8h_1acc86ec5ff1e3996d1ad7087b8d6b71da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+        <definition>ALGIF_ANIMATION* algif_load_raw</definition>
+        <argsstring>(ALLEGRO_FILE *file)</argsstring>
+        <name>algif_load_raw</name>
+        <param>
+          <type>ALLEGRO_FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="53" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" bodystart="62" bodyend="233"/>
+        <references refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" compoundref="bitmap_8c" startline="3" endline="9">algif_create_bitmap</references>
+        <references refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" compoundref="gif_8c" startline="9" endline="25">algif_destroy_animation</references>
+        <references refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" compoundref="bitmap_8c" startline="11" endline="14">algif_destroy_bitmap</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbbcfa8fc4b738d2c1ee7db5e81e5091" compoundref="algif_8h" startline="33">ALGIF_ANIMATION::background_index</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" compoundref="algif_8h" startline="43">ALGIF_FRAME::bitmap_8_bit</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" compoundref="algif_8h" startline="21">ALGIF_PALETTE::colors_count</references>
+        <references refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" compoundref="algif_8h" startline="47">ALGIF_FRAME::disposal_method</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::height</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" compoundref="algif_8h" startline="34">ALGIF_ANIMATION::loop</references>
+        <references refid="gif_8c_1af0925fb5910899c42de64674c481d82e" compoundref="lzw_8c" startline="37" endline="145">LZW_decode</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" compoundref="algif_8h" startline="35">ALGIF_ANIMATION::palette</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" compoundref="algif_8h" startline="44">ALGIF_FRAME::palette</references>
+        <references refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" compoundref="gif_8c" startline="27" endline="36">read_palette</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" compoundref="algif_8h" startline="48">ALGIF_FRAME::transparent_index</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::width</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" compoundref="algif_8h" startline="45">ALGIF_FRAME::xoff</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" compoundref="algif_8h" startline="45">ALGIF_FRAME::yoff</references>
+        <referencedby refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" compoundref="algif_8c" startline="59" endline="83">algif_load_animation_f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+        <definition>ALGIF_ANIMATION* algif_load_animation_f</definition>
+        <argsstring>(ALLEGRO_FILE *file)</argsstring>
+        <name>algif_load_animation_f</name>
+        <param>
+          <type>ALLEGRO_FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="54" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="59" bodyend="83"/>
+        <references refid="algif_8h_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</references>
+        <references refid="algif_8c_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" compoundref="algif_8h" startline="38">ALGIF_ANIMATION::duration</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::height</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::width</references>
+        <referencedby refid="algif_8h_1aa6850ac29de0f9ee57a29e29e7c0644f" compoundref="algif_8c" startline="85" endline="88">algif_load_animation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1aa6850ac29de0f9ee57a29e29e7c0644f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+        <definition>ALGIF_ANIMATION* algif_load_animation</definition>
+        <argsstring>(char const *filename)</argsstring>
+        <name>algif_load_animation</name>
+        <param>
+          <type>char const *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="55" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="85" bodyend="88"/>
+        <references refid="algif_8c_1ab3364e9ed4689444db2819fef23fc8e4" compoundref="algif_8c" startline="59" endline="83">algif_load_animation_f</references>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1a2773a1b184c8218469b4527c93b422d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_render_frame</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, int frame, int xpos, int ypos)</argsstring>
+        <name>algif_render_frame</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="56" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="11" bodyend="57"/>
+        <references refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" compoundref="algif_8h" startline="17">ALGIF_RGB::b</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" compoundref="algif_8h" startline="43">ALGIF_FRAME::bitmap_8_bit</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" compoundref="algif_8h" startline="22">ALGIF_PALETTE::colors</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" compoundref="algif_8h" startline="21">ALGIF_PALETTE::colors_count</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" compoundref="algif_8h" startline="47">ALGIF_FRAME::disposal_method</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" compoundref="algif_8h" startline="17">ALGIF_RGB::g</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::height</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" compoundref="algif_8h" startline="35">ALGIF_ANIMATION::palette</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" compoundref="algif_8h" startline="44">ALGIF_FRAME::palette</references>
+        <references refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" compoundref="algif_8h" startline="17">ALGIF_RGB::r</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" compoundref="algif_8h" startline="39">ALGIF_ANIMATION::store</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" compoundref="algif_8h" startline="48">ALGIF_FRAME::transparent_index</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::width</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" compoundref="algif_8h" startline="45">ALGIF_FRAME::xoff</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" compoundref="algif_8h" startline="45">ALGIF_FRAME::yoff</references>
+        <referencedby refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" compoundref="algif_8c" startline="59" endline="83">algif_load_animation_f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1a2300f4f64d2cc24fefbd77cb6a586fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_destroy_animation</definition>
+        <argsstring>(ALGIF_ANIMATION *gif)</argsstring>
+        <name>algif_destroy_animation</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="57" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" bodystart="9" bodyend="25"/>
+        <references refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" compoundref="bitmap_8c" startline="11" endline="14">algif_destroy_bitmap</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" compoundref="algif_8h" startline="43">ALGIF_FRAME::bitmap_8_bit</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" compoundref="algif_8h" startline="39">ALGIF_ANIMATION::store</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+        <definition>ALGIF_BITMAP* algif_create_bitmap</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>algif_create_bitmap</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="59" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" bodystart="3" bodyend="9"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_destroy_bitmap</definition>
+        <argsstring>(ALGIF_BITMAP *bitmap)</argsstring>
+        <name>algif_destroy_bitmap</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="60" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" bodystart="11" bodyend="14"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <referencedby refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" compoundref="gif_8c" startline="9" endline="25">algif_destroy_animation</referencedby>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1a402ed5778f346117ca734b52032f9946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_blit</definition>
+        <argsstring>(ALGIF_BITMAP *from, ALGIF_BITMAP *to, int xf, int yf, int xt, int yt, int w, int h)</argsstring>
+        <name>algif_blit</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="61" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/bitmap.c" bodystart="16" bodyend="74"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <referencedby refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1a0fbf2c5cd040ec377caec01c907b5645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* algif_get_bitmap</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, double seconds)</argsstring>
+        <name>algif_get_bitmap</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="63" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="90" bodyend="101"/>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" compoundref="algif_8h" startline="38">ALGIF_ANIMATION::duration</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1abbec0cebd0ffcb0ef86ef206c02d2e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* algif_get_frame_bitmap</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, int i)</argsstring>
+        <name>algif_get_frame_bitmap</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="64" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="103" bodyend="105"/>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+      </memberdef>
+      <memberdef kind="function" id="algif_8h_1add9608008dfba9fa1ed501d2ee5b2384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double algif_get_frame_duration</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, int i)</argsstring>
+        <name>algif_get_frame_duration</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="65" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="107" bodyend="109"/>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_GIF_H_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_GIF_H_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro5.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="algif_8h_1a530b526533e2164795ca79abec9885cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref>;</highlight></codeline>
+<codeline lineno="11" refid="algif_8h_1aba4c4f9bad9c68f3a1d547a09b66db0f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref>;</highlight></codeline>
+<codeline lineno="12" refid="algif_8h_1a7ff959b6c50854c6a95c5a3e5d1d07ba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref><sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref>;</highlight></codeline>
+<codeline lineno="13" refid="algif_8h_1ac30f0d56ffed59b13a7845692e38c0b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref>;</highlight></codeline>
+<codeline lineno="14" refid="algif_8h_1abcd22d2bb503fb5bc2144e1970f6d9bf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___r_g_b" kindref="compound">ALGIF_RGB</ref><sp/><ref refid="struct_a_l_g_i_f___r_g_b" kindref="compound">ALGIF_RGB</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_a_l_g_i_f___r_g_b" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___r_g_b" kindref="compound">ALGIF_RGB</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" kindref="member">r</ref>,<sp/><ref refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" kindref="member">g</ref>,<sp/><ref refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref>;</highlight></codeline>
+<codeline lineno="22" refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___r_g_b" kindref="compound">ALGIF_RGB</ref><sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[256];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="struct_a_l_g_i_f___b_i_t_m_a_p" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="27" refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" kindref="member">width</ref>,<sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="32" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref>;</highlight></codeline>
+<codeline lineno="33" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbbcfa8fc4b738d2c1ee7db5e81e5091" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbbcfa8fc4b738d2c1ee7db5e81e5091" kindref="member">background_index</ref>;</highlight></codeline>
+<codeline lineno="34" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" kindref="member">loop</ref>;<sp/></highlight><highlight class="comment">/*<sp/>-1<sp/>=<sp/>no,<sp/>0<sp/>=<sp/>forever,<sp/>1..65535<sp/>=<sp/>that<sp/>many<sp/>times<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kindref="member">palette</ref>;</highlight></codeline>
+<codeline lineno="36" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>*<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="39" refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="struct_a_l_g_i_f___f_r_a_m_e" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>{</highlight></codeline>
+<codeline lineno="43" refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>;</highlight></codeline>
+<codeline lineno="44" refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" kindref="member">palette</ref>;</highlight></codeline>
+<codeline lineno="45" refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref>,<sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref>;</highlight></codeline>
+<codeline lineno="46" refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" kindref="member">duration</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>in<sp/>1/100th<sp/>seconds<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" kindref="member">disposal_method</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>0<sp/>=<sp/>don&apos;t<sp/>care,<sp/>1<sp/>=<sp/>keep,<sp/>2<sp/>=<sp/>background,<sp/>3<sp/>=<sp/>previous<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kindref="member">transparent_index</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_BITMAP<sp/>*<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*<ref refid="algif_8h_1acc86ec5ff1e3996d1ad7087b8d6b71da" kindref="member">algif_load_raw</ref>(ALLEGRO_FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*<ref refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" kindref="member">algif_load_animation_f</ref>(ALLEGRO_FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*<ref refid="algif_8h_1aa6850ac29de0f9ee57a29e29e7c0644f" kindref="member">algif_load_animation</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" kindref="member">algif_render_frame</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xpos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ypos);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="algif_8h_1a2300f4f64d2cc24fefbd77cb6a586fc9" kindref="member">algif_destroy_animation</ref><sp/>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*<ref refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" kindref="member">algif_create_bitmap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" kindref="member">algif_destroy_bitmap</ref>(<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*bitmap);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref>(<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*from,<sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*to,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yt,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">ALLEGRO_BITMAP<sp/>*<ref refid="algif_8h_1a0fbf2c5cd040ec377caec01c907b5645" kindref="member">algif_get_bitmap</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>seconds);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">ALLEGRO_BITMAP<sp/>*<ref refid="algif_8h_1abbec0cebd0ffcb0ef86ef206c02d2e0e" kindref="member">algif_get_frame_bitmap</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="algif_8h_1add9608008dfba9fa1ed501d2ee5b2384" kindref="member">algif_get_frame_duration</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h"/>
+  </compounddef>
+</doxygen>

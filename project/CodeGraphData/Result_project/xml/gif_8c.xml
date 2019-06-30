@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="gif_8c" kind="file">
+    <compoundname>gif.c</compoundname>
+    <includes refid="algif_8h" local="yes">algif.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <incdepgraph>
+      <node id="22">
+        <label>allegro5/allegro5.h</label>
+      </node>
+      <node id="20">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c</label>
+        <link refid="gif.c"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>stdlib.h</label>
+      </node>
+      <node id="24">
+        <label>string.h</label>
+      </node>
+      <node id="21">
+        <label>algif.h</label>
+        <link refid="algif_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gif_8c_1af0925fb5910899c42de64674c481d82e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LZW_decode</definition>
+        <argsstring>(ALLEGRO_FILE *file, ALGIF_BITMAP *bmp)</argsstring>
+        <name>LZW_decode</name>
+        <param>
+          <type>ALLEGRO_FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" line="6" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/lzw.c" bodystart="37" bodyend="145"/>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="lzw_8c_1aefd93af2ce6a447bae5ff63c7205d892" compoundref="lzw_8c" startline="4" endline="34">read_code</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_destroy_animation</definition>
+        <argsstring>(ALGIF_ANIMATION *gif)</argsstring>
+        <name>algif_destroy_animation</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" line="9" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" bodystart="9" bodyend="25"/>
+        <references refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" compoundref="bitmap_8c" startline="11" endline="14">algif_destroy_bitmap</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" compoundref="algif_8h" startline="43">ALGIF_FRAME::bitmap_8_bit</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" compoundref="algif_8h" startline="39">ALGIF_ANIMATION::store</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void read_palette</definition>
+        <argsstring>(ALLEGRO_FILE *file, ALGIF_PALETTE *palette)</argsstring>
+        <name>read_palette</name>
+        <param>
+          <type>ALLEGRO_FILE *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref> *</type>
+          <declname>palette</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" bodystart="27" bodyend="36"/>
+        <references refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" compoundref="algif_8h" startline="17">ALGIF_RGB::b</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" compoundref="algif_8h" startline="22">ALGIF_PALETTE::colors</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" compoundref="algif_8h" startline="21">ALGIF_PALETTE::colors_count</references>
+        <references refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" compoundref="algif_8h" startline="17">ALGIF_RGB::g</references>
+        <references refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" compoundref="algif_8h" startline="17">ALGIF_RGB::r</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gif_8c_1aabed6e6c96386875a253310546aec2b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void deinterlace</definition>
+        <argsstring>(ALGIF_BITMAP *bmp)</argsstring>
+        <name>deinterlace</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref> *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" line="38" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" bodystart="38" bodyend="60"/>
+        <references refid="algif_8h_1a402ed5778f346117ca734b52032f9946" compoundref="bitmap_8c" startline="16" endline="74">algif_blit</references>
+        <references refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" compoundref="bitmap_8c" startline="3" endline="9">algif_create_bitmap</references>
+        <references refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" compoundref="bitmap_8c" startline="11" endline="14">algif_destroy_bitmap</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <referencedby refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+        <definition>ALGIF_ANIMATION* algif_load_raw</definition>
+        <argsstring>(ALLEGRO_FILE *file)</argsstring>
+        <name>algif_load_raw</name>
+        <param>
+          <type>ALLEGRO_FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" line="62" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c" bodystart="62" bodyend="233"/>
+        <references refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" compoundref="bitmap_8c" startline="3" endline="9">algif_create_bitmap</references>
+        <references refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" compoundref="gif_8c" startline="9" endline="25">algif_destroy_animation</references>
+        <references refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" compoundref="bitmap_8c" startline="11" endline="14">algif_destroy_bitmap</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbbcfa8fc4b738d2c1ee7db5e81e5091" compoundref="algif_8h" startline="33">ALGIF_ANIMATION::background_index</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" compoundref="algif_8h" startline="43">ALGIF_FRAME::bitmap_8_bit</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" compoundref="algif_8h" startline="21">ALGIF_PALETTE::colors_count</references>
+        <references refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" compoundref="gif_8c" startline="38" endline="60">deinterlace</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" compoundref="algif_8h" startline="47">ALGIF_FRAME::disposal_method</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::height</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" compoundref="algif_8h" startline="34">ALGIF_ANIMATION::loop</references>
+        <references refid="gif_8c_1af0925fb5910899c42de64674c481d82e" compoundref="lzw_8c" startline="37" endline="145">LZW_decode</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" compoundref="algif_8h" startline="35">ALGIF_ANIMATION::palette</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" compoundref="algif_8h" startline="44">ALGIF_FRAME::palette</references>
+        <references refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" compoundref="gif_8c" startline="27" endline="36">read_palette</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" compoundref="algif_8h" startline="48">ALGIF_FRAME::transparent_index</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::width</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" compoundref="algif_8h" startline="45">ALGIF_FRAME::xoff</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" compoundref="algif_8h" startline="45">ALGIF_FRAME::yoff</references>
+        <referencedby refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" compoundref="algif_8c" startline="59" endline="83">algif_load_animation_f</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="algif_8h" kindref="compound">algif.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gif_8c_1af0925fb5910899c42de64674c481d82e" kindref="member">LZW_decode</ref><sp/>(ALLEGRO_FILE<sp/>*<sp/>file,<sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*bmp);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Destroy<sp/>a<sp/>complete<sp/>gif,<sp/>including<sp/>all<sp/>frames.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" kindref="member">algif_destroy_animation</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>*frame<sp/>=<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref><sp/>+<sp/>i;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(frame-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" kindref="member">algif_destroy_bitmap</ref><sp/>(frame-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(frame-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_destroy_bitmap(frame-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_destroy_bitmap(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>free<sp/>(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>free<sp/>(gif);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" kindref="member">read_palette</ref><sp/>(ALLEGRO_FILE<sp/>*<sp/>file,<sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref><sp/>*palette)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>palette-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palette-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[i].<ref refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" kindref="member">r</ref><sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palette-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[i].<ref refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" kindref="member">g</ref><sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>palette-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[i].<ref refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" kindref="member">b</ref><sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" kindref="member">deinterlace</ref><sp/>(<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*bmp)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*n<sp/>=<sp/><ref refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" kindref="member">algif_create_bitmap</ref><sp/>(bmp-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/>bmp-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;<sp/>y<sp/>+=<sp/>8)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref><sp/>(bmp,<sp/>n,<sp/>0,<sp/>i++,<sp/>0,<sp/>y,<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y<sp/>=<sp/>4;<sp/>y<sp/>&lt;<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;<sp/>y<sp/>+=<sp/>8)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref><sp/>(bmp,<sp/>n,<sp/>0,<sp/>i++,<sp/>0,<sp/>y,<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y<sp/>=<sp/>2;<sp/>y<sp/>&lt;<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;<sp/>y<sp/>+=<sp/>4)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref><sp/>(bmp,<sp/>n,<sp/>0,<sp/>i++,<sp/>0,<sp/>y,<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y<sp/>=<sp/>1;<sp/>y<sp/>&lt;<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;<sp/>y<sp/>+=<sp/>2)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref><sp/>(bmp,<sp/>n,<sp/>0,<sp/>i++,<sp/>0,<sp/>y,<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kindref="member">algif_blit</ref><sp/>(n,<sp/>bmp,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,<sp/>n-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" kindref="member">algif_destroy_bitmap</ref><sp/>(n);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" refkind="member"><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*<ref refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" kindref="member">algif_load_raw</ref>(ALLEGRO_FILE<sp/>*file)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!file)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___b_i_t_m_a_p" kindref="compound">ALGIF_BITMAP</ref><sp/>*bmp<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif<sp/>=<sp/>calloc<sp/>(1,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>*gif);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>frame;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>is<sp/>it<sp/>really<sp/>a<sp/>GIF?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(al_fgetc<sp/>(file)<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(al_fgetc<sp/>(file)<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;I&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(al_fgetc<sp/>(file)<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(al_fgetc<sp/>(file)<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;8&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>&apos;7&apos;<sp/>or<sp/>&apos;9&apos;,<sp/>for<sp/>87a<sp/>or<sp/>89a.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>version<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(version<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;7&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>version<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(al_fgetc<sp/>(file)<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" kindref="member">width</ref><sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" kindref="member">height</ref><sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Global<sp/>color<sp/>table?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&amp;<sp/>128)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kindref="member">palette</ref>.<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>((i<sp/>&amp;<sp/>7)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kindref="member">palette</ref>.<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Background<sp/>color<sp/>is<sp/>only<sp/>valid<sp/>with<sp/>a<sp/>global<sp/>palette.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbbcfa8fc4b738d2c1ee7db5e81e5091" kindref="member">background_index</ref><sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Skip<sp/>aspect<sp/>ratio.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>al_fseek<sp/>(file,<sp/>1,<sp/>ALLEGRO_SEEK_CUR);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kindref="member">palette</ref>.<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref>)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" kindref="member">read_palette</ref><sp/>(file,<sp/>&amp;gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kindref="member">palette</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(&amp;frame,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>frame);<sp/></highlight><highlight class="comment">/*<sp/>For<sp/>first<sp/>frame.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kindref="member">transparent_index</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(i)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x2c:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Image<sp/>Descriptor<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w,<sp/>h;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interlaced<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref><sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref><sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmp<sp/>=<sp/><ref refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" kindref="member">algif_create_bitmap</ref><sp/>(w,<sp/>h);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!bmp)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Local<sp/>palette.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&amp;<sp/>128)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" kindref="member">palette</ref>.<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>((i<sp/>&amp;<sp/>7)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" kindref="member">read_palette</ref><sp/>(file,<sp/>&amp;frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" kindref="member">palette</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" kindref="member">palette</ref>.<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&amp;<sp/>64)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interlaced<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="gif_8c_1af0925fb5910899c42de64674c481d82e" kindref="member">LZW_decode</ref><sp/>(file,<sp/>bmp))</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(interlaced)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" kindref="member">deinterlace</ref><sp/>(bmp);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref><sp/>=<sp/>bmp;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmp<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref>++;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref><sp/>=</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>realloc<sp/>(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref><sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>*gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref><sp/>-<sp/>1]<sp/>=<sp/>frame;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(&amp;frame,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>frame);<sp/></highlight><highlight class="comment">/*<sp/>For<sp/>next<sp/>frame.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kindref="member">transparent_index</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x21:<sp/></highlight><highlight class="comment">/*<sp/>Extension<sp/>Introducer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/>al_fgetc<sp/>(file);<sp/></highlight><highlight class="comment">/*<sp/>Extension<sp/>Type.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);<sp/></highlight><highlight class="comment">/*<sp/>Size.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j<sp/>==<sp/>0xf9)<sp/></highlight><highlight class="comment">/*<sp/>Graphic<sp/>Control<sp/>Extension.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>size<sp/>must<sp/>be<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>!=<sp/>4)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>error;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" kindref="member">disposal_method</ref><sp/>=<sp/>(i<sp/>&gt;&gt;<sp/>2)<sp/>&amp;<sp/>7;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" kindref="member">duration</ref><sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&amp;<sp/>1)<sp/><sp/></highlight><highlight class="comment">/*<sp/>Transparency?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kindref="member">transparent_index</ref><sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_fseek<sp/>(file,<sp/>1,<sp/>ALLEGRO_SEEK_CUR);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame.<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kindref="member">transparent_index</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);<sp/></highlight><highlight class="comment">/*<sp/>Size.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Application<sp/>Extension.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j<sp/>==<sp/>0xff)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>11)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>name[12];</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_fread<sp/>(file,<sp/>name,<sp/>11);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);<sp/></highlight><highlight class="comment">/*<sp/>Size.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name[11]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp<sp/>(name,<sp/></highlight><highlight class="stringliteral">&quot;NETSCAPE2.0&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" kindref="member">loop</ref><sp/>=<sp/>al_fread16le<sp/>(file);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j<sp/>!=<sp/>1)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" kindref="member">loop</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);<sp/></highlight><highlight class="comment">/*<sp/>Size.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Possibly<sp/>more<sp/>blocks<sp/>until<sp/>terminator<sp/>block<sp/>(0).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_fseek<sp/>(file,<sp/>i,<sp/>ALLEGRO_SEEK_CUR);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>al_fgetc<sp/>(file);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0x3b:</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>GIF<sp/>Trailer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_fclose<sp/>(file);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>error:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(file)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_fclose<sp/>(file);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gif)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" kindref="member">algif_destroy_animation</ref><sp/>(gif);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(bmp)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" kindref="member">algif_destroy_bitmap</ref><sp/>(bmp);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/gif.c"/>
+  </compounddef>
+</doxygen>

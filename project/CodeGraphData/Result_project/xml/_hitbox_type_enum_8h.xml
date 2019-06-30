@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_hitbox_type_enum_8h" kind="file">
+    <compoundname>HitboxTypeEnum.h</compoundname>
+    <includedby refid="_hitbox_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h</includedby>
+    <invincdepgraph>
+      <node id="339">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/saced.cpp</label>
+        <link refid="saced_8cpp"/>
+      </node>
+      <node id="322">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="325">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.cpp</label>
+        <link refid="_bullets_8cpp"/>
+      </node>
+      <node id="324">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.cpp</label>
+        <link refid="_enemy_8cpp"/>
+      </node>
+      <node id="321">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Object.cpp</label>
+        <link refid="_object_8cpp"/>
+      </node>
+      <node id="326">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data_8h"/>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="336">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.cpp</label>
+        <link refid="ship_8cpp"/>
+      </node>
+      <node id="327">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="334">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.cpp</label>
+        <link refid="_weapons_8cpp"/>
+      </node>
+      <node id="333">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Player.cpp</label>
+        <link refid="_player_8cpp"/>
+      </node>
+      <node id="323">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp</label>
+        <link refid="_bullet_8cpp"/>
+      </node>
+      <node id="320">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/HitboxTypeEnum.h</label>
+        <link refid="HitboxTypeEnum.h"/>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Hitbox.cpp</label>
+        <link refid="_hitbox_8cpp"/>
+      </node>
+      <node id="331">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623" prot="public" static="no">
+        <name>HitboxType</name>
+        <enumvalue id="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" prot="public">
+          <name>dot</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" prot="public">
+          <name>square</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" prot="public">
+          <name>circle</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/HitboxTypeEnum.h" line="3" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/HitboxTypeEnum.h" bodystart="3" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623" kindref="member">HitboxType</ref><sp/>{</highlight></codeline>
+<codeline lineno="4" refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" kindref="member">dot</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="5" refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" kindref="member">square</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="6" refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" kindref="member">circle</ref><sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/HitboxTypeEnum.h"/>
+  </compounddef>
+</doxygen>

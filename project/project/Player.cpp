@@ -1,9 +1,6 @@
 #include "Player.h"
 
-
-Player::Player() : ship::ship()
-{
-}
+	
 
 Player::Player(const char *filename, int radius, int health) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius, health)
 {
@@ -12,6 +9,29 @@ Player::Player(const char *filename, int radius, int health) : ship::ship(filena
 Player::Player(const char *filename, int radius, int s, int health) : ship::ship(filename, WindowWidth / 2, WindowHeight - 32, radius, s, health)
 {
 }
+
+void Player::SetUp(bool var)
+{
+	this->up = var;
+}
+void Player::SetDown(bool var)
+{
+	this->down = var;
+}
+void Player::SetLeft(bool var)
+{
+	this->left = var;
+}
+void Player::SetRight(bool var)
+{
+	this->right = var;
+}
+void Player::SetShooting(bool var)
+{
+	this->shooting = var;
+}
+
+
 
 double Player::GetX()
 {
@@ -116,9 +136,12 @@ bool Player::CalculateCollisionsForPlayer(Bullets *bullets)
 	
 }
 
-void Player::PlayerShot(Bullets *bullets)
+void Player::PlayerShot(Bullets *bullets, int counter)
 {
-	bullets->AddBullet(0, GetX() - 1, GetY() - 10, 0, -3, 3);
+	if (counter % 10 == 0 && shooting)
+	{
+		bullets->AddBullet(0, GetX() - 1, GetY() - 10, 0, -6, 3);
+	}
 }
 
 void Player::DrawPlayer(int x, int y, int rotation, int scale)

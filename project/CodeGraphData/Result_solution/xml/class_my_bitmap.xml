@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_my_bitmap" kind="class" prot="public">
+    <compoundname>MyBitmap</compoundname>
+    <includes refid="_my_bitmap_8h" local="no">MyBitmap.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" prot="public" static="no" mutable="no">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* MyBitmap::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" line="10" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" compoundref="_my_bitmap_8cpp" startline="10" endline="14">ChangeBitmap</referencedby>
+        <referencedby refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" compoundref="_object_8cpp" startline="64" endline="72">Object::GetBitmap</referencedby>
+        <referencedby refid="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" compoundref="_my_bitmap_8cpp" startline="4" endline="7">MyBitmap</referencedby>
+        <referencedby refid="class_object_1aea2952b0ed70add86517aaa67cc37958" compoundref="_object_8cpp" startline="9" endline="14">Object::Object</referencedby>
+        <referencedby refid="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" compoundref="_my_bitmap_8cpp" startline="15" endline="18">~MyBitmap</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyBitmap::MyBitmap</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>MyBitmap</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp" bodystart="4" bodyend="7"/>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">image</references>
+      </memberdef>
+      <memberdef kind="function" id="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MyBitmap::ChangeBitmap</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>ChangeBitmap</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp" bodystart="10" bodyend="14"/>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">image</references>
+        <referencedby refid="class_object_1aed084a85d0a40590be323d90fb68c44e" compoundref="_object_8cpp" startline="45" endline="48">Object::ChangeBitmap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MyBitmap::~MyBitmap</definition>
+        <argsstring>()</argsstring>
+        <name>~MyBitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" line="13" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp" bodystart="15" bodyend="18"/>
+        <references refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" compoundref="_my_bitmap_8h" startline="10">image</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.h" bodystart="7" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" prot="public" virt="non-virtual"><scope>MyBitmap</scope><name>ChangeBitmap</name></member>
+      <member refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" prot="public" virt="non-virtual"><scope>MyBitmap</scope><name>image</name></member>
+      <member refid="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" prot="public" virt="non-virtual"><scope>MyBitmap</scope><name>MyBitmap</name></member>
+      <member refid="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" prot="public" virt="non-virtual"><scope>MyBitmap</scope><name>~MyBitmap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

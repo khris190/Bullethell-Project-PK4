@@ -1,8 +1,6 @@
 #include "Hitbox.h"
 
-Hitbox::Hitbox()
-{
-}
+
 Hitbox::Hitbox(double x, double y)
 {
 	*posX = x;
@@ -26,15 +24,6 @@ Hitbox::Hitbox(double x, double y, double boundryX, double boundryY)
 }
 
 
-void Hitbox::HitboxHELPME(double x, double y, bool flag)
-{
-	if (flag)
-	{
-		*(this->posX) = x;
-		*(this->posY) = y;
-	}
-	
-}
 double Hitbox::GetX()
 {
 	return *posX;

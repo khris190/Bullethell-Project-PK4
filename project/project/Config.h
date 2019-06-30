@@ -2,7 +2,7 @@
 
 
 
-#define WindowHeight 900
+#define WindowHeight 900	
 #define WindowWidth 750
 
 
@@ -14,5 +14,7 @@
 
 #define PI 3.14159265
 
+constexpr auto PlayerDmg = 10;
+constexpr auto TicsForEnemySpawn = 60;
 constexpr auto PlayerHealth = 20;
 

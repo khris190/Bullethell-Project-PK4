@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_a_l_g_i_f___r_g_b" kind="struct" prot="public">
+    <compoundname>ALGIF_RGB</compoundname>
+    <includes refid="algif_8h" local="no">algif.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ALGIF_RGB::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</referencedby>
+        <referencedby refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" compoundref="gif_8c" startline="27" endline="36">read_palette</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ALGIF_RGB::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</referencedby>
+        <referencedby refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" compoundref="gif_8c" startline="27" endline="36">read_palette</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ALGIF_RGB::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</referencedby>
+        <referencedby refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" compoundref="gif_8c" startline="27" endline="36">read_palette</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.h" bodystart="16" bodyend="18"/>
+    <listofallmembers>
+      <member refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" prot="public" virt="non-virtual"><scope>ALGIF_RGB</scope><name>b</name></member>
+      <member refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" prot="public" virt="non-virtual"><scope>ALGIF_RGB</scope><name>g</name></member>
+      <member refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" prot="public" virt="non-virtual"><scope>ALGIF_RGB</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

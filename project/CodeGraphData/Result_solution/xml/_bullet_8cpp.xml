@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_bullet_8cpp" kind="file">
+    <compoundname>Bullet.cpp</compoundname>
+    <includes refid="_bullet_8h" local="yes">Bullet.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="33">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>math.h</label>
+      </node>
+      <node id="30">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp</label>
+        <link refid="Bullet.cpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="36">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullet_8h" kindref="compound">Bullet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" refkind="member"><highlight class="normal"><ref refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kindref="member">Bullet::Bullet</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speedX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speedY)<sp/>:<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref>::<ref refid="class_hitbox" kindref="compound">Hitbox</ref>(posX,<sp/>posY)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rotation<sp/>=<sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speedX<sp/>=<sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speedY<sp/>=<sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" kindref="member">startY</ref><sp/>=<sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11" refid="class_bullet_1a527eed15fda3686a78d4ca58f157484f" refkind="member"><highlight class="normal"><ref refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kindref="member">Bullet::Bullet</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speedX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speedY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sizeX)<sp/>:<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref>::<ref refid="class_hitbox" kindref="compound">Hitbox</ref>(posX,<sp/>posY,<sp/>sizeX<sp/>/<sp/>2<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rotation<sp/>=<sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speedX<sp/>=<sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speedY<sp/>=<sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" kindref="member">startY</ref><sp/>=<sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20" refid="class_bullet_1a47d3ab46ecf015ac89533fe076277208" refkind="member"><highlight class="normal"><ref refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kindref="member">Bullet::Bullet</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rotation,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>posY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speedX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speedY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sizeX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sizeY)<sp/>:<sp/><ref refid="class_hitbox" kindref="compound">Hitbox</ref>::<ref refid="class_hitbox" kindref="compound">Hitbox</ref>(posX,<sp/>posY,<sp/>sizeX<sp/>/<sp/>2<sp/>-<sp/>1,<sp/>sizeY<sp/>/<sp/>2<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rotation<sp/>=<sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speedX<sp/>=<sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;speedY<sp/>=<sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" kindref="member">startY</ref><sp/>=<sp/><ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" kindref="member">Bullet::GetRotation</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/><ref refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34" refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" kindref="member">Bullet::calculate</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref><sp/>+=<sp/><ref refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kindref="member">speedX</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref><sp/>+=<sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*posX<sp/>&lt;<sp/>0<sp/>||<sp/>*posX<sp/>&gt;<sp/><ref refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" kindref="member">WindowWidth</ref>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*posY<sp/>&lt;<sp/>0<sp/>||<sp/>*posY<sp/>&gt;<sp/><ref refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" kindref="member">WindowHeight</ref>)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_bullet_1af4a9561ed519dddfc36342bcb07bc8ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" kindref="member">Bullet::calculate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>f(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x))</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kindref="member">posX</ref><sp/>+=<sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref><sp/>*<sp/>f((*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref><sp/>-<sp/><ref refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" kindref="member">startY</ref>)<sp/>/<sp/>50)<sp/>*<sp/>2;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kindref="member">posY</ref><sp/>+=<sp/><ref refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kindref="member">speedY</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*posX<sp/>&lt;<sp/>0<sp/>||<sp/>*posX<sp/>&gt;<sp/><ref refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" kindref="member">WindowWidth</ref>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*posY<sp/>&lt;<sp/>0<sp/>||<sp/>*posY<sp/>&gt;<sp/><ref refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" kindref="member">WindowHeight</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_bullet_1aaeb5cb41d7db89f49007b08b41f1bfcf" refkind="member"><highlight class="normal"><ref refid="class_bullet_1aaeb5cb41d7db89f49007b08b41f1bfcf" kindref="member">Bullet::~Bullet</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Bullet.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="data_8h" kind="file">
+    <compoundname>data.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">allegro5/allegro.h</includes>
+    <includes refid="_bullets_8h" local="yes">Bullets.h</includes>
+    <includes refid="_player_8h" local="yes">Player.h</includes>
+    <includes refid="_enemy_8h" local="yes">Enemy.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="data_8cpp" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</includedby>
+    <includedby refid="_game_8h" local="yes">C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</includedby>
+    <incdepgraph>
+      <node id="155">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>Bullet.h</label>
+        <link refid="_bullet_8h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="158">
+        <label>string</label>
+      </node>
+      <node id="170">
+        <label>SideEnum.h</label>
+        <link refid="_side_enum_8h"/>
+      </node>
+      <node id="160">
+        <label>Config.h</label>
+        <link refid="_config_8h"/>
+      </node>
+      <node id="154">
+        <label>Bullets.h</label>
+        <link refid="_bullets_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Hitbox.h</label>
+        <link refid="_hitbox_8h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>allegro5/allegro.h</label>
+      </node>
+      <node id="167">
+        <label>Player.h</label>
+        <link refid="_player_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>Object.h</label>
+        <link refid="_object_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>vector</label>
+      </node>
+      <node id="151">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data.h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>Enemy.h</label>
+        <link refid="_enemy_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>math.h</label>
+      </node>
+      <node id="162">
+        <label>HitboxTypeEnum.h</label>
+        <link refid="_hitbox_type_enum_8h"/>
+      </node>
+      <node id="156">
+        <label>allegro5\allegro5.h</label>
+      </node>
+      <node id="169">
+        <label>Weapons.h</label>
+        <link refid="_weapons_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>ship.h</label>
+        <link refid="ship_8h"/>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>stdio.h</label>
+      </node>
+      <node id="164">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="176">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="172">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h</label>
+        <link refid="data.h"/>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.cpp</label>
+        <link refid="_game_8cpp"/>
+      </node>
+      <node id="173">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp</label>
+        <link refid="data_8cpp"/>
+      </node>
+      <node id="174">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_d_a_t_a" prot="public">DATA</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bullets_8h" kindref="compound">Bullets.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_player_8h" kindref="compound">Player.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_enemy_8h" kindref="compound">Enemy.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_d_a_t_a" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_d_a_t_a" kindref="compound">DATA</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_MUTEX<sp/>*<ref refid="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" kindref="member">mutex</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_COND<sp/><sp/>*<ref refid="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" kindref="member">cond</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bullets" kindref="compound">Bullets</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" kindref="member">Playerbullets</ref>,<sp/>*<ref refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" kindref="member">enemyBullets</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player" kindref="compound">Player</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" kindref="member">player</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" kindref="member">counter</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector<sp/>&lt;<sp/>Enemy<sp/>*<sp/>&gt;<sp/><ref refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" kindref="member">enemies</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" kindref="member">ready</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" kindref="member">DATA</ref>(<ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*<ref refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" kindref="member">Playerbullets</ref>,<sp/><ref refid="class_bullets" kindref="compound">Bullets</ref><sp/>*<ref refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" kindref="member">enemyBullets</ref>,<sp/><ref refid="class_player" kindref="compound">Player</ref><sp/>*<ref refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" kindref="member">player</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_d_a_t_a_1a9795f3559916a27d697485c54a6dfd68" kindref="member">~DATA</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//vector<sp/>of<sp/>enemies<sp/>should<sp/>be<sp/>put<sp/>into<sp/>its<sp/>own<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" kindref="member">AddEnemy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" kindref="member">AddEnemy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(*f2)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x),<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" kindref="member">DrawEnemies</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" kindref="member">calculateEnemies</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timer);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_a_t_a_1a8ebcf37ee1e12ed016585ecf5e5f0973" kindref="member">ClearDeadEnemies</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h"/>
+  </compounddef>
+</doxygen>

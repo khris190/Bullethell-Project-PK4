@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kind="struct"><name>ALGIF_ANIMATION</name>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" kind="variable"><name>width</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" kind="variable"><name>height</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kind="variable"><name>frames_count</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbbcfa8fc4b738d2c1ee7db5e81e5091" kind="variable"><name>background_index</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a5e9811df51ae101d3713153d07503030" kind="variable"><name>loop</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kind="variable"><name>palette</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kind="variable"><name>frames</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" kind="variable"><name>duration</name></member>
+    <member refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kind="variable"><name>store</name></member>
+  </compound>
+  <compound refid="struct_a_l_g_i_f___b_i_t_m_a_p" kind="struct"><name>ALGIF_BITMAP</name>
+    <member refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kind="variable"><name>w</name></member>
+    <member refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kind="variable"><name>h</name></member>
+    <member refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="struct_a_l_g_i_f___f_r_a_m_e" kind="struct"><name>ALGIF_FRAME</name>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kind="variable"><name>bitmap_8_bit</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" kind="variable"><name>palette</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kind="variable"><name>xoff</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kind="variable"><name>yoff</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" kind="variable"><name>duration</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" kind="variable"><name>disposal_method</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kind="variable"><name>transparent_index</name></member>
+    <member refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kind="variable"><name>rendered</name></member>
+  </compound>
+  <compound refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kind="struct"><name>ALGIF_PALETTE</name>
+    <member refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kind="variable"><name>colors_count</name></member>
+    <member refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kind="variable"><name>colors</name></member>
+  </compound>
+  <compound refid="struct_a_l_g_i_f___r_g_b" kind="struct"><name>ALGIF_RGB</name>
+    <member refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" kind="variable"><name>r</name></member>
+    <member refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" kind="variable"><name>g</name></member>
+    <member refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" kind="variable"><name>b</name></member>
+  </compound>
+  <compound refid="class_bullet" kind="class"><name>Bullet</name>
+    <member refid="class_bullet_1a6f75a78f24bc20b0a156677cc62f5d9d" kind="variable"><name>rotation</name></member>
+    <member refid="class_bullet_1a74055a783f9eea95db18bb1b72e6997b" kind="variable"><name>speedX</name></member>
+    <member refid="class_bullet_1a902c0a699b180045a4b486afaf1534aa" kind="variable"><name>speedY</name></member>
+    <member refid="class_bullet_1a8aa52ada9ccfc25ee77e751a82bc5b96" kind="variable"><name>startY</name></member>
+    <member refid="class_bullet_1a8e906a67619e1618a81d92ae98d62b13" kind="function"><name>Bullet</name></member>
+    <member refid="class_bullet_1a527eed15fda3686a78d4ca58f157484f" kind="function"><name>Bullet</name></member>
+    <member refid="class_bullet_1a47d3ab46ecf015ac89533fe076277208" kind="function"><name>Bullet</name></member>
+    <member refid="class_bullet_1a4a7aa023d951ebacabb845a5ab33f05b" kind="function"><name>GetRotation</name></member>
+    <member refid="class_bullet_1a8b66928213748cb82d17aa518e035e44" kind="function"><name>calculate</name></member>
+    <member refid="class_bullet_1af4a9561ed519dddfc36342bcb07bc8ba" kind="function"><name>calculate</name></member>
+    <member refid="class_bullet_1aaeb5cb41d7db89f49007b08b41f1bfcf" kind="function"><name>~Bullet</name></member>
+  </compound>
+  <compound refid="class_bullets" kind="class"><name>Bullets</name>
+    <member refid="class_bullets_1a53a318fd200e7219a108ad3e0e28ab92" kind="variable"><name>bullets</name></member>
+    <member refid="class_bullets_1a81b222aea8b9e5bf1f8abe4ae2b1f84c" kind="variable"><name>damage</name></member>
+    <member refid="class_bullets_1abed7f9d0864b2b24e27aeb4043f1b3f2" kind="variable"><name>f</name></member>
+    <member refid="class_bullets_1ace129acbcb0197aeddeda0496c1f5221" kind="function"><name>Bullets</name></member>
+    <member refid="class_bullets_1aa7fcaa946e44c97c96445bf4abe145a4" kind="function"><name>Bullets</name></member>
+    <member refid="class_bullets_1a6ed87f3884b4b078a8fd58609849c9db" kind="function"><name>Bullets</name></member>
+    <member refid="class_bullets_1a5e4d8d679c7f7772ef0d5cf192099a56" kind="function"><name>AddBullet</name></member>
+    <member refid="class_bullets_1ac01654985d09b52593fdd052a59d6346" kind="function"><name>AddBullet</name></member>
+    <member refid="class_bullets_1a00dd9aaa29a31ab32274b2cddcd03416" kind="function"><name>AddBullet</name></member>
+    <member refid="class_bullets_1a5745c15e43bc84fb86d8e8106c3e0f65" kind="function"><name>setDmg</name></member>
+    <member refid="class_bullets_1aca3fc8591a3d209c32e795ab67d8df5c" kind="function"><name>CalculateBullets</name></member>
+    <member refid="class_bullets_1a7b6f9556c43672b6b01aa8b21e9ffe30" kind="function"><name>CalculateBulletsV2</name></member>
+    <member refid="class_bullets_1a026c979c3f071430224ce573b85c849f" kind="function"><name>CalcuclateBulletsCollision</name></member>
+    <member refid="class_bullets_1aa62020a66537feffcc87af99f8a320ae" kind="function"><name>CalcuclateBulletsCollision</name></member>
+    <member refid="class_bullets_1a967524f7f519020974b7eeab7f65d365" kind="function"><name>ClearBulletsByCollision</name></member>
+    <member refid="class_bullets_1ada07690e67204c954299ffd238dd8d77" kind="function"><name>DrawBullets</name></member>
+    <member refid="class_bullets_1acd3b30c2969c8b6fb5c2091f5105758c" kind="function"><name>DrawBulletstest</name></member>
+    <member refid="class_bullets_1a8585dadd976a62544a28682e6fd73352" kind="function"><name>GetBullets</name></member>
+    <member refid="class_bullets_1a1bf441b2c64f66d8c1afa3de7f308b71" kind="function"><name>~Bullets</name></member>
+  </compound>
+  <compound refid="class_d_a_t_a" kind="class"><name>DATA</name>
+    <member refid="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" kind="variable"><name>mutex</name></member>
+    <member refid="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" kind="variable"><name>cond</name></member>
+    <member refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" kind="variable"><name>Playerbullets</name></member>
+    <member refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" kind="variable"><name>enemyBullets</name></member>
+    <member refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" kind="variable"><name>player</name></member>
+    <member refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" kind="variable"><name>counter</name></member>
+    <member refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" kind="variable"><name>enemies</name></member>
+    <member refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" kind="variable"><name>ready</name></member>
+    <member refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" kind="function"><name>DATA</name></member>
+    <member refid="class_d_a_t_a_1a9795f3559916a27d697485c54a6dfd68" kind="function"><name>~DATA</name></member>
+    <member refid="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" kind="function"><name>AddEnemy</name></member>
+    <member refid="class_d_a_t_a_1abc6d185131aa5aed8b1a317b4141ac92" kind="function"><name>AddEnemy</name></member>
+    <member refid="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" kind="function"><name>DrawEnemies</name></member>
+    <member refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" kind="function"><name>calculateEnemies</name></member>
+    <member refid="class_d_a_t_a_1a8ebcf37ee1e12ed016585ecf5e5f0973" kind="function"><name>ClearDeadEnemies</name></member>
+  </compound>
+  <compound refid="class_enemy" kind="class"><name>Enemy</name>
+    <member refid="class_enemy_1a0eeca21ea934f0cfba373c90c121127e" kind="variable"><name>rotation</name></member>
+    <member refid="class_enemy_1a15837b7ba8d49e5201519eebab485e9b" kind="variable"><name>period</name></member>
+    <member refid="class_enemy_1a8cd2a7db176f01915c72b3daa039a7ea" kind="variable"><name>startX</name></member>
+    <member refid="class_enemy_1ae48782aa0b2555d1b256ebb184b48832" kind="variable"><name>startY</name></member>
+    <member refid="class_enemy_1a5705f1cbe211ff11dd25f049ab34c29a" kind="variable"><name>f</name></member>
+    <member refid="class_enemy_1a0f68c8bb16c74412d91c831eb2b27ed3" kind="variable"><name>playerWeapons</name></member>
+    <member refid="class_enemy_1a6dc4c82159f47f449aca7b5c82cdc61b" kind="function"><name>calculatePosition</name></member>
+    <member refid="class_enemy_1a81f09cf639d685c4d33e305be6610fe8" kind="function"><name>DrawEntity</name></member>
+    <member refid="class_enemy_1acfe9bf22704fb772cb270f9425ed0853" kind="function"><name>EntityShot</name></member>
+    <member refid="class_enemy_1ae90d5b107c74f5a4180c930de10c2e2d" kind="function"><name>GetHealth</name></member>
+    <member refid="class_enemy_1a0b9b8c319880720710947c99076dab5a" kind="function"><name>GetHealthAndBoundarys</name></member>
+    <member refid="class_enemy_1a32a21b406465ac663e8167b8b6a57086" kind="function"><name>GetX</name></member>
+    <member refid="class_enemy_1afb46819090c0052387207176e90ed3ee" kind="function"><name>GetY</name></member>
+    <member refid="class_enemy_1a94f30d348b6d2840fd71675472ba38dd" kind="function"><name>Enemy</name></member>
+    <member refid="class_enemy_1a0d6ca7f540f2aecc7e6031193082e2a2" kind="function"><name>Enemy</name></member>
+    <member refid="class_enemy_1ab289c970c7681450919f07d99edde7ef" kind="function"><name>Enemy</name></member>
+    <member refid="class_enemy_1ac0eec4755e28c02688065f9657150ac3" kind="function"><name>~Enemy</name></member>
+  </compound>
+  <compound refid="class_game" kind="class"><name>Game</name>
+    <member refid="class_game_1a7f99be1d73886fcd844eecf053663d1e" kind="variable"><name>result</name></member>
+    <member refid="class_game_1ad59df6562a58a614fda24622d3715b65" kind="function"><name>Game</name></member>
+    <member refid="class_game_1ae3d112ca6e0e55150d2fdbc704474530" kind="function"><name>~Game</name></member>
+    <member refid="class_game_1a340fe38d2e3eb547f36994598155b667" kind="function"><name>Func_ThreadBulletsCalculations</name></member>
+    <member refid="class_game_1a6f4086fc159e19900d86edda79e46088" kind="function"><name>mainloop</name></member>
+  </compound>
+  <compound refid="class_hitbox" kind="class"><name>Hitbox</name>
+    <member refid="class_hitbox_1a676ad16d58e3ba6898bf0c8f57fd9e60" kind="variable"><name>radius</name></member>
+    <member refid="class_hitbox_1aeeac644bef271fc65f06586babbbdf38" kind="variable"><name>type</name></member>
+    <member refid="class_hitbox_1a11b5164f83caefd988dbc1868ea9b458" kind="variable"><name>posX</name></member>
+    <member refid="class_hitbox_1aaf53484f0d8561ae490474738871bfa8" kind="variable"><name>posY</name></member>
+    <member refid="class_hitbox_1a9ec9ed1c18505f36b85a09ed8e292a34" kind="variable"><name>boundryX</name></member>
+    <member refid="class_hitbox_1ad1856f6f33790613c6ba8ddfc61b5d46" kind="variable"><name>boundryY</name></member>
+    <member refid="class_hitbox_1a999b0be8486978b3dd7bcd001c7c3c03" kind="function"><name>Hitbox</name></member>
+    <member refid="class_hitbox_1a70e80aebadf8f0345a49516a9a63dd13" kind="function"><name>Hitbox</name></member>
+    <member refid="class_hitbox_1a96e95a7d37445115bb2bd92b2c2e1e59" kind="function"><name>Hitbox</name></member>
+    <member refid="class_hitbox_1aa32862084fe3b86a0e6e6c141272a2ef" kind="function"><name>Hitbox</name></member>
+    <member refid="class_hitbox_1a3470535eb9b20f7c3c741924c30508f6" kind="function"><name>HitboxHELPME</name></member>
+    <member refid="class_hitbox_1aa69e19591d8d4ee44b29a1065a2fd8f5" kind="function"><name>GetX</name></member>
+    <member refid="class_hitbox_1ace2cb3427770ebe15571596b96badaa4" kind="function"><name>GetY</name></member>
+    <member refid="class_hitbox_1ab6786a165ba331c122569d3b75fa8976" kind="function"><name>CalculateCollision</name></member>
+    <member refid="class_hitbox_1ad42db756c64e62a03e3a337beb8fbc92" kind="function"><name>CalculateCollision</name></member>
+    <member refid="class_hitbox_1aafd01dbe871f6f7f464217345bd4ca01" kind="function"><name>~Hitbox</name></member>
+  </compound>
+  <compound refid="class_my_bitmap" kind="class"><name>MyBitmap</name>
+    <member refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kind="variable"><name>image</name></member>
+    <member refid="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" kind="function"><name>MyBitmap</name></member>
+    <member refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" kind="function"><name>ChangeBitmap</name></member>
+    <member refid="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" kind="function"><name>~MyBitmap</name></member>
+  </compound>
+  <compound refid="class_object" kind="class"><name>Object</name>
+    <member refid="class_object_1a4296d4f6665a8c720abcedb3745a29d9" kind="variable"><name>sizeX</name></member>
+    <member refid="class_object_1a9951998336ee6906a052572d37019e89" kind="variable"><name>sizeY</name></member>
+    <member refid="class_object_1ad0a5b4d4c8c279af7fe46425c5fbf6b1" kind="variable"><name>bitmapa</name></member>
+    <member refid="class_object_1a44ea217e657aa0eb204f0d746773326f" kind="function"><name>DrawObject</name></member>
+    <member refid="class_object_1a7382271d52d647c940cb234f44a22ebf" kind="function"><name>DrawObjecttest</name></member>
+    <member refid="class_object_1aea2952b0ed70add86517aaa67cc37958" kind="function"><name>Object</name></member>
+    <member refid="class_object_1a459e80cb8ce4587c7f0f0cad4d7ef2e7" kind="function"><name>Object</name></member>
+    <member refid="class_object_1acef869cdd43d0cac5d2f6b21dc1327cc" kind="function"><name>Object</name></member>
+    <member refid="class_object_1a65c7bbe5bcf26a80569c55e48e7115e7" kind="function"><name>Object</name></member>
+    <member refid="class_object_1a0100999b4fb6331d9ee44d6d89838c73" kind="function"><name>Object</name></member>
+    <member refid="class_object_1acccd4381d6d751b01b38a1b4b39d36b3" kind="function"><name>Object</name></member>
+    <member refid="class_object_1aa965ff676265eb8053afa99afa2054b5" kind="function"><name>Object</name></member>
+    <member refid="class_object_1a8a12cba46b0145a45935c926fc778624" kind="function"><name>Object</name></member>
+    <member refid="class_object_1aed084a85d0a40590be323d90fb68c44e" kind="function"><name>ChangeBitmap</name></member>
+    <member refid="class_object_1ae1cf3d2722c5db32cc7c19e562bf3d65" kind="function"><name>CollisionCalculate</name></member>
+    <member refid="class_object_1a13a4e0081ca87204a74fd2d34de0577b" kind="function"><name>GetBitmap</name></member>
+    <member refid="class_object_1af0539f9d219b8b9b37f9faf30d6b9eaa" kind="function"><name>GetSizeX</name></member>
+    <member refid="class_object_1a00b8b12350ba1a536a37c2fb7b30acfc" kind="function"><name>GetSizeY</name></member>
+    <member refid="class_object_1a40860402e64d8008fb42329df7097cdb" kind="function"><name>Object</name></member>
+    <member refid="class_object_1ae8f5483f459e46687bd01e6f9977afd3" kind="function"><name>~Object</name></member>
+  </compound>
+  <compound refid="class_player" kind="class"><name>Player</name>
+    <member refid="class_player_1a749c92b68d265f527c6f83e82b59ed2d" kind="variable"><name>up</name></member>
+    <member refid="class_player_1a6a11323ba4cf1d54ec09a579fd6edff9" kind="variable"><name>down</name></member>
+    <member refid="class_player_1ab9dbb061c4a10c873d9c8ce1c6e533be" kind="variable"><name>left</name></member>
+    <member refid="class_player_1a8a40c57ac05cddb400b3160bba974063" kind="variable"><name>right</name></member>
+    <member refid="class_player_1af1782cc3d35231181addec8de1eaf7e8" kind="variable"><name>shooting</name></member>
+    <member refid="class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kind="function"><name>Player</name></member>
+    <member refid="class_player_1ab1b9a6da7f071107ec509bd0d644031f" kind="function"><name>Player</name></member>
+    <member refid="class_player_1a01d443cd95a8923ecb956728219bfbb8" kind="function"><name>Player</name></member>
+    <member refid="class_player_1a93076fbfb49b562a9b2ad0484519f516" kind="function"><name>calculatePosition</name></member>
+    <member refid="class_player_1ac08da8b993ba03687fd046d8ce058fc3" kind="function"><name>DrawPlayer</name></member>
+    <member refid="class_player_1a0924fd1003260b5cef4f7c08afc6f186" kind="function"><name>CalculateCollisionsForPlayer</name></member>
+    <member refid="class_player_1a7990f800855f5677900fffe617307919" kind="function"><name>PlayerShot</name></member>
+    <member refid="class_player_1acad938f794172fe1c7b52e465b968d2f" kind="function"><name>SetUp</name></member>
+    <member refid="class_player_1a5d1204b9ff886ad55f388166084324b2" kind="function"><name>SetDown</name></member>
+    <member refid="class_player_1a8eee8bbd132e23e4fee69627f513ce9f" kind="function"><name>SetLeft</name></member>
+    <member refid="class_player_1a2704e0194eff2a730cc2b6c6ec91cec2" kind="function"><name>SetRight</name></member>
+    <member refid="class_player_1a90f2712d0f70ff1642432ea49e94fcde" kind="function"><name>SetShooting</name></member>
+    <member refid="class_player_1a4675847a50a68b4f07f61a499f2b226b" kind="function"><name>GetX</name></member>
+    <member refid="class_player_1a910f6d1fe2033793395db3b0dd3ac1c2" kind="function"><name>GetY</name></member>
+    <member refid="class_player_1a749d2c00e1fe0f5c2746f7505a58c062" kind="function"><name>~Player</name></member>
+  </compound>
+  <compound refid="class_semaphore" kind="class"><name>Semaphore</name>
+    <member refid="class_semaphore_1a7f5e2978748697966f3cbaf3379fc1cb" kind="variable"><name>count</name></member>
+    <member refid="class_semaphore_1aca1661adbce12634d2fa9d7e0c09d121" kind="function"><name>Semaphore</name></member>
+    <member refid="class_semaphore_1a633658a6fde276bffc912028725c6ade" kind="function"><name>~Semaphore</name></member>
+    <member refid="class_semaphore_1ac5ff4584f6a5cbb6b0c2e14cb0efedc4" kind="function"><name>Lock_Semaphore</name></member>
+    <member refid="class_semaphore_1ad1261f5a720623f16c3f9205eb776ea8" kind="function"><name>Unlock_Semaphore</name></member>
+  </compound>
+  <compound refid="classship" kind="class"><name>ship</name>
+    <member refid="classship_1ac37c32c7de05413ac55bdfbd66751e8c" kind="variable"><name>rotation</name></member>
+    <member refid="classship_1ad320351e65237d459fb6cf29b001159d" kind="variable"><name>speed</name></member>
+    <member refid="classship_1a36db50422b5f9b5e9240a0f81779557b" kind="variable"><name>health</name></member>
+    <member refid="classship_1a85ae4582c87c67a93f30258c52c55a84" kind="variable"><name>playerWeapons</name></member>
+    <member refid="classship_1a002c8f2eea35e3b4f0c8003850a782d4" kind="function"><name>ship</name></member>
+    <member refid="classship_1ab174d904c0308e3cac53df83e055706a" kind="function"><name>ship</name></member>
+    <member refid="classship_1ae6c205955d4dcf6d476cf0136b77b688" kind="function"><name>ship</name></member>
+    <member refid="classship_1aa2f38e2c68c1d7ff82f09ee9a680fbfe" kind="function"><name>CalculateCollisions</name></member>
+    <member refid="classship_1a0976d4ce93a8bb5a7a29edc297c42223" kind="function"><name>GetHealth</name></member>
+    <member refid="classship_1aa953e67ecab211a01d4a327304a174a5" kind="function"><name>GetX</name></member>
+    <member refid="classship_1afeec2db3150c47d7152ae961df1992dd" kind="function"><name>GetY</name></member>
+    <member refid="classship_1a0ff329ef317f778cf7024e1022254067" kind="function"><name>GetSpeed</name></member>
+    <member refid="classship_1a9ce640cd66ad06fb53ba256b09720816" kind="function"><name>~ship</name></member>
+    <member refid="classship_1a4c3adc9f2c6093095c9f348f1e58e441" kind="function"><name>DrawShip</name></member>
+  </compound>
+  <compound refid="class_weapons" kind="class"><name>Weapons</name>
+    <member refid="class_weapons_1af2658e63e9b06e199f5422566ad1f8d0" kind="variable"><name>weapons</name></member>
+    <member refid="class_weapons_1a05023ae3e624d7154f3c5b6a956d79ad" kind="variable"><name>side</name></member>
+    <member refid="class_weapons_1aecd81c1ed9efff890c83bb7090a80e83" kind="function"><name>Weapons</name></member>
+    <member refid="class_weapons_1a1d911b6ecc86212b5396726806715471" kind="function"><name>AddWeapon</name></member>
+    <member refid="class_weapons_1af1796ac8fd6145e5281bf35b1755a512" kind="function"><name>~Weapons</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="algif_8c" kind="file"><name>algif.c</name>
+    <member refid="algif_8c_1a2773a1b184c8218469b4527c93b422d5" kind="function"><name>algif_render_frame</name></member>
+    <member refid="algif_8c_1ab3364e9ed4689444db2819fef23fc8e4" kind="function"><name>algif_load_animation_f</name></member>
+    <member refid="algif_8c_1aa6850ac29de0f9ee57a29e29e7c0644f" kind="function"><name>algif_load_animation</name></member>
+    <member refid="algif_8c_1a0fbf2c5cd040ec377caec01c907b5645" kind="function"><name>algif_get_bitmap</name></member>
+    <member refid="algif_8c_1abbec0cebd0ffcb0ef86ef206c02d2e0e" kind="function"><name>algif_get_frame_bitmap</name></member>
+    <member refid="algif_8c_1add9608008dfba9fa1ed501d2ee5b2384" kind="function"><name>algif_get_frame_duration</name></member>
+  </compound>
+  <compound refid="algif_8h" kind="file"><name>algif.h</name>
+    <member refid="algif_8h_1a530b526533e2164795ca79abec9885cb" kind="typedef"><name>ALGIF_ANIMATION</name></member>
+    <member refid="algif_8h_1aba4c4f9bad9c68f3a1d547a09b66db0f" kind="typedef"><name>ALGIF_FRAME</name></member>
+    <member refid="algif_8h_1a7ff959b6c50854c6a95c5a3e5d1d07ba" kind="typedef"><name>ALGIF_PALETTE</name></member>
+    <member refid="algif_8h_1ac30f0d56ffed59b13a7845692e38c0b0" kind="typedef"><name>ALGIF_BITMAP</name></member>
+    <member refid="algif_8h_1abcd22d2bb503fb5bc2144e1970f6d9bf" kind="typedef"><name>ALGIF_RGB</name></member>
+    <member refid="algif_8h_1acc86ec5ff1e3996d1ad7087b8d6b71da" kind="function"><name>algif_load_raw</name></member>
+    <member refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" kind="function"><name>algif_load_animation_f</name></member>
+    <member refid="algif_8h_1aa6850ac29de0f9ee57a29e29e7c0644f" kind="function"><name>algif_load_animation</name></member>
+    <member refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" kind="function"><name>algif_render_frame</name></member>
+    <member refid="algif_8h_1a2300f4f64d2cc24fefbd77cb6a586fc9" kind="function"><name>algif_destroy_animation</name></member>
+    <member refid="algif_8h_1a943a7d4908a215f57a5338d17647b3e4" kind="function"><name>algif_create_bitmap</name></member>
+    <member refid="algif_8h_1a2a5a82f50d2c014f87985dd0840a22fe" kind="function"><name>algif_destroy_bitmap</name></member>
+    <member refid="algif_8h_1a402ed5778f346117ca734b52032f9946" kind="function"><name>algif_blit</name></member>
+    <member refid="algif_8h_1a0fbf2c5cd040ec377caec01c907b5645" kind="function"><name>algif_get_bitmap</name></member>
+    <member refid="algif_8h_1abbec0cebd0ffcb0ef86ef206c02d2e0e" kind="function"><name>algif_get_frame_bitmap</name></member>
+    <member refid="algif_8h_1add9608008dfba9fa1ed501d2ee5b2384" kind="function"><name>algif_get_frame_duration</name></member>
+  </compound>
+  <compound refid="bitmap_8c" kind="file"><name>bitmap.c</name>
+    <member refid="bitmap_8c_1a943a7d4908a215f57a5338d17647b3e4" kind="function"><name>algif_create_bitmap</name></member>
+    <member refid="bitmap_8c_1a2a5a82f50d2c014f87985dd0840a22fe" kind="function"><name>algif_destroy_bitmap</name></member>
+    <member refid="bitmap_8c_1a402ed5778f346117ca734b52032f9946" kind="function"><name>algif_blit</name></member>
+  </compound>
+  <compound refid="gif_8c" kind="file"><name>gif.c</name>
+    <member refid="gif_8c_1af0925fb5910899c42de64674c481d82e" kind="function"><name>LZW_decode</name></member>
+    <member refid="gif_8c_1a2300f4f64d2cc24fefbd77cb6a586fc9" kind="function"><name>algif_destroy_animation</name></member>
+    <member refid="gif_8c_1a5c695aca4c7c0e4ea22d3090e18c5356" kind="function"><name>read_palette</name></member>
+    <member refid="gif_8c_1aabed6e6c96386875a253310546aec2b0" kind="function"><name>deinterlace</name></member>
+    <member refid="gif_8c_1acc86ec5ff1e3996d1ad7087b8d6b71da" kind="function"><name>algif_load_raw</name></member>
+  </compound>
+  <compound refid="lzw_8c" kind="file"><name>lzw.c</name>
+    <member refid="lzw_8c_1aefd93af2ce6a447bae5ff63c7205d892" kind="function"><name>read_code</name></member>
+    <member refid="lzw_8c_1af0925fb5910899c42de64674c481d82e" kind="function"><name>LZW_decode</name></member>
+  </compound>
+  <compound refid="_bullet_8cpp" kind="file"><name>Bullet.cpp</name>
+  </compound>
+  <compound refid="_bullet_8h" kind="file"><name>Bullet.h</name>
+  </compound>
+  <compound refid="_bullets_8cpp" kind="file"><name>Bullets.cpp</name>
+  </compound>
+  <compound refid="_bullets_8h" kind="file"><name>Bullets.h</name>
+  </compound>
+  <compound refid="_config_8h" kind="file"><name>Config.h</name>
+    <member refid="_config_8h_1a2ec915f902b2010979ebf49975b3f473" kind="define"><name>WindowHeight</name></member>
+    <member refid="_config_8h_1a603c34f14d3148cc8e6e76b104e0b6c0" kind="define"><name>WindowWidth</name></member>
+    <member refid="_config_8h_1a11f028ea0fccac47423949e772d8a672" kind="define"><name>blackRGB</name></member>
+    <member refid="_config_8h_1ad04ae0397d0740262c49252d369284ab" kind="define"><name>FPScount</name></member>
+    <member refid="_config_8h_1a98edc98c795eda0ac5157ac2bc7fe579" kind="define"><name>programName</name></member>
+    <member refid="_config_8h_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+    <member refid="_config_8h_1a48e9025e95285941c6e62ec25f46984e" kind="variable"><name>PlayerDmg</name></member>
+    <member refid="_config_8h_1a3b0539b6c8ce710f9cd88babdcdf3735" kind="variable"><name>TicsForEnemySpawn</name></member>
+    <member refid="_config_8h_1a6ea53b7a5532fe92235a7681bc48a153" kind="variable"><name>PlayerHealth</name></member>
+  </compound>
+  <compound refid="data_8cpp" kind="file"><name>data.cpp</name>
+  </compound>
+  <compound refid="data_8h" kind="file"><name>data.h</name>
+  </compound>
+  <compound refid="_enemy_8cpp" kind="file"><name>Enemy.cpp</name>
+  </compound>
+  <compound refid="_enemy_8h" kind="file"><name>Enemy.h</name>
+  </compound>
+  <compound refid="_game_8cpp" kind="file"><name>Game.cpp</name>
+  </compound>
+  <compound refid="_game_8h" kind="file"><name>Game.h</name>
+  </compound>
+  <compound refid="_hitbox_8cpp" kind="file"><name>Hitbox.cpp</name>
+  </compound>
+  <compound refid="_hitbox_8h" kind="file"><name>Hitbox.h</name>
+  </compound>
+  <compound refid="_hitbox_type_enum_8h" kind="file"><name>HitboxTypeEnum.h</name>
+    <member refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623" kind="enum"><name>HitboxType</name></member>
+    <member refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a8556f65fa6da6a7294137fe6bf2b70b6" kind="enumvalue"><name>dot</name></member>
+    <member refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623aa3f65e7d51a12b7b234da165931c2728" kind="enumvalue"><name>square</name></member>
+    <member refid="_hitbox_type_enum_8h_1a969043dd6aea3b233f7f63b761ff2623a1155d8992f910feb05ac24fc65521792" kind="enumvalue"><name>circle</name></member>
+  </compound>
+  <compound refid="_my_bitmap_8cpp" kind="file"><name>MyBitmap.cpp</name>
+  </compound>
+  <compound refid="_my_bitmap_8h" kind="file"><name>MyBitmap.h</name>
+  </compound>
+  <compound refid="_object_8cpp" kind="file"><name>Object.cpp</name>
+  </compound>
+  <compound refid="_object_8h" kind="file"><name>Object.h</name>
+    <member refid="_object_8h_1a1ac41480eb2e4aadd52252ee550b630a" kind="define"><name>new</name></member>
+  </compound>
+  <compound refid="_player_8cpp" kind="file"><name>Player.cpp</name>
+  </compound>
+  <compound refid="_player_8h" kind="file"><name>Player.h</name>
+  </compound>
+  <compound refid="saced_8cpp" kind="file"><name>saced.cpp</name>
+  </compound>
+  <compound refid="_semaphore_8cpp" kind="file"><name>Semaphore.cpp</name>
+  </compound>
+  <compound refid="_semaphore_8h" kind="file"><name>Semaphore.h</name>
+  </compound>
+  <compound refid="ship_8cpp" kind="file"><name>ship.cpp</name>
+  </compound>
+  <compound refid="ship_8h" kind="file"><name>ship.h</name>
+  </compound>
+  <compound refid="_side_enum_8h" kind="file"><name>SideEnum.h</name>
+    <member refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00" kind="enum"><name>Side</name></member>
+    <member refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00ac37f0609760d22ed92a4d81c3f46dcdb" kind="enumvalue"><name>player</name></member>
+    <member refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" kind="enumvalue"><name>enemy</name></member>
+  </compound>
+  <compound refid="_source_8cpp" kind="file"><name>Source.cpp</name>
+    <member refid="_source_8cpp_1afc30e481f763a8d68a861dba91be7316" kind="define"><name>_CRTDBG_MAP_ALLOC</name></member>
+    <member refid="_source_8cpp_1a38526c221904dd1ccce056f94263164a" kind="define"><name>ALLEGRO_USE_CONSOLE</name></member>
+    <member refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_weapons_8cpp" kind="file"><name>Weapons.cpp</name>
+  </compound>
+  <compound refid="_weapons_8h" kind="file"><name>Weapons.h</name>
+  </compound>
+  <compound refid="dir_4cbd5e020a528c0740508a4b836b79db" kind="dir"><name>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5</name>
+  </compound>
+  <compound refid="dir_ce26a3061a32f0879ced32aa5151c937" kind="dir"><name>C:/Users/User/source/repos/Bullethell-Project-PK4</name>
+  </compound>
+  <compound refid="dir_2256df61a681f3f9fc4e6b8603564d4d" kind="dir"><name>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project</name>
+  </compound>
+  <compound refid="dir_d81bd9b5265ef0fb2e7b2767d4a95d6f" kind="dir"><name>C:/Users/User/source/repos/Bullethell-Project-PK4/project</name>
+  </compound>
+  <compound refid="dir_17193bb867937aaad54712c01a7faaf4" kind="dir"><name>C:/Users/User/source/repos</name>
+  </compound>
+  <compound refid="dir_430aefdf61d9778041431be5eb6512e6" kind="dir"><name>C:/Users/User/source</name>
+  </compound>
+  <compound refid="dir_9afdf31a6b2f8c983a10d9ad6ddad54e" kind="dir"><name>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src</name>
+  </compound>
+  <compound refid="dir_06c5b1a02392cbf94af8d58ea8d9521c" kind="dir"><name>C:/Users/User</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

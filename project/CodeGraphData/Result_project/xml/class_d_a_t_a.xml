@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_a_t_a" kind="class" prot="public">
+    <compoundname>DATA</compoundname>
+    <includes refid="data_8h" local="no">data.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" prot="public" static="no" mutable="no">
+        <type>ALLEGRO_MUTEX *</type>
+        <definition>ALLEGRO_MUTEX* DATA::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="12" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_d_a_t_a_1a9795f3559916a27d697485c54a6dfd68" compoundref="data_8cpp" startline="64" endline="67">~DATA</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" prot="public" static="no" mutable="no">
+        <type>ALLEGRO_COND *</type>
+        <definition>ALLEGRO_COND* DATA::cond</definition>
+        <argsstring></argsstring>
+        <name>cond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="13" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_d_a_t_a_1a9795f3559916a27d697485c54a6dfd68" compoundref="data_8cpp" startline="64" endline="67">~DATA</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+        <definition>Bullets* DATA::Playerbullets</definition>
+        <argsstring></argsstring>
+        <name>Playerbullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="14" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" compoundref="data_8cpp" startline="26" endline="34">calculateEnemies</referencedby>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+        <definition>Bullets * DATA::enemyBullets</definition>
+        <argsstring></argsstring>
+        <name>enemyBullets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="14" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" compoundref="data_8cpp" startline="26" endline="34">calculateEnemies</referencedby>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+        <definition>Player* DATA::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="15" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DATA::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="16" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_enemy" kindref="compound">Enemy</ref> * &gt;</type>
+        <definition>std::vector&lt; Enemy * &gt; DATA::enemies</definition>
+        <argsstring></argsstring>
+        <name>enemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="17" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" compoundref="data_8cpp" startline="14" endline="18">AddEnemy</referencedby>
+        <referencedby refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" compoundref="data_8cpp" startline="26" endline="34">calculateEnemies</referencedby>
+        <referencedby refid="class_d_a_t_a_1a8ebcf37ee1e12ed016585ecf5e5f0973" compoundref="data_8cpp" startline="46" endline="60">ClearDeadEnemies</referencedby>
+        <referencedby refid="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" compoundref="data_8cpp" startline="36" endline="44">DrawEnemies</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DATA::ready</definition>
+        <argsstring></argsstring>
+        <name>ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="19" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" compoundref="data_8cpp" startline="3" endline="12">DATA</referencedby>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DATA::DATA</definition>
+        <argsstring>(Bullets *Playerbullets, Bullets *enemyBullets, Player *player)</argsstring>
+        <name>DATA</name>
+        <param>
+          <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+          <declname>Playerbullets</declname>
+        </param>
+        <param>
+          <type><ref refid="class_bullets" kindref="compound">Bullets</ref> *</type>
+          <declname>enemyBullets</declname>
+        </param>
+        <param>
+          <type><ref refid="class_player" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="20" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="3" bodyend="12"/>
+        <references refid="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" compoundref="data_8h" startline="13">cond</references>
+        <references refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" compoundref="data_8h" startline="16">counter</references>
+        <references refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" compoundref="data_8h" startline="14">enemyBullets</references>
+        <references refid="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" compoundref="data_8h" startline="12">mutex</references>
+        <references refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" compoundref="data_8h" startline="15">player</references>
+        <references refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" compoundref="data_8h" startline="14">Playerbullets</references>
+        <references refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" compoundref="data_8h" startline="19">ready</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_a_t_a_1a9795f3559916a27d697485c54a6dfd68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DATA::~DATA</definition>
+        <argsstring>()</argsstring>
+        <name>~DATA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="21" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="64" bodyend="67"/>
+        <references refid="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" compoundref="data_8h" startline="13">cond</references>
+        <references refid="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" compoundref="data_8h" startline="12">mutex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA::AddEnemy</definition>
+        <argsstring>(const char *filename, int x, int y, double speed, int period)</argsstring>
+        <name>AddEnemy</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="23" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="14" bodyend="18"/>
+        <references refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" compoundref="data_8h" startline="17">enemies</references>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" compoundref="_side_enum_8h" startline="4">enemy</references>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_a_t_a_1abc6d185131aa5aed8b1a317b4141ac92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA::AddEnemy</definition>
+        <argsstring>(const char *filename, int x, int y, double speed, double(*f2)(double x), int period)</argsstring>
+        <name>AddEnemy</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>double(*)(double x)</type>
+          <declname>f2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="24" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="20" bodyend="24"/>
+        <references refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" compoundref="data_8h" startline="17">enemies</references>
+        <references refid="_side_enum_8h_1a8c0137d7160ad71b6ed265c53c99ed00aaa2cd972f1aea648318a13183ca9b7e1" compoundref="_side_enum_8h" startline="4">enemy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA::DrawEnemies</definition>
+        <argsstring>()</argsstring>
+        <name>DrawEnemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="25" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="36" bodyend="44"/>
+        <references refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" compoundref="data_8h" startline="17">enemies</references>
+        <references refid="_config_8h_1a598a3330b3c21701223ee0ca14316eca" compoundref="_config_8h" startline="15">PI</references>
+        <referencedby refid="class_game_1a6f4086fc159e19900d86edda79e46088" compoundref="_game_8cpp" startline="9" endline="470">Game::mainloop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA::calculateEnemies</definition>
+        <argsstring>(int timer)</argsstring>
+        <name>calculateEnemies</name>
+        <param>
+          <type>int</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="26" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="26" bodyend="34"/>
+        <references refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" compoundref="data_8h" startline="17">enemies</references>
+        <references refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" compoundref="data_8h" startline="14">enemyBullets</references>
+        <references refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" compoundref="data_8h" startline="14">Playerbullets</references>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_a_t_a_1a8ebcf37ee1e12ed016585ecf5e5f0973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DATA::ClearDeadEnemies</definition>
+        <argsstring>()</argsstring>
+        <name>ClearDeadEnemies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="27" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.cpp" bodystart="46" bodyend="60"/>
+        <references refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" compoundref="data_8h" startline="17">enemies</references>
+        <referencedby refid="class_game_1a340fe38d2e3eb547f36994598155b667" compoundref="_game_8cpp" startline="472" endline="509">Game::Func_ThreadBulletsCalculations</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="37">
+        <label>ship</label>
+        <link refid="classship"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>playerWeapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>Bullets</label>
+        <link refid="class_bullets"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>bullets</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>std::vector&lt; Enemy * &gt;</label>
+        <childnode refid="36" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>Weapons</label>
+        <link refid="class_weapons"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>weapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Object</label>
+        <link refid="class_object"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>bitmapa</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>Hitbox</label>
+        <link refid="class_hitbox"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>posX</edgelabel>
+          <edgelabel>posY</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>std::vector&lt; Bullet * &gt;</label>
+        <childnode refid="46" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>playerWeapons</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>MyBitmap</label>
+        <link refid="class_my_bitmap"/>
+      </node>
+      <node id="43">
+        <label>std::vector&lt; Bullets * &gt;</label>
+        <childnode refid="44" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>std::unique_ptr&lt; double &gt;</label>
+      </node>
+      <node id="34">
+        <label>DATA</label>
+        <link refid="class_d_a_t_a"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>enemies</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>enemyBullets</edgelabel>
+          <edgelabel>Playerbullets</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" line="8" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/data.h" bodystart="8" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_d_a_t_a_1a143b0c39cc8f74504fba9ac613d6dc70" prot="public" virt="non-virtual"><scope>DATA</scope><name>AddEnemy</name></member>
+      <member refid="class_d_a_t_a_1abc6d185131aa5aed8b1a317b4141ac92" prot="public" virt="non-virtual"><scope>DATA</scope><name>AddEnemy</name></member>
+      <member refid="class_d_a_t_a_1ab86b9ce14289b7690dc71ebcd2d4a436" prot="public" virt="non-virtual"><scope>DATA</scope><name>calculateEnemies</name></member>
+      <member refid="class_d_a_t_a_1a8ebcf37ee1e12ed016585ecf5e5f0973" prot="public" virt="non-virtual"><scope>DATA</scope><name>ClearDeadEnemies</name></member>
+      <member refid="class_d_a_t_a_1a87d6faece2d0a33e5adc640d3d1394e3" prot="public" virt="non-virtual"><scope>DATA</scope><name>cond</name></member>
+      <member refid="class_d_a_t_a_1afb3271ec0a77dbde10bb682b1b820d38" prot="public" virt="non-virtual"><scope>DATA</scope><name>counter</name></member>
+      <member refid="class_d_a_t_a_1a15de39b935cd36f384807e2deef1e34d" prot="public" virt="non-virtual"><scope>DATA</scope><name>DATA</name></member>
+      <member refid="class_d_a_t_a_1aaf5df1fbf0b40917222850db4b7952dd" prot="public" virt="non-virtual"><scope>DATA</scope><name>DrawEnemies</name></member>
+      <member refid="class_d_a_t_a_1a8da4e35fdb267a9db79dd8c0c1c56861" prot="public" virt="non-virtual"><scope>DATA</scope><name>enemies</name></member>
+      <member refid="class_d_a_t_a_1a980791782caa8920116cd9f5da1150ee" prot="public" virt="non-virtual"><scope>DATA</scope><name>enemyBullets</name></member>
+      <member refid="class_d_a_t_a_1add8f4e9cf7987f482a803b8abd074299" prot="public" virt="non-virtual"><scope>DATA</scope><name>mutex</name></member>
+      <member refid="class_d_a_t_a_1a7aa467f5cb24c8c437cffaf901e53cef" prot="public" virt="non-virtual"><scope>DATA</scope><name>player</name></member>
+      <member refid="class_d_a_t_a_1a9f22a6eaa9a43bd99a451f073a44534e" prot="public" virt="non-virtual"><scope>DATA</scope><name>Playerbullets</name></member>
+      <member refid="class_d_a_t_a_1a9f77bdcf3bfd86c89c86904d7b512019" prot="public" virt="non-virtual"><scope>DATA</scope><name>ready</name></member>
+      <member refid="class_d_a_t_a_1a9795f3559916a27d697485c54a6dfd68" prot="public" virt="non-virtual"><scope>DATA</scope><name>~DATA</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

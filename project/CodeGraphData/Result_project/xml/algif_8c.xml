@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="algif_8c" kind="file">
+    <compoundname>algif.c</compoundname>
+    <includes refid="algif_8h" local="yes">algif.h</includes>
+    <includes local="no">allegro5/allegro_primitives.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>allegro5/allegro5.h</label>
+      </node>
+      <node id="3">
+        <label>allegro5/allegro_primitives.h</label>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="0">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c</label>
+        <link refid="algif.c"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>algif.h</label>
+        <link refid="algif_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="algif_8c_1a2773a1b184c8218469b4527c93b422d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void algif_render_frame</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, int frame, int xpos, int ypos)</argsstring>
+        <name>algif_render_frame</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xpos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ypos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" line="11" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="11" bodyend="57"/>
+        <references refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" compoundref="algif_8h" startline="17">ALGIF_RGB::b</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" compoundref="algif_8h" startline="43">ALGIF_FRAME::bitmap_8_bit</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" compoundref="algif_8h" startline="22">ALGIF_PALETTE::colors</references>
+        <references refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" compoundref="algif_8h" startline="21">ALGIF_PALETTE::colors_count</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" compoundref="algif_8h" startline="27">ALGIF_BITMAP::data</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" compoundref="algif_8h" startline="47">ALGIF_FRAME::disposal_method</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" compoundref="algif_8h" startline="17">ALGIF_RGB::g</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" compoundref="algif_8h" startline="26">ALGIF_BITMAP::h</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::height</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" compoundref="algif_8h" startline="35">ALGIF_ANIMATION::palette</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" compoundref="algif_8h" startline="44">ALGIF_FRAME::palette</references>
+        <references refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" compoundref="algif_8h" startline="17">ALGIF_RGB::r</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" compoundref="algif_8h" startline="39">ALGIF_ANIMATION::store</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" compoundref="algif_8h" startline="48">ALGIF_FRAME::transparent_index</references>
+        <references refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" compoundref="algif_8h" startline="26">ALGIF_BITMAP::w</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::width</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" compoundref="algif_8h" startline="45">ALGIF_FRAME::xoff</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" compoundref="algif_8h" startline="45">ALGIF_FRAME::yoff</references>
+        <referencedby refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" compoundref="algif_8c" startline="59" endline="83">algif_load_animation_f</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8c_1ab3364e9ed4689444db2819fef23fc8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+        <definition>ALGIF_ANIMATION* algif_load_animation_f</definition>
+        <argsstring>(ALLEGRO_FILE *file)</argsstring>
+        <name>algif_load_animation_f</name>
+        <param>
+          <type>ALLEGRO_FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" line="59" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="59" bodyend="83"/>
+        <references refid="algif_8h_1acc86ec5ff1e3996d1ad7087b8d6b71da" compoundref="gif_8c" startline="62" endline="233">algif_load_raw</references>
+        <references refid="algif_8c_1a2773a1b184c8218469b4527c93b422d5" compoundref="algif_8c" startline="11" endline="57">algif_render_frame</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" compoundref="algif_8h" startline="38">ALGIF_ANIMATION::duration</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::height</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" compoundref="algif_8h" startline="31">ALGIF_ANIMATION::width</references>
+        <referencedby refid="algif_8h_1aa6850ac29de0f9ee57a29e29e7c0644f" compoundref="algif_8c" startline="85" endline="88">algif_load_animation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="algif_8c_1aa6850ac29de0f9ee57a29e29e7c0644f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+        <definition>ALGIF_ANIMATION* algif_load_animation</definition>
+        <argsstring>(char const *filename)</argsstring>
+        <name>algif_load_animation</name>
+        <param>
+          <type>char const *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" line="85" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="85" bodyend="88"/>
+        <references refid="algif_8c_1ab3364e9ed4689444db2819fef23fc8e4" compoundref="algif_8c" startline="59" endline="83">algif_load_animation_f</references>
+      </memberdef>
+      <memberdef kind="function" id="algif_8c_1a0fbf2c5cd040ec377caec01c907b5645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* algif_get_bitmap</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, double seconds)</argsstring>
+        <name>algif_get_bitmap</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" line="90" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="90" bodyend="101"/>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" compoundref="algif_8h" startline="38">ALGIF_ANIMATION::duration</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" compoundref="algif_8h" startline="32">ALGIF_ANIMATION::frames_count</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+      </memberdef>
+      <memberdef kind="function" id="algif_8c_1abbec0cebd0ffcb0ef86ef206c02d2e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ALLEGRO_BITMAP *</type>
+        <definition>ALLEGRO_BITMAP* algif_get_frame_bitmap</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, int i)</argsstring>
+        <name>algif_get_frame_bitmap</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" line="103" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="103" bodyend="105"/>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" compoundref="algif_8h" startline="50">ALGIF_FRAME::rendered</references>
+      </memberdef>
+      <memberdef kind="function" id="algif_8c_1add9608008dfba9fa1ed501d2ee5b2384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double algif_get_frame_duration</definition>
+        <argsstring>(ALGIF_ANIMATION *gif, int i)</argsstring>
+        <name>algif_get_frame_duration</name>
+        <param>
+          <type><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref> *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" line="107" column="1" bodyfile="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c" bodystart="107" bodyend="109"/>
+        <references refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" compoundref="algif_8h" startline="46">ALGIF_FRAME::duration</references>
+        <references refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" compoundref="algif_8h" startline="36">ALGIF_ANIMATION::frames</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="algif_8h" kindref="compound">algif.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;allegro5/allegro_primitives.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Renders<sp/>the<sp/>next<sp/>frame<sp/>in<sp/>a<sp/>GIF<sp/>animation<sp/>to<sp/>the<sp/>given<sp/>position.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>You<sp/>need<sp/>to<sp/>call<sp/>this<sp/>in<sp/>order<sp/>on<sp/>the<sp/>same<sp/>destination<sp/>for<sp/>frames</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>[0..gif-&gt;frames_count<sp/>-<sp/>1]<sp/>to<sp/>properly<sp/>render<sp/>all<sp/>the<sp/>frames<sp/>in<sp/>the<sp/>GIF.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>The<sp/>current<sp/>target<sp/>bitmap<sp/>should<sp/>have<sp/>the<sp/>same<sp/>height<sp/>as<sp/>the<sp/>animation,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>and<sp/>blending<sp/>should<sp/>be<sp/>set<sp/>to<sp/>fully<sp/>copy<sp/>RGBA.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="algif_8h_1a2773a1b184c8218469b4527c93b422d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="algif_8c_1a2773a1b184c8218469b4527c93b422d5" kindref="member">algif_render_frame</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xpos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ypos)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y,<sp/>w,<sp/>h;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>*f<sp/>=<sp/>&amp;gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[frame];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e" kindref="compound">ALGIF_PALETTE</ref><sp/>*pal;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(frame<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_filled_rectangle(xpos,<sp/>ypos,<sp/>xpos<sp/>+<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" kindref="member">width</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ypos<sp/>+<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" kindref="member">height</ref>,<sp/>al_map_rgba_f(0,<sp/>0,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>*p<sp/>=<sp/>&amp;gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[frame<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" kindref="member">disposal_method</ref><sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_filled_rectangle(xpos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref>,<sp/>ypos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xpos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref><sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ypos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref><sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_map_rgba_f(0,<sp/>0,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" kindref="member">disposal_method</ref><sp/>==<sp/>3<sp/>&amp;&amp;<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_bitmap_region(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>,<sp/>xpos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref>,<sp/>ypos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xpos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref>,<sp/>ypos<sp/>+<sp/>p-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_destroy_bitmap(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>w<sp/>=<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a071265c41512300003455f8998a5b133" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1acd9eab58bd09352a3b2df839ff5ef839" kindref="member">disposal_method</ref><sp/>==<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_destroy_bitmap(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a70caebb01edb6cc2220eaf7c29cad3ab" kindref="member">store</ref><sp/>=<sp/>al_clone_bitmap(al_get_target_bitmap());</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>pal<sp/>=<sp/>&amp;gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[frame].<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ac565a04f34f26ca4fb94b2efec90a136" kindref="member">palette</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pal-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1a3f0437dcc9b2b4e4a6bbfcc4ec52dbcc" kindref="member">colors_count</ref><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pal<sp/>=<sp/>&amp;gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a632319409bc54bb9b25df35d0ce23ce1" kindref="member">palette</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/>h;<sp/>y++)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x<sp/>=<sp/>0;<sp/>x<sp/>&lt;<sp/>w;<sp/>x++)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a471b78c8c30702165d401b88a903ecd7" kindref="member">data</ref>[x<sp/>+<sp/>y<sp/>*<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1ade53bd919829be2f3ec807faa25c2ff0" kindref="member">bitmap_8_bit</ref>-&gt;<ref refid="struct_a_l_g_i_f___b_i_t_m_a_p_1a04fc5224d6d214b07ae59a6ad698b840" kindref="member">w</ref>];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>!=<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1485e1dab1a2e18620713e9c14899d64" kindref="member">transparent_index</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_draw_pixel(xpos<sp/>+<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a7abe51c5a141edeb939294063e12c208" kindref="member">xoff</ref><sp/>+<sp/>x,<sp/>ypos<sp/>+<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1aff07a7a440fd294fd06c972241158989" kindref="member">yoff</ref><sp/>+<sp/>y,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_map_rgb(pal-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[c].<ref refid="struct_a_l_g_i_f___r_g_b_1aabd85927f8a8e4c78580dbcc4712aadb" kindref="member">r</ref>,<sp/>pal-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[c].<ref refid="struct_a_l_g_i_f___r_g_b_1a12c00f65372dedf9c6cb1253e84b670d" kindref="member">g</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pal-&gt;<ref refid="struct_a_l_g_i_f___p_a_l_e_t_t_e_1abe4e757ecc9141bfdf4ea0619c265cb2" kindref="member">colors</ref>[c].<ref refid="struct_a_l_g_i_f___r_g_b_1ab70546b9904f0f5a44bb7bba4a3d8d4b" kindref="member">b</ref>));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="algif_8h_1ab3364e9ed4689444db2819fef23fc8e4" refkind="member"><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*<ref refid="algif_8c_1ab3364e9ed4689444db2819fef23fc8e4" kindref="member">algif_load_animation_f</ref>(ALLEGRO_FILE<sp/>*file)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif<sp/>=<sp/><ref refid="algif_8h_1acc86ec5ff1e3996d1ad7087b8d6b71da" kindref="member">algif_load_raw</ref>(file);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!gif)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>al_init_primitives_addon();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" kindref="member">duration</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_STATE<sp/>s;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>al_store_state(&amp;s,<sp/>ALLEGRO_STATE_TARGET_BITMAP<sp/>|<sp/>ALLEGRO_STATE_BLENDER);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>al_set_blender(ALLEGRO_ADD,<sp/>ALLEGRO_ONE,<sp/>ALLEGRO_ZERO);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_a_l_g_i_f___f_r_a_m_e" kindref="compound">ALGIF_FRAME</ref><sp/>*f<sp/>=<sp/>&amp;gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[i];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref><sp/>=<sp/>al_create_bitmap(gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ad6728d3718d4cf0cfcb883b197491937" kindref="member">width</ref>,<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1afbb5f2d0645c5925b6288671d7da502f" kindref="member">height</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>al_set_target_bitmap(f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="algif_8c_1a2773a1b184c8218469b4527c93b422d5" kindref="member">algif_render_frame</ref>(gif,<sp/>i,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" kindref="member">duration</ref><sp/>+=<sp/>f-&gt;<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" kindref="member">duration</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>al_restore_state(&amp;s);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="algif_8h_1aa6850ac29de0f9ee57a29e29e7c0644f" refkind="member"><highlight class="normal"><ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*<ref refid="algif_8c_1aa6850ac29de0f9ee57a29e29e7c0644f" kindref="member">algif_load_animation</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*filename)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>ALLEGRO_FILE<sp/>*file<sp/>=<sp/>al_fopen(filename,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="algif_8c_1ab3364e9ed4689444db2819fef23fc8e4" kindref="member">algif_load_animation_f</ref>(file);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="algif_8h_1a0fbf2c5cd040ec377caec01c907b5645" refkind="member"><highlight class="normal">ALLEGRO_BITMAP<sp/>*<ref refid="algif_8c_1a0fbf2c5cd040ec377caec01c907b5645" kindref="member">algif_get_bitmap</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>seconds)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1ade06142a7ad0b67f10168a2cd8ac73d2" kindref="member">frames_count</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>seconds<sp/>=<sp/>fmod(seconds,<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1aa2f9a4fc1211fa2486220ae8390d4e82" kindref="member">duration</ref><sp/>/<sp/>100.0);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d<sp/>+=<sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[i].<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" kindref="member">duration</ref><sp/>/<sp/>100.0;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(seconds<sp/>&lt;<sp/>d)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[i].<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[0].<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="algif_8h_1abbec0cebd0ffcb0ef86ef206c02d2e0e" refkind="member"><highlight class="normal">ALLEGRO_BITMAP<sp/>*<ref refid="algif_8c_1abbec0cebd0ffcb0ef86ef206c02d2e0e" kindref="member">algif_get_frame_bitmap</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[i].<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a720381ccaee4a1b4f733ab624fe7ad88" kindref="member">rendered</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="algif_8h_1add9608008dfba9fa1ed501d2ee5b2384" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="algif_8c_1add9608008dfba9fa1ed501d2ee5b2384" kindref="member">algif_get_frame_duration</ref>(<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n" kindref="compound">ALGIF_ANIMATION</ref><sp/>*gif,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gif-&gt;<ref refid="struct_a_l_g_i_f___a_n_i_m_a_t_i_o_n_1a665a283757a878e9f9b9130fde47d4ef" kindref="member">frames</ref>[i].<ref refid="struct_a_l_g_i_f___f_r_a_m_e_1a1a342ab63dc0d5a8c8d20984c73ee01d" kindref="member">duration</ref><sp/>/<sp/>100.0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/ALgif5/src/algif.c"/>
+  </compounddef>
+</doxygen>

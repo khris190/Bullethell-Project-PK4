@@ -2,12 +2,13 @@
 
 DATA::DATA(Bullets *Playerbullets, Bullets *enemyBullets, Player *player)
 {
-	mutex = al_create_mutex();
-	cond = al_create_cond();
+	//mutex = al_create_mutex();
+	//cond = al_create_cond();
 	this->Playerbullets = Playerbullets;
 	this->enemyBullets = enemyBullets;
 	this->player = player;
 	ready = false;
+	counter = 0;
 }
 
 void DATA::AddEnemy(const char *filename, int x, int y, double speed, int period) {
@@ -48,11 +49,7 @@ void DATA::ClearDeadEnemies() {
 	{
 		if (enemies[i]->GetHealthAndBoundarys() <= 0)
 		{
-			Enemy *swapper = enemies[i];
-			enemies[i] = enemies[enemies.size() - 1];
-			enemies[enemies.size() - 1] = swapper;
-			enemies.erase(enemies.end() - 1);
-			delete swapper;
+			enemies.DeleteElement(i);
 		}
 	}
 
@@ -61,6 +58,6 @@ void DATA::ClearDeadEnemies() {
 
 
 DATA::~DATA() {
-	al_destroy_mutex(mutex);
-	al_destroy_cond(cond);
+	//al_destroy_mutex(mutex);
+	//al_destroy_cond(cond);
 }

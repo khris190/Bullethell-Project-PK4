@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_my_bitmap_8cpp" kind="file">
+    <compoundname>MyBitmap.cpp</compoundname>
+    <includes refid="_my_bitmap_8h" local="yes">MyBitmap.h</includes>
+    <incdepgraph>
+      <node id="344">
+        <label>MyBitmap.h</label>
+        <link refid="_my_bitmap_8h"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>allegro5/allegro_image.h</label>
+      </node>
+      <node id="347">
+        <label>string</label>
+      </node>
+      <node id="343">
+        <label>C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp</label>
+        <link refid="MyBitmap.cpp"/>
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>allegro5\allegro5.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_my_bitmap_8h" kindref="compound">MyBitmap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" refkind="member"><highlight class="normal"><ref refid="class_my_bitmap_1ab691adac090732e5b7278cbb273ec768" kindref="member">MyBitmap::MyBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref><sp/>=<sp/>al_load_bitmap(filename);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_my_bitmap_1a668ef2e670a586b9838e943cdd330868" kindref="member">MyBitmap::ChangeBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref><sp/>=<sp/>al_load_bitmap(filename);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15" refid="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" refkind="member"><highlight class="normal"><ref refid="class_my_bitmap_1ab84c0df78aec0ae080029c3618886d3a" kindref="member">MyBitmap::~MyBitmap</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>al_destroy_bitmap(<ref refid="class_my_bitmap_1a6a931da7815c6e638ff97ced36c5b0b8" kindref="member">image</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/User/source/repos/Bullethell-Project-PK4/project/project/MyBitmap.cpp"/>
+  </compounddef>
+</doxygen>
